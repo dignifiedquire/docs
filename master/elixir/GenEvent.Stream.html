@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GenEvent.Stream</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+    <script type="text/javascript" charset="utf-8">
+      relpath = '';
+      if (relpath != '') relpath += '/';
+    </script>
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+  </head>
+
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <div id="content">
+      <div class="breadcrumbs">Elixir v0.15.1-dev &rarr; <a href="overview.html">Overview</a> &rarr; <a href="GenEvent.html">GenEvent</a> &rarr; <a href="GenEvent.Stream.html">Stream</a></div>
+
+      <h1>
+        GenEvent.Stream
+        
+      </h1>
+
+      <ul class="summary_links">
+        
+        
+        
+        
+        
+          <li><a href="#types_details">Types</a></li>
+        
+      </ul>
+
+      
+        <div id="moduledoc" class="docstring">
+          <p>Defines a <a href="GenEvent.html"><code>GenEvent</code></a> stream.</p>
+
+<p>This is a struct returned by <code>stream/2</code>. The struct is public and
+contains the following fields:</p>
+
+<ul>
+<li><code>:manager</code>  - the manager reference given to <a href="GenEvent.html#stream/2"><code>GenEvent.stream/2</code></a></li>
+<li><code>:id</code>       - the event stream id for cancellation</li>
+<li><code>:timeout</code>  - the timeout in between events, defaults to <code>:infinity</code></li>
+<li><code>:duration</code> - the duration of the subscription, defaults to <code>:infinity</code></li>
+<li><code>:mode</code>     - if the subscription mode is sync or async, defaults to <code>:sync</code></li>
+</ul>
+
+        </div>
+      
+
+      
+        <a href="https://github.com/elixir-lang/elixir/blob/1e3135514fd21605d4fcd80b158b204bf216affd/lib/elixir/lib/gen_event.ex#L1" class="view_source">Source</a>
+      
+
+      
+
+      
+        <div id="types_details" class="details_list">
+          <h2>Types <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></h2>
+          <div class="type_detail">
+  <p class="typespec" id="t:mode/0">
+    <a href="#t:mode/0">mode</a> :: :sync | :async
+  </p>
+  
+      <div class="typespec_doc"><p>The stream mode</p>
+</div>
+  
+</div>
+<div class="type_detail">
+  <p class="typespec" id="t:t/0">
+    <a href="#t:t/0">t</a> :: %GenEvent.Stream{manager: <a href="GenEvent.html#t:manager/0">GenEvent.manager</a>, id: term, timeout: timeout, duration: timeout, mode: <a href="#t:mode/0">mode</a>}
+  </p>
+  
+</div>
+
+        </div>
+      
+
+      
+
+      
+
+      
+    </div>
+  </body>
+</html>
