@@ -20,7 +20,7 @@
     </script>
 
     <div id="content">
-      <div class="breadcrumbs">Logger v0.15.1-dev &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Logger.html">Logger</a> &rarr; <a href="Logger.Formatter.html">Formatter</a></div>
+      <div class="breadcrumbs">Logger v0.15.2-dev &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Logger.html">Logger</a> &rarr; <a href="Logger.Formatter.html">Formatter</a></div>
 
       <h1>
         Logger.Formatter
@@ -57,12 +57,14 @@ serves as template for log messages, for example:</p>
 <p>The valid parameters you can use are:</p>
 
 <ul>
-<li><code>$time</code> - time the log message was sent</li>
-<li><code>$date</code> - date the log message was sent</li>
-<li><code>$message</code> - the log message</li>
-<li><code>$level</code> - the log level</li>
-<li><code>$node</code> - the node that prints the message</li>
-<li><code>$metadata</code> - user controled data presented in &quot;key=val key2=val2&quot; format</li>
+<li><code>$time</code>     - time the log message was sent</li>
+<li><code>$date</code>     - date the log message was sent</li>
+<li><code>$message</code>  - the log message</li>
+<li><code>$level</code>    - the log level</li>
+<li><code>$node</code>     - the node that prints the message</li>
+<li><code>$metadata</code> - user controlled data presented in <code>&quot;key=val key2=val2&quot;</code> format</li>
+<li><code>$levelpad</code> - set to a single space if level is 4 characters long,
+otherwise set to the empty space. Used to align the message after level.</li>
 </ul>
 
 <p>Backends typically allow developers to supply such control
@@ -77,14 +79,14 @@ actual IO data.</p>
 the <a href="Logger.html#metadata/0"><code>Logger.metadata/0</code></a> and <a href="Logger.html#metadata/1"><code>Logger.metadata/1</code></a> functions. For example,
 you can set <code>Logger.metadata([user_id: 13])</code> to add user_id metadata
 to the current process. The user can configure the backend to chose
-which metadata it wants to print and it will replace the $metadata
+which metadata it wants to print and it will replace the <code>$metadata</code>
 value.</p>
 
         </div>
       
 
       
-        <a href="https://github.com/elixir-lang/elixir/blob/1e3135514fd21605d4fcd80b158b204bf216affd/lib/logger/lib/logger/formatter.ex#L3" class="view_source">Source</a>
+        <a href="https://github.com/elixir-lang/elixir/blob/555afad624cf72df74632283be23500cf453e98e/lib/logger/lib/logger/formatter.ex#L3" class="view_source">Source</a>
       
 
       
@@ -135,29 +137,18 @@ metadata listdict and returns a properly formatted string</p>
   
   <div class="docstring"><p>Compiles a format string into an array that the <a href="#format/5"><code>format/5</code></a> can handle.</p>
 
-<p>The valid parameters you can use are:</p>
-
-<ul>
-<li>$time</li>
-<li>$date</li>
-<li>$message</li>
-<li>$level</li>
-<li>$node</li>
-<li>$metadata - metadata is presented in key=val key2=val2 format.</li>
-</ul>
-
-<p>If you pass nil into compile it will use the default
-format of <code>$time $metadata [$level] $message</code></p>
+<p>Check the module doc for documentation on the valid parameters. If you
+pass <code>nil</code>, it defaults to: <code>$time $metadata [$level] $levelpad$message\n</code></p>
 
 <p>If you would like to make your own custom formatter simply pass
-<code>{module, function}</code> to compile and the rest is handled.</p>
+<code>{module, function}</code> to <a href="#compile/1"><code>compile/1</code></a> and the rest is handled.</p>
 
 <pre><code>iex&gt; Logger.Formatter.compile(&quot;$time $metadata [$level] $message\n&quot;)
 [:time, &quot; &quot;, :metadata, &quot; [&quot;, :level, &quot;] &quot;, :message, &quot;\n&quot;]
 </code></pre>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/1e3135514fd21605d4fcd80b158b204bf216affd/lib/logger/lib/logger/formatter.ex#L68" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/555afad624cf72df74632283be23500cf453e98e/lib/logger/lib/logger/formatter.ex#L61" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -174,7 +165,7 @@ format of <code>$time $metadata [$level] $message</code></p>
 metadata listdict and returns a properly formatted string.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/1e3135514fd21605d4fcd80b158b204bf216affd/lib/logger/lib/logger/formatter.ex#L90" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/555afad624cf72df74632283be23500cf453e98e/lib/logger/lib/logger/formatter.ex#L83" class="view_source">Source</a>
   
 </div>
 

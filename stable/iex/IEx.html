@@ -20,7 +20,7 @@
     </script>
 
     <div id="content">
-      <div class="breadcrumbs">IEx v0.15.0 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="IEx.html">IEx</a></div>
+      <div class="breadcrumbs">IEx v0.15.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="IEx.html">IEx</a></div>
 
       <h1>
         IEx
@@ -181,14 +181,14 @@ a shortcut via the command line as well:</p>
 
 <p>When starting IEx, it will look for a local <code>.iex.exs</code> file (located in the current
 working directory), then a global one (located at <code>~/.iex.exs</code>) and will load the
-first one it finds (if any). The code in the chosen .iex file will be
+first one it finds (if any). The code in the chosen .iex.exs file will be
 evaluated in the shell&#39;s context. So, for instance, any modules that are
-loaded or variables that are bound in the .iex file will be available in the
+loaded or variables that are bound in the .iex.exs file will be available in the
 shell after it has booted.</p>
 
-<p>Sample contents of a local .iex file:</p>
+<p>Sample contents of a local .iex.exs file:</p>
 
-<pre><code># source another `.iex` file
+<pre><code># source another `.iex.exs` file
 import_file &quot;~/.iex.exs&quot;
 
 # print something before the shell starts
@@ -198,7 +198,7 @@ IO.puts &quot;hello world&quot;
 value = 13
 </code></pre>
 
-<p>Running the shell in the directory where the above .iex file is located
+<p>Running the shell in the directory where the above .iex.exs file is located
 results in:</p>
 
 <pre><code>$ iex
@@ -221,7 +221,7 @@ at the docs for the <a href="IEx.html#configure/1"><code>IEx.configure/1</code><
 <p>Those options can be configured in your project configuration file or globally
 by calling <a href="IEx.html#configure/1"><code>IEx.configure/1</code></a> from your <code>~/.iex.exs</code> file like this:</p>
 
-<pre><code># .iex
+<pre><code># .iex.exs
 IEx.configure(inspect: [limit: 3])
 
 ### now run the shell ###
@@ -273,7 +273,7 @@ pending expression and return to its normal state:</p>
       
 
       
-        <a href="https://github.com/elixir-lang/elixir/blob/v0.15.0/lib/iex/lib/iex.ex#L1" class="view_source">Source</a>
+        <a href="https://github.com/elixir-lang/elixir/blob/v0.15.1/lib/iex/lib/iex.ex#L1" class="view_source">Source</a>
       
 
       
@@ -364,7 +364,7 @@ pending expression and return to its normal state:</p>
   <div class="docstring"><p>Returns registered <code>after_spawn</code> callbacks.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.0/lib/iex/lib/iex.ex#L314" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.1/lib/iex/lib/iex.ex#L314" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -380,7 +380,7 @@ pending expression and return to its normal state:</p>
   <div class="docstring"><p>Registers a function to be invoked after the IEx process is spawned.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.0/lib/iex/lib/iex.ex#L307" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.1/lib/iex/lib/iex.ex#L307" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -398,7 +398,7 @@ pending expression and return to its normal state:</p>
 <p>ANSI escapes in <code>string</code> are not processed in any way.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.0/lib/iex/lib/iex.ex#L331" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.1/lib/iex/lib/iex.ex#L331" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -414,7 +414,7 @@ pending expression and return to its normal state:</p>
   <div class="docstring"><p>Returns IEx configuration.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.0/lib/iex/lib/iex.ex#L300" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.1/lib/iex/lib/iex.ex#L300" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -497,7 +497,7 @@ when awaiting input.</p>
 </ul>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.0/lib/iex/lib/iex.ex#L275" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.1/lib/iex/lib/iex.ex#L275" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -513,7 +513,7 @@ when awaiting input.</p>
   <div class="docstring"><p>Gets the options used for inspecting.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.0/lib/iex/lib/iex.ex#L364" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.1/lib/iex/lib/iex.ex#L360" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -529,7 +529,7 @@ when awaiting input.</p>
   <div class="docstring"><p>Returns <code>true</code> if IEx was started.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.0/lib/iex/lib/iex.ex#L322" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.1/lib/iex/lib/iex.ex#L322" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -547,7 +547,7 @@ when awaiting input.</p>
 <p>Used by helpers and it has a maximum cap of 80 chars.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.0/lib/iex/lib/iex.ex#L354" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.1/lib/iex/lib/iex.ex#L350" class="view_source">Source</a>
   
 </div>
 
@@ -627,7 +627,7 @@ Interactive Elixir - press Ctrl+C to exit (type h() ENTER for help)
 affect the caller the environment (hence it is called <code>pry</code>).</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.0/lib/iex/lib/iex.ex#L426" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/v0.15.1/lib/iex/lib/iex.ex#L422" class="view_source">Source</a>
   
 </div>
 
