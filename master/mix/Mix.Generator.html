@@ -52,7 +52,7 @@ the action to be performed via <code>Mix.shell</code>.</p>
       
 
       
-        <a href="https://github.com/elixir-lang/elixir/blob/ceb17fac7dae3423eb0681f8ccc97ddf3c2a604c/lib/mix/lib/mix/generator.ex#L1" class="view_source">Source</a>
+        <a href="https://github.com/elixir-lang/elixir/blob/d895c762a104d29c8e80da6208bfc03a967a60b3/lib/mix/lib/mix/generator.ex#L1" class="view_source">Source</a>
       
 
       
@@ -66,7 +66,7 @@ the action to be performed via <code>Mix.shell</code>.</p>
   
 </tr>
 <tr>
-  <td class="summary_signature"><a href="#create_file/2">create_file(path, contents)</a></td>
+  <td class="summary_signature"><a href="#create_file/3">create_file(path, contents, opts \\ [])</a></td>
   
     <td class="summary_synopsis"><p>Creates a file with the given contents.
 If the file already exists, asks for user confirmation</p>
@@ -109,24 +109,30 @@ If the file already exists, asks for user confirmation</p>
   <div class="docstring"><p>Creates a directory if one does not exist yet.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ceb17fac7dae3423eb0681f8ccc97ddf3c2a604c/lib/mix/lib/mix/generator.ex#L25" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/d895c762a104d29c8e80da6208bfc03a967a60b3/lib/mix/lib/mix/generator.ex#L29" class="view_source">Source</a>
   
 </div>
 <div class="detail">
-  <div class="detail_header" id="create_file/2">
-    <span class="signature"><strong>create_file(path, contents)</strong></span>
+  <div class="detail_header" id="create_file/3">
+    <span class="signature"><strong>create_file(path, contents, opts \\ [])</strong></span>
     <div class="detail_header_links">
       <span class="detail_type">(function)</span>
-      <a href="#create_file/2" class="detail_link" title="Link to this function">#</a>
+      <a href="#create_file/3" class="detail_link" title="Link to this function">#</a>
       <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
     </div>
   </div>
   
   <div class="docstring"><p>Creates a file with the given contents.
 If the file already exists, asks for user confirmation.</p>
+
+<h2>Options</h2>
+
+<ul>
+<li><code>:force</code> - forces installation without a shell prompt.</li>
+</ul>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ceb17fac7dae3423eb0681f8ccc97ddf3c2a604c/lib/mix/lib/mix/generator.ex#L13" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/d895c762a104d29c8e80da6208bfc03a967a60b3/lib/mix/lib/mix/generator.ex#L17" class="view_source">Source</a>
   
 </div>
 
@@ -158,7 +164,7 @@ template using the <code>@</code> macro.</p>
 <p>For more information, check <code>EEx.SmartEngine</code>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ceb17fac7dae3423eb0681f8ccc97ddf3c2a604c/lib/mix/lib/mix/generator.ex#L58" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/d895c762a104d29c8e80da6208bfc03a967a60b3/lib/mix/lib/mix/generator.ex#L62" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -177,7 +183,7 @@ template using the <code>@</code> macro.</p>
 <code>_text</code> that expects no argument.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ceb17fac7dae3423eb0681f8ccc97ddf3c2a604c/lib/mix/lib/mix/generator.ex#L83" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/d895c762a104d29c8e80da6208bfc03a967a60b3/lib/mix/lib/mix/generator.ex#L87" class="view_source">Source</a>
   
 </div>
 
