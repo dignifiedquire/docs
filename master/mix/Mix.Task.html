@@ -81,13 +81,20 @@ configure them in Mix:</p>
       
 
       
-        <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L1" class="view_source">Source</a>
+        <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L1" class="view_source">Source</a>
       
 
       
         <h2 id="summary">Summary<div class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></div></h2>
         <table class="summary">
           <tr>
+  <td class="summary_signature"><a href="#alias?/1">alias?(task)</a></td>
+  
+    <td class="summary_synopsis"><p>Checks if exists an alias with the given task name</p>
+</td>
+  
+</tr>
+<tr>
   <td class="summary_signature"><a href="#all_modules/0">all_modules()</a></td>
   
     <td class="summary_synopsis"><p>Returns all loaded task modules</p>
@@ -206,6 +213,29 @@ umbrella projects</p>
         <div id="functions_details" class="details_list">
           <h2>Functions</h2>
           <div class="detail">
+  <div class="detail_header" id="alias?/1">
+    <span class="signature"><strong>alias?(task)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#alias?/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+    <p>Specs:</p>
+    <ul class="spec">
+      
+        <li>alias?(<a href="#t:task_name/0">task_name</a>) :: boolean</li>
+      
+    </ul>
+  
+  <div class="docstring"><p>Checks if exists an alias with the given task name.</p>
+</div>
+  
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L155" class="view_source">Source</a>
+  
+</div>
+<div class="detail">
   <div class="detail_header" id="all_modules/0">
     <span class="signature"><strong>all_modules()</strong></span>
     <div class="detail_header_links">
@@ -228,7 +258,7 @@ umbrella projects</p>
 Check <a href="#load_all/0"><code>load_all/0</code></a> if you want to preload all tasks.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L97" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L97" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -253,7 +283,7 @@ Check <a href="#load_all/0"><code>load_all/0</code></a> if you want to preload a
 <p>This operation is not recursive.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L271" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L283" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -279,7 +309,7 @@ Check <a href="#load_all/0"><code>load_all/0</code></a> if you want to preload a
 exists but it isn&#39;t a task or <code>{:error, :not_found}</code>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L158" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L170" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -309,7 +339,7 @@ exists but it isn&#39;t a task or <code>{:error, :not_found}</code>.</p>
 </ul>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L175" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L187" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -332,7 +362,7 @@ exists but it isn&#39;t a task or <code>{:error, :not_found}</code>.</p>
   <div class="docstring"><p>Loads all tasks in all code paths.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L56" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L56" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -355,7 +385,7 @@ exists but it isn&#39;t a task or <code>{:error, :not_found}</code>.</p>
   <div class="docstring"><p>Loads all tasks in the given <code>paths</code>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L62" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L62" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -380,7 +410,7 @@ exists but it isn&#39;t a task or <code>{:error, :not_found}</code>.</p>
 <p>Returns the moduledoc or <code>nil</code>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L109" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L109" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -406,7 +436,7 @@ umbrella projects.</p>
 <p>Returns <code>true</code> or <code>false</code>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L136" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L136" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -435,7 +465,7 @@ is called.</p>
 children projects.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L285" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L297" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -471,7 +501,7 @@ be found or the task is invalid. Check <a href="#get!/1"><code>get!/1</code></a>
 information.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L212" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L224" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -496,7 +526,7 @@ information.</p>
 <p>Returns the shortdoc or <code>nil</code>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L122" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L122" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -519,7 +549,7 @@ information.</p>
   <div class="docstring"><p>Returns <code>true</code> if given module is a task.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L316" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L328" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -542,7 +572,7 @@ information.</p>
   <div class="docstring"><p>Returns the task name for the given <code>module</code>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L147" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L147" class="view_source">Source</a>
   
 </div>
 
@@ -575,7 +605,7 @@ information.</p>
 a list of command line args.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ccbfec611a09ebcb9a13da2b9c480c4d37c2bea9/lib/mix/lib/mix/task.ex#L41" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix/task.ex#L41" class="view_source">Source</a>
   
 </div>
 
