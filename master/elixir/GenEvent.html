@@ -122,7 +122,7 @@ you want to customize. The callbacks are:</p>
 <li> <code>{:error, reason}</code></li>
 </ul></li>
 <li><p><code>handle_event(msg, state)</code> - invoked whenever an event is sent via
-<a href="#notify/2"><code>notify/2</code></a> or <a href="#sync_notify/2"><code>sync_notify/2</code></a>.</p>
+<a href="#notify/2"><code>notify/2</code></a>, <a href="#ack_notify/2"><code>ack_notify/2</code></a> or <a href="#sync_notify/2"><code>sync_notify/2</code></a>.</p>
 
 <p>It must return:</p>
 
@@ -147,7 +147,17 @@ handler.</p>
 are received by the process. Must return the same values as
 <code>handle_event/2</code>.</p></li>
 <li><p><code>terminate(reason, state)</code> - called when the event handler is removed or
-the event manager is terminating. It can return any term.</p></li>
+the event manager is terminating. It can return any term.</p>
+
+<p>The reason is one of:</p>
+
+<ul>
+<li> <code>:stop</code> - manager is terminating</li>
+<li> <code>{:stop, reason}</code> - monitored process terminated (for monitored handlers)</li>
+<li> <code>:remove_handler</code> - handler is being removed</li>
+<li> <code>{:error, term}</code> - handler crashed or returned a bad value</li>
+<li> <code>term</code> - any term passed to functions like <code>GenEvent.remove_handler/2</code></li>
+</ul></li>
 <li><p><code>code_change(old_vsn, state, extra)</code> - called when the application
 code is being upgraded live (hot code swapping).</p>
 
@@ -162,6 +172,20 @@ code is being upgraded live (hot code swapping).</p>
 
 <p>A GenEvent is bound to the same name registration rules as a <a href="GenServer.html"><code>GenServer</code></a>.
 Read more about it in the <a href="GenServer.html"><code>GenServer</code></a> docs.</p>
+
+<h2>Modes</h2>
+
+<p>GenEvent stream supports three different notifications.</p>
+
+<p>On <a href="GenEvent.html#ack_notify/2"><code>GenEvent.ack_notify/2</code></a>, the manager acknowledges each event,
+providing back pressure, but processing of the message happens
+asynchronously.</p>
+
+<p>On <a href="GenEvent.html#sync_notify/2"><code>GenEvent.sync_notify/2</code></a>, the manager acknowledges an event
+just after it was processed by all event handlers.</p>
+
+<p>On <a href="GenEvent.html#notify/2"><code>GenEvent.notify/2</code></a>, all events are processed asynchronously and
+there is no ack (which means there is no backpressure).</p>
 
 <h2>Streaming</h2>
 
@@ -180,9 +204,9 @@ end
 </code></pre>
 
 <p>A stream may also be given an id, which allows all streams with the given
-id to be cancelled at any moment via <a href="#cancel_streams/1"><code>cancel_streams/1</code></a>.</p>
+id to be cancelled at any moment via <code>cancel_streams/1</code>.</p>
 
-<h2>Learn more</h2>
+<h2>Learn more and compatibility</h2>
 
 <p>If you wish to find out more about gen events, Elixir getting started
 guides provide a tutorial-like introduction. The documentation and links
@@ -194,17 +218,36 @@ in Erlang can also provide extra insight.</p>
 <li><a href="http://learnyousomeerlang.com/event-handlers">http://learnyousomeerlang.com/event-handlers</a></li>
 </ul>
 
+<p>Keep in mind though Elixir and Erlang gen events are not 100% compatible.
+The <a href="http://www.erlang.org/doc/man/gen_event.html#add_sup_handler-3"><code>:gen_event.add_sup_handler/3</code></a> is not supported by Elixir&#39;s GenEvent,
+which in turn supports <code>monitor: true</code> in <a href="GenEvent.html#add_handler/4"><code>GenEvent.add_handler/4</code></a>.</p>
+
+<p>The benefits of the monitoring approach are described in the &quot;Don&#39;t drink
+too much kool aid&quot; section of the &quot;Learn you some Erlang&quot; link above. Due
+to those changes, Elixir&#39;s GenEvent does not trap exits by default.</p>
+
+<p>Futhermore, Elixir&#39;s also normalizes the <code>{:error, _}</code> tuples returned
+by many functions, in order to be more consistent with themselves and
+the <a href="GenServer.html"><code>GenServer</code></a> module.</p>
+
         </div>
       
 
       
-        <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L27" class="view_source">Source</a>
+        <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L1" class="view_source">Source</a>
       
 
       
         <h2 id="summary">Summary<div class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></div></h2>
         <table class="summary">
           <tr>
+  <td class="summary_signature"><a href="#ack_notify/2">ack_notify(manager, event)</a></td>
+  
+    <td class="summary_synopsis"><p>Sends a ack event notification to the event <code>manager</code></p>
+</td>
+  
+</tr>
+<tr>
   <td class="summary_signature"><a href="#add_handler/4">add_handler(manager, handler, args, options \\ [])</a></td>
   
     <td class="summary_synopsis"><p>Adds a new event handler to the event <code>manager</code></p>
@@ -215,13 +258,6 @@ in Erlang can also provide extra insight.</p>
   <td class="summary_signature"><a href="#call/4">call(manager, handler, request, timeout \\ 5000)</a></td>
   
     <td class="summary_synopsis"><p>Makes a synchronous call to the event <code>handler</code> installed in <code>manager</code></p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#cancel_streams/1">cancel_streams(stream)</a></td>
-  
-    <td class="summary_synopsis"><p>Cancels all streams currently running with the given <code>:id</code></p>
 </td>
   
 </tr>
@@ -348,6 +384,36 @@ in Erlang can also provide extra insight.</p>
         <div id="functions_details" class="details_list">
           <h2>Functions</h2>
           <div class="detail">
+  <div class="detail_header" id="ack_notify/2">
+    <span class="signature"><strong>ack_notify(manager, event)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#ack_notify/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+    <p>Specs:</p>
+    <ul class="spec">
+      
+        <li>ack_notify(<a href="#t:manager/0">manager</a>, term) :: :ok</li>
+      
+    </ul>
+  
+  <div class="docstring"><p>Sends a ack event notification to the event <code>manager</code>.</p>
+
+<p>In other words, this function only returns <code>:ok</code> as soon as the
+event manager starts processing this event, but it does not wait
+for event handlers to process the sent event.</p>
+
+<p>See <a href="#notify/2"><code>notify/2</code></a> for more info. Note this function is specific
+to Elixir&#39;s GenEvent and does not work with Erlang ones.</p>
+</div>
+  
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L427" class="view_source">Source</a>
+  
+</div>
+<div class="detail">
   <div class="detail_header" id="add_handler/4">
     <span class="signature"><strong>add_handler(manager, handler, args, options \\ [])</strong></span>
     <div class="detail_header_links">
@@ -360,7 +426,7 @@ in Erlang can also provide extra insight.</p>
     <p>Specs:</p>
     <ul class="spec">
       
-        <li>add_handler(<a href="#t:manager/0">manager</a>, <a href="#t:handler/0">handler</a>, term, [{:link, boolean}]) :: :ok | {:EXIT, term} | {:error, term}</li>
+        <li>add_handler(<a href="#t:manager/0">manager</a>, <a href="#t:handler/0">handler</a>, term, [{:monitor, boolean}]) :: :ok | {:error, term}</li>
       
     </ul>
   
@@ -372,13 +438,15 @@ initiate the event handler and its internal state.</p>
 <p>If <code>init/1</code> returns a correct value indicating successful completion,
 the event manager adds the event handler and this function returns
 <code>:ok</code>. If the callback fails with <code>reason</code> or returns <code>{:error, reason}</code>,
-the event handler is ignored and this function returns <code>{:EXIT, reason}</code>
-or <code>{:error, reason}</code>, respectively.</p>
+the event handler is ignored and this function returns <code>{:error, reason}</code>.</p>
 
-<h2>Linked handlers</h2>
+<p>If the given handler was previously installed at the manager, this
+function returns <code>{:error, :already_added}</code>.</p>
 
-<p>When adding a handler, a <code>:link</code> option with value <code>true</code> can be given.
-This means the event handler and the calling process are now linked.</p>
+<h2>Monitored handlers</h2>
+
+<p>When adding a handler, a <code>:monitor</code> option with value <code>true</code> can be given.
+This means the calling process will now be monitored by the GenEvent handler.</p>
 
 <p>If the calling process later terminates with <code>reason</code>, the event manager
 will delete the event handler by calling the <code>terminate/2</code> callback with
@@ -397,9 +465,22 @@ event handler by another</p></li>
 <li><p>a term - if the event handler is removed due to an error. Which term
 depends on the error</p></li>
 </ul>
+
+<p>Keep in mind that the <code>{:gen_event_EXIT, handler, reason}</code> message is not
+guaranteed to be delivered in case the manager crashes. If you want to
+guarantee the message is delivered, you have two options:</p>
+
+<ul>
+<li>monitor the event manager</li>
+<li>link to the event manager and then set <code>Process.flag(:trap_exit, true)</code>
+in your handler callback</li>
+</ul>
+
+<p>Finally, this functionality only works with GenEvent started via this
+module (it is not backwards compatible with Erlang&#39;s <code>:gen_event</code>).</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L357" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L356" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -427,37 +508,10 @@ the request.</p>
 
 <p>The return value <code>reply</code> is defined in the return value of <code>handle_call/2</code>.
 If the specified event handler is not installed, the function returns
-<code>{:error, :bad_module}</code>.</p>
+<code>{:error, :module_not_found}</code>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L399" class="view_source">Source</a>
-  
-</div>
-<div class="detail">
-  <div class="detail_header" id="cancel_streams/1">
-    <span class="signature"><strong>cancel_streams(stream)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#cancel_streams/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
-    </div>
-  </div>
-  
-    <p>Specs:</p>
-    <ul class="spec">
-      
-        <li>cancel_streams(<a href="GenEvent.Stream.html#t:t/0">GenEvent.Stream.t</a>) :: :ok</li>
-      
-    </ul>
-  
-  <div class="docstring"><p>Cancels all streams currently running with the given <code>:id</code>.</p>
-
-<p>In order for a stream to be cancelled, an <code>:id</code> must be passed
-when the stream is created via <a href="#stream/2"><code>stream/2</code></a>. Passing a stream without
-an id leads to an argument error.</p>
-</div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L411" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L443" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -479,14 +533,15 @@ an id leads to an argument error.</p>
   
   <div class="docstring"><p>Sends an event notification to the event <code>manager</code>.</p>
 
-<p>The event manager will call <code>handle_event/2</code> for each installed event handler.</p>
+<p>The event manager will call <code>handle_event/2</code> for each
+installed event handler.</p>
 
-<p><code>notify</code> is asynchronous and will return immediately after the notification is
-sent. <code>notify</code> will not fail even if the specified event manager does not exist,
-unless it is specified as <code>name</code> (atom).</p>
+<p><code>notify</code> is asynchronous and will return immediately after the
+notification is sent. <code>notify</code> will not fail even if the specified
+event manager does not exist, unless it is specified as an atom.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L374" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L378" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -513,7 +568,7 @@ and return the callback value. If the specified event handler is not
 installed, the function returns <code>{:error, :module_not_found}</code>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L434" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L462" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -538,7 +593,7 @@ installed, the function returns <code>{:error, :module_not_found}</code>.</p>
 <p>See <a href="#start_link/1"><code>start_link/1</code></a> for more information.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L259" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L267" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -575,7 +630,7 @@ parent process and will exit not only on crashes but also if the parent
 process exits with <code>:normal</code> reason.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L249" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L257" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -601,7 +656,7 @@ process exits with <code>:normal</code> reason.</p>
 for each installed event handler.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L480" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L513" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -626,35 +681,18 @@ for each installed event handler.</p>
 <p>The stream is a <a href="GenEvent.html"><code>GenEvent</code></a> struct that implements the <a href="Enumerable.html"><code>Enumerable</code></a>
 protocol. Consumption of events only begins when enumeration starts.</p>
 
+<p>Note streaming is specific to Elixir&#39;s GenEvent and does not work
+with Erlang ones.</p>
+
 <h2>Options</h2>
 
 <ul>
-<li><p><code>:id</code> - an id to identify all live stream instances; when an <code>:id</code> is
-given, existing streams can be called with via <code>cancel_streams</code>.</p></li>
-<li><p><code>:timeout</code> (Enumerable) - raises if no event arrives in X milliseconds.</p></li>
-<li><p><code>:duration</code> (Enumerable) - only consume events during the X milliseconds
-from the streaming start.</p></li>
-<li><p><code>:mode</code> - the mode to consume events, can be <code>:ack</code> (default), <code>:sync</code>
-or <code>:async</code>. See modes below.</p></li>
+<li><code>:timeout</code> - raises if no event arrives in X milliseconds
+(defaults to <code>:infinity</code>)</li>
 </ul>
-
-<h2>Modes</h2>
-
-<p>GenEvent stream supports three different modes.</p>
-
-<p>On <code>:ack</code>, the stream acknowledges each event, providing back pressure,
-but processing of the message happens asynchronously, allowing the event
-manager to move on to the next handler as soon as the event is
-acknowledged.</p>
-
-<p>On <code>:sync</code>, the event manager waits for the event to be consumed
-before moving on to the next event handler.</p>
-
-<p>On <code>:async</code>, all events are processed asynchronously but there is no
-ack (which means there is no backpressure).</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L310" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L300" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -670,7 +708,7 @@ ack (which means there is no backpressure).</p>
     <p>Specs:</p>
     <ul class="spec">
       
-        <li>swap_handler(<a href="#t:manager/0">manager</a>, <a href="#t:handler/0">handler</a>, term, <a href="#t:handler/0">handler</a>, term, [{:link, boolean}]) :: :ok | {:error, term}</li>
+        <li>swap_handler(<a href="#t:manager/0">manager</a>, <a href="#t:handler/0">handler</a>, term, <a href="#t:handler/0">handler</a>, term, [{:monitor, boolean}]) :: :ok | {:error, term}</li>
       
     </ul>
   
@@ -678,24 +716,23 @@ ack (which means there is no backpressure).</p>
 
 <p>First, the old event handler is deleted by calling <code>terminate/2</code> with
 the given <code>args1</code> and collects the return value. Then the new event handler
-is added and initiated by calling <code>init({args2, term}), where term is the
+is added and initiated by calling <code>init({args2, state}), where term is the
 return value of calling</code>terminate/2` in the old handler. This makes it
 possible to transfer information from one handler to another.</p>
 
 <p>The new handler will be added even if the specified old event handler
-is not installed in which case <code>term = :error</code> or if the handler fails to
-terminate with a given reason.</p>
+is not installed or if the handler fails to terminate with a given reason
+in which case <code>state = {:error, term}</code>.</p>
 
-<p>If there was a linked connection between handler1 and a process pid, there
-will be a link connection between handler2 and pid instead. A new link in
-between the caller process and the new handler can also be set with by
-giving <code>link: true</code> as option. See <a href="#add_handler/4"><code>add_handler/4</code></a> for more information.</p>
+<p>A <code>:monitor</code> option can also be set to specify if the new handler
+should be monitored by the manager. See <a href="#add_handler/4"><code>add_handler/4</code></a> for more
+information.</p>
 
-<p>If <code>init/1</code> in the second handler returns a correct value, this function
-returns <code>:ok</code>.</p>
+<p>If <code>init/1</code> in the second handler returns a correct value, this
+function returns <code>:ok</code>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L460" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L487" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -723,7 +760,7 @@ invokes the <code>handle_event/2</code> on each installed event handler.</p>
 <p>See <a href="#notify/2"><code>notify/2</code></a> for more info.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L385" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L412" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -746,7 +783,7 @@ invokes the <code>handle_event/2</code> on each installed event handler.</p>
   <div class="docstring"><p>Returns a list of all event handlers installed in the <code>manager</code>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L471" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event.ex#L502" class="view_source">Source</a>
   
 </div>
 

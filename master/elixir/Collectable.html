@@ -54,13 +54,6 @@ enumerable into a collection:</p>
 %{a: 1, b: 2}
 </code></pre>
 
-<p>If a collection implements both <a href="Enumerable.html"><code>Enumerable</code></a> and <a href="Collectable.html"><code>Collectable</code></a>, both
-operations can be combined with <a href="Enum.html#traverse/2"><code>Enum.traverse/2</code></a>:</p>
-
-<pre><code>iex&gt; Enum.traverse(%{a: 1, b: 2}, fn {k, v} -&gt; {k, v * 2} end)
-%{a: 2, b: 4}
-</code></pre>
-
 <h2>Why Collectable?</h2>
 
 <p>The <a href="Enumerable.html"><code>Enumerable</code></a> protocol is useful to take values out of a collection.
@@ -80,15 +73,11 @@ shape where just the range limits are stored.</p>
 <a href="Enumerable.html"><code>Enumerable</code></a> is about taking values out, <a href="Collectable.html#into/1"><code>Collectable.into/1</code></a> is about
 collecting those values into a structure.</p>
 
-<p><a href="#empty/1"><code>empty/1</code></a> receives a collectable and returns an empty version of the
-same collectable. By combining the enumerable functionality with <a href="#into/1"><code>into/1</code></a>
-and <a href="#empty/1"><code>empty/1</code></a>, one can, for example, implement a traversal mechanism.</p>
-
         </div>
       
 
       
-        <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/collectable.ex#L1" class="view_source">Source</a>
+        <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/collectable.ex#L1" class="view_source">Source</a>
       
 
       
@@ -155,7 +144,7 @@ the initial accumulation value</p>
   <div class="docstring"><p>Receives a collectable structure and returns an empty one.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/collectable.ex#L47" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/collectable.ex#L37" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -189,7 +178,7 @@ be returned on <code>:done</code>.</p>
 return any value, as it won&#39;t be used.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/collectable.ex#L64" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/collectable.ex#L54" class="view_source">Source</a>
   
 </div>
 

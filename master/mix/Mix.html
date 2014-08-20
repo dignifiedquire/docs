@@ -184,6 +184,10 @@ at once:</p>
 that prints hello, then fetches dependencies specific to the
 current environment and compiles it.</p>
 
+<p>Arguments given to the alias will be appended to the arguments
+of the last task in the list, if the last task is a function
+they will be given as a list of strings to the function.</p>
+
 <p>Finally, aliases can also be use to augment existing tasks.
 Let&#39;s suppose you want to augment <code>mix clean</code> to clean another
 directory Mix does not know about:</p>
@@ -200,7 +204,7 @@ with extra clean up logic.</p>
       
 
       
-        <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix.ex#L1" class="view_source">Source</a>
+        <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/mix/lib/mix.ex#L1" class="view_source">Source</a>
       
 
       
@@ -285,7 +289,7 @@ end
 </code></pre>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix.ex#L204" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/mix/lib/mix.ex#L208" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -301,7 +305,7 @@ end
   <div class="docstring"><p>Returns the mix environment.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix.ex#L178" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/mix/lib/mix.ex#L182" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -320,7 +324,7 @@ end
 configuration won&#39;t be reloaded.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix.ex#L189" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/mix/lib/mix.ex#L193" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -336,7 +340,7 @@ configuration won&#39;t be reloaded.</p>
   <div class="docstring"><p>Raises a mix error that is nicely formatted.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix.ex#L230" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/mix/lib/mix.ex#L234" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -356,7 +360,7 @@ uses to store the project or application name which is
 automatically by the formatting tools.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix.ex#L241" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/mix/lib/mix.ex#L245" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -377,7 +381,7 @@ allowing developers to use a test shell that simply sends the
 messages to the current process.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix.ex#L216" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/mix/lib/mix.ex#L220" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -393,7 +397,7 @@ messages to the current process.</p>
   <div class="docstring"><p>Sets the current shell.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/mix/lib/mix.ex#L223" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/mix/lib/mix.ex#L227" class="view_source">Source</a>
   
 </div>
 

@@ -46,17 +46,14 @@ contains the following fields:</p>
 
 <ul>
 <li><code>:manager</code>  - the manager reference given to <a href="GenEvent.html#stream/2"><code>GenEvent.stream/2</code></a></li>
-<li><code>:id</code>       - the event stream id for cancellation</li>
 <li><code>:timeout</code>  - the timeout in between events, defaults to <code>:infinity</code></li>
-<li><code>:duration</code> - the duration of the subscription, defaults to <code>:infinity</code></li>
-<li><code>:mode</code>     - if the subscription mode is ack, sync or async, defaults to <code>:ack</code></li>
 </ul>
 
         </div>
       
 
       
-        <a href="https://github.com/elixir-lang/elixir/blob/ba376823007c5f551fb256c34493a4ef77a83897/lib/elixir/lib/gen_event.ex#L1" class="view_source">Source</a>
+        <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/elixir/lib/gen_event/stream.ex#L1" class="view_source">Source</a>
       
 
       
@@ -65,17 +62,8 @@ contains the following fields:</p>
         <div id="types_details" class="details_list">
           <h2>Types <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></h2>
           <div class="type_detail">
-  <p class="typespec" id="t:mode/0">
-    <a href="#t:mode/0">mode</a> :: :ack | :sync | :async
-  </p>
-  
-      <div class="typespec_doc"><p>The stream mode</p>
-</div>
-  
-</div>
-<div class="type_detail">
   <p class="typespec" id="t:t/0">
-    <a href="#t:t/0">t</a> :: %GenEvent.Stream{manager: <a href="GenEvent.html#t:manager/0">GenEvent.manager</a>, id: term, timeout: timeout, duration: timeout, mode: <a href="#t:mode/0">mode</a>}
+    <a href="#t:t/0">t</a> :: %GenEvent.Stream{manager: <a href="GenEvent.html#t:manager/0">GenEvent.manager</a>, timeout: timeout}
   </p>
   
 </div>
