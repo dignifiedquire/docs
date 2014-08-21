@@ -82,13 +82,22 @@ be started.</p></li>
 <li><p><code>:embed_elixir</code> - if <code>true</code> embed elixir and its children apps
 (<code>ex_unit</code>, <code>mix</code>, etc.) mentioned in the <code>:applications</code> list inside the
 <code>application</code> function in <code>mix.exs</code>.
-Defaults to <code>true</code>.</p></li>
+Defaults to <code>true</code> for Elixir projects.</p></li>
 <li><p><code>:shebang</code> - shebang interpreter directive used to execute the escript.
 Defaults to <code>&quot;#! /usr/bin/env escript\n&quot;</code>.</p></li>
 <li><p><code>:comment</code> - comment line to follow shebang directive in the escript.
 Defaults to <code>&quot;&quot;</code>.</p></li>
 <li><p><code>:emu_args</code> - emulator arguments to embed in the escript file.
 Defaults to <code>&quot;&quot;</code>.</p></li>
+</ul>
+
+<p>There is one project-level option that affects how the escript is generated:</p>
+
+<ul>
+<li><code>language: :elixir | :erlang</code> - set it to <code>:erlang</code> for Erlang projects
+managed by mix. Doing so will ensure Elixir is not embedded by default.
+Your app will still be started as part of escript loading, with the
+config used during build.</li>
 </ul>
 
 <h2>Example</h2>
@@ -110,7 +119,7 @@ end
       
 
       
-        <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/mix/lib/mix/tasks/escript.build.ex#L1" class="view_source">Source</a>
+        <a href="https://github.com/elixir-lang/elixir/blob/74391b793c77f8d7bfcaf4ed9c7e665cf740d01d/lib/mix/lib/mix/tasks/escript.build.ex#L1" class="view_source">Source</a>
       
 
       
@@ -145,7 +154,7 @@ end
   <div class="docstring"><p>Callback implementation of <a href="Mix.Task.html#run/1"><code>Mix.Task.run/1</code></a>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/ab9450d92ff1582ad9ce11e6ec4baf450a07e00e/lib/mix/lib/mix/tasks/escript.build.ex#L74" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/74391b793c77f8d7bfcaf4ed9c7e665cf740d01d/lib/mix/lib/mix/tasks/escript.build.ex#L81" class="view_source">Source</a>
   
 </div>
 
