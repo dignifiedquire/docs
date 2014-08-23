@@ -20,7 +20,7 @@
     </script>
 
     <div id="content">
-      <div class="breadcrumbs">plug v0.5.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; Adapters &rarr; <a href="Plug.Adapters.Cowboy.html">Cowboy</a></div>
+      <div class="breadcrumbs">plug v0.6.0 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; Adapters &rarr; <a href="Plug.Adapters.Cowboy.html">Cowboy</a></div>
 
       <h1>
         Plug.Adapters.Cowboy
@@ -42,15 +42,30 @@
       
         <div id="moduledoc" class="docstring">
           <p>Adapter interface to the Cowboy webserver.</p>
-<h2 id="options">Options</h2>
+<h2>Options</h2>
 <ul>
-<li><p><code>:ip</code> - the ip to bind the server to. Must be a tuple in the format <code>{x, y, z, w}</code>.</p></li>
-<li><p><code>:port</code> - the port to run the server. Defaults to 4000 (http) and 4040 (https).</p></li>
-<li><p><code>:acceptors</code> - the number of acceptors for the listener. Defaults to 100.</p></li>
-<li><p><code>:max_connections</code> - max number of connections supported. Defaults to <code>:infinity</code>.</p></li>
-<li><p><code>:dispatch</code> - manually configure Cowboy's dispatch. If this option is used, the plug given plug won't be initialized nor dispatched to (and doing so becomes the user responsibility).</p></li>
-<li><p><code>:ref</code> - the reference name to be used. Defaults to <code>plug.HTTP</code> (http) and <code>plug.HTTPS</code> (https). This is the value that needs to be given on shutdown.</p></li>
-<li><p><code>:compress</code> - Cowboy will attempt to compress the response body.</p></li>
+<li><p><code class="inline">:ip</code> - the ip to bind the server to.
+  Must be a tuple in the format <code class="inline">{x, y, z, w}</code>.</p>
+</li>
+<li><p><code class="inline">:port</code> - the port to run the server.
+  Defaults to 4000 (http) and 4040 (https).</p>
+</li>
+<li><p><code class="inline">:acceptors</code> - the number of acceptors for the listener.
+  Defaults to 100.</p>
+</li>
+<li><p><code class="inline">:max_connections</code> - max number of connections supported.
+  Defaults to <code class="inline">:infinity</code>.</p>
+</li>
+<li><p><code class="inline">:dispatch</code> - manually configure Cowboy’s dispatch.
+  If this option is used, the plug given plug won’t be initialized
+  nor dispatched to (and doing so becomes the user responsibility).</p>
+</li>
+<li><p><code class="inline">:ref</code> - the reference name to be used.
+  Defaults to <code class="inline">plug.HTTP</code> (http) and <code class="inline">plug.HTTPS</code> (https).
+  This is the value that needs to be given on shutdown.</p>
+</li>
+<li><code class="inline">:compress</code> - Cowboy will attempt to compress the response body.
+</li>
 </ul>
 
         </div>
@@ -122,8 +137,15 @@
     </div>
   </div>
   
+    <p>Specs:</p>
+    <ul class="spec">
+      
+        <li>http(module, <a href="http://elixir-lang.org/docs/stable/elixir/Keyword.html#t:t/0">Keyword.t</a>, <a href="http://elixir-lang.org/docs/stable/elixir/Keyword.html#t:t/0">Keyword.t</a>) :: {:ok, pid} | {:error, :eaddrinuse} | {:error, term}</li>
+      
+    </ul>
+  
   <div class="docstring"><p>Run cowboy under http.</p>
-<h2 id="example">Example</h2>
+<h2>Example</h2>
 <pre><code># Starts a new interface
 Plug.Adapters.Cowboy.http MyPlug, [], port: 80
 
@@ -142,10 +164,23 @@ Plug.Adapters.Cowboy.shutdown MyPlug.HTTP</code></pre>
     </div>
   </div>
   
+    <p>Specs:</p>
+    <ul class="spec">
+      
+        <li>https(module, <a href="http://elixir-lang.org/docs/stable/elixir/Keyword.html#t:t/0">Keyword.t</a>, <a href="http://elixir-lang.org/docs/stable/elixir/Keyword.html#t:t/0">Keyword.t</a>) :: {:ok, pid} | {:error, :eaddrinuse} | {:error, term}</li>
+      
+    </ul>
+  
   <div class="docstring"><p>Run cowboy under https.</p>
-<p>Besides the options described in the module documentation, this module also accepts all options defined in [the <code>ssl</code> erlang module] (http://www.erlang.org/doc/man/ssl.html), like keyfile, certfile, cacertfile and others.</p>
-<p>The certificate files can be given as a relative path. For such, the <code>:otp_app</code> option must also be given and certificates will be looked from the priv directory of the given application.</p>
-<h2 id="example">Example</h2>
+<p>Besides the options described in the module documentation,
+this module also accepts all options defined in [the `ssl`
+erlang module] (<a href="http://www.erlang.org/doc/man/ssl.html">http://www.erlang.org/doc/man/ssl.html</a>),
+like keyfile, certfile, cacertfile and others.</p>
+<p>The certificate files can be given as a relative path.
+For such, the <code class="inline">:otp_app</code> option must also be given and
+certificates will be looked from the priv directory of
+the given application.</p>
+<h2>Example</h2>
 <pre><code># Starts a new interface
 Plug.Adapters.Cowboy.https MyPlug, [],
   port: 443,

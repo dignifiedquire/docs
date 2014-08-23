@@ -20,7 +20,7 @@
     </script>
 
     <div id="content">
-      <div class="breadcrumbs">plug v0.5.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Parsers.html">Parsers</a></div>
+      <div class="breadcrumbs">plug v0.6.0 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Parsers.html">Parsers</a></div>
 
       <h1>
         Plug.Parsers
@@ -46,27 +46,48 @@
       
         <div id="moduledoc" class="docstring">
           <p>A plug for parsing the request body</p>
-<h2 id="options">Options</h2>
+<h2>Options</h2>
 <ul>
-<li><code>:parsers</code> - a set of modules to be invoked for parsing. These modules need to implement the behaviour outlined in this module.</li>
-<li><code>:accept</code> - an optional list of accepted mime type strings. Any mime not handled by a parser and not explicitly accepted will raise UnsupportedMediaTypeError. ie: * [&quot;<em>/</em>&quot;] - never raise * [&quot;text/html&quot;, &quot;application/*&quot;] - don't raise for those values * [] - always raise (default)</li>
+<li><p><code class="inline">:parsers</code> - a set of modules to be invoked for parsing.</p>
+<pre><code>These modules need to implement the behaviour
+       outlined in this module.</code></pre>
+</li>
+<li><p><code class="inline">:accept</code>  - an optional list of accepted mime type strings. Any mime</p>
+<pre><code>not handled by a parser and not explicitly accepted will
+       raise UnsupportedMediaTypeError. ie:
+       * [&quot;*/*&quot;] - never raise
+       * [&quot;text/html&quot;, &quot;application/*&quot;] - don't raise for those values
+       * [] - always raise (default)</code></pre>
+</li>
 </ul>
-<p>All options supported by <a href="Plug.Conn.html#read_body/2"><code>Plug.Conn.read_body/2</code></a> are also supported here.</p>
-<h2 id="examples">Examples</h2>
+<p>All options supported by <a href="Plug.Conn.html#read_body/2"><code class="inline">Plug.Conn.read_body/2</code></a> are also
+supported here.</p>
+<h2>Examples</h2>
 <pre><code>plug Plug.Parsers, parsers: [:urlencoded, :multipart]
 plug Plug.Parsers, parsers: [:urlencoded, :multipart],
                    accept:  [&quot;application/json&quot;, &quot;text/*&quot;]</code></pre>
-<h2 id="built-in-parsers">Built-in parsers</h2>
+<h2>Built-in parsers</h2>
 <p>Plug ships with the following parsers:</p>
 <ul>
-<li><code>Plug.Parsers.URLENCODED</code> - parses &quot;application/x-www-form-urlencoded&quot; requests</li>
-<li><code>Plug.Parsers.MULTIPART</code> - parses &quot;multipart/form-data&quot; and &quot;multipart/mixed&quot; requests</li>
+<li><code class="inline">Plug.Parsers.URLENCODED</code> - parses “application/x-www-form-urlencoded” requests
+</li>
+<li><code class="inline">Plug.Parsers.MULTIPART</code> - parses “multipart/form-data” and “multipart/mixed” requests
+</li>
 </ul>
-<p>This plug will raise <a href="Plug.Parsers.UnsupportedMediaTypeError.html"><code>Plug.Parsers.UnsupportedMediaTypeError</code></a> by default if the request cannot be parsed by any of the given types and the mime type has not been explicity accepted in the <code>:accept</code> option. <a href="Plug.Parsers.RequestTooLargeError.html"><code>Plug.Parsers.RequestTooLargeError</code></a> will be raised if the request goes over the given limit.</p>
-<h2 id="file-handling">File handling</h2>
-<p>If a file is uploaded via any of the parsers, Plug will stream the uploaded contents to a file in a temporary directory, avoiding loading the whole file into memory. For such, it is required that the <code>:plug</code> application is started.</p>
-<p>In those cases, the parameter will return a <a href="Plug.Upload.html"><code>Plug.Upload</code></a> struct with information about the file and its content type.</p>
-<p>You can customize the temporary directory by setting the <code>PLUG_TMPDIR</code> environment variable in your system.</p>
+<p>This plug will raise <a href="Plug.Parsers.UnsupportedMediaTypeError.html"><code class="inline">Plug.Parsers.UnsupportedMediaTypeError</code></a> by default if the request
+cannot be parsed by any of the given types and the mime type has not been
+explicity accepted in the <code class="inline">:accept</code> option.
+<a href="Plug.Parsers.RequestTooLargeError.html"><code class="inline">Plug.Parsers.RequestTooLargeError</code></a> will be raised  if the request goes over the
+given limit.</p>
+<h2>File handling</h2>
+<p>If a file is uploaded via any of the parsers, Plug will
+stream the uploaded contents to a file in a temporary directory,
+avoiding loading the whole file into memory. For such, it is
+required that the <code class="inline">:plug</code> application is started.</p>
+<p>In those cases, the parameter will return a <a href="Plug.Upload.html"><code class="inline">Plug.Upload</code></a>
+struct with information about the file and its content type.</p>
+<p>You can customize the temporary directory by setting the <code class="inline">PLUG_TMPDIR</code>
+environment variable in your system.</p>
 
         </div>
       
@@ -79,14 +100,14 @@ plug Plug.Parsers, parsers: [:urlencoded, :multipart],
           <tr>
   <td class="summary_signature"><a href="#call/2">call(conn, opts)</a></td>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.html#call/2"><code>Plug.call/2</code></a></p>
+    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.html#call/2"><code class="inline">Plug.call/2</code></a></p>
 </td>
   
 </tr>
 <tr>
   <td class="summary_signature"><a href="#init/1">init(opts)</a></td>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.html#init/1"><code>Plug.init/1</code></a></p>
+    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.html#init/1"><code class="inline">Plug.init/1</code></a></p>
 </td>
   
 </tr>
@@ -109,7 +130,7 @@ plug Plug.Parsers, parsers: [:urlencoded, :multipart],
     </div>
   </div>
   
-  <div class="docstring"><p>Callback implementation of <a href="Plug.html#call/2"><code>Plug.call/2</code></a>.</p>
+  <div class="docstring"><p>Callback implementation of <a href="Plug.html#call/2"><code class="inline">Plug.call/2</code></a>.</p>
 </div>
   
 </div>
@@ -123,7 +144,7 @@ plug Plug.Parsers, parsers: [:urlencoded, :multipart],
     </div>
   </div>
   
-  <div class="docstring"><p>Callback implementation of <a href="Plug.html#init/1"><code>Plug.init/1</code></a>.</p>
+  <div class="docstring"><p>Callback implementation of <a href="Plug.html#init/1"><code class="inline">Plug.init/1</code></a>.</p>
 </div>
   
 </div>
@@ -153,7 +174,9 @@ plug Plug.Parsers, parsers: [:urlencoded, :multipart],
       
     </ul>
   
-  <div class="docstring"><p>Attempt to parse the connection request body given the type, subtype and headers. Returns <code>{:ok, conn}</code> if the parser can handle the given content type, <code>{:halt, conn}</code> otherwise.</p>
+  <div class="docstring"><p>Attempt to parse the connection request body given the type,
+subtype and headers. Returns <code class="inline">{:ok, conn}</code> if the parser can
+handle the given content type, <code class="inline">{:halt, conn}</code> otherwise.</p>
 </div>
   
 </div>

@@ -20,7 +20,7 @@
     </script>
 
     <div id="content">
-      <div class="breadcrumbs">plug v0.5.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Session.html">Session</a> &rarr; <a href="Plug.Session.ETS.html">ETS</a></div>
+      <div class="breadcrumbs">plug v0.6.0 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Session.html">Session</a> &rarr; <a href="Plug.Session.ETS.html">ETS</a></div>
 
       <h1>
         Plug.Session.ETS
@@ -43,18 +43,21 @@
         <div id="moduledoc" class="docstring">
           <p>Stores the session in an in-memory ETS table.</p>
 <p>A created ETS table is required for this store to work.</p>
-<p>This store does not create the ETS table, it is expected that an existing named table is given as argument with public properties.</p>
-<h2 id="options">Options</h2>
+<p>This store does not create the ETS table, it is expected
+that an existing named table is given as argument with
+public properties.</p>
+<h2>Options</h2>
 <ul>
-<li><code>:table</code> - ETS table name (required);</li>
+<li><code class="inline">:table</code> - ETS table name (required);
+</li>
 </ul>
-<h2 id="examples">Examples</h2>
+<h2>Examples</h2>
 <pre><code># Create table during application start
 :ets.new(:session, [:named_table, :public, read_concurrency: true])
 
 # Use the session plug with the table name
 plug Plug.Session, store: :ets, key: &quot;sid&quot;, table: :session</code></pre>
-<p>http://www.erlang.org/doc/man/ets.html</p>
+<p><a href="http://www.erlang.org/doc/man/ets.html">http://www.erlang.org/doc/man/ets.html</a></p>
 
         </div>
       
@@ -67,28 +70,28 @@ plug Plug.Session, store: :ets, key: &quot;sid&quot;, table: :session</code></pr
           <tr>
   <td class="summary_signature"><a href="#delete/2">delete(sid, table)</a></td>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#delete/2"><code>Plug.Session.Store.delete/2</code></a></p>
+    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#delete/2"><code class="inline">Plug.Session.Store.delete/2</code></a></p>
 </td>
   
 </tr>
 <tr>
   <td class="summary_signature"><a href="#get/2">get(sid, table)</a></td>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#get/2"><code>Plug.Session.Store.get/2</code></a></p>
+    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#get/2"><code class="inline">Plug.Session.Store.get/2</code></a></p>
 </td>
   
 </tr>
 <tr>
   <td class="summary_signature"><a href="#init/1">init(opts)</a></td>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#init/1"><code>Plug.Session.Store.init/1</code></a></p>
+    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#init/1"><code class="inline">Plug.Session.Store.init/1</code></a></p>
 </td>
   
 </tr>
 <tr>
   <td class="summary_signature"><a href="#put/3">put(sid, data, table)</a></td>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#put/3"><code>Plug.Session.Store.put/3</code></a></p>
+    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#put/3"><code class="inline">Plug.Session.Store.put/3</code></a></p>
 </td>
   
 </tr>
@@ -111,7 +114,7 @@ plug Plug.Session, store: :ets, key: &quot;sid&quot;, table: :session</code></pr
     </div>
   </div>
   
-  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#delete/2"><code>Plug.Session.Store.delete/2</code></a>.</p>
+  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#delete/2"><code class="inline">Plug.Session.Store.delete/2</code></a>.</p>
 </div>
   
 </div>
@@ -125,7 +128,7 @@ plug Plug.Session, store: :ets, key: &quot;sid&quot;, table: :session</code></pr
     </div>
   </div>
   
-  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#get/2"><code>Plug.Session.Store.get/2</code></a>.</p>
+  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#get/2"><code class="inline">Plug.Session.Store.get/2</code></a>.</p>
 </div>
   
 </div>
@@ -139,7 +142,7 @@ plug Plug.Session, store: :ets, key: &quot;sid&quot;, table: :session</code></pr
     </div>
   </div>
   
-  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#init/1"><code>Plug.Session.Store.init/1</code></a>.</p>
+  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#init/1"><code class="inline">Plug.Session.Store.init/1</code></a>.</p>
 </div>
   
 </div>
@@ -153,7 +156,7 @@ plug Plug.Session, store: :ets, key: &quot;sid&quot;, table: :session</code></pr
     </div>
   </div>
   
-  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#put/3"><code>Plug.Session.Store.put/3</code></a>.</p>
+  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#put/3"><code class="inline">Plug.Session.Store.put/3</code></a>.</p>
 </div>
   
 </div>

@@ -20,7 +20,7 @@
     </script>
 
     <div id="content">
-      <div class="breadcrumbs">plug v0.5.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.MessageVerifier.html">MessageVerifier</a></div>
+      <div class="breadcrumbs">plug v0.6.0 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.MessageVerifier.html">MessageVerifier</a></div>
 
       <h1>
         Plug.MessageVerifier
@@ -41,8 +41,11 @@
 
       
         <div id="moduledoc" class="docstring">
-          <p><code>MessageVerifier</code> makes it easy to generate and verify messages which are signed to prevent tampering.</p>
-<p>For example, the cookie store uses this verifier to send data to the client. Although the data can be read by the client, he cannot tamper it.</p>
+          <p><code class="inline">MessageVerifier</code> makes it easy to generate and verify messages
+which are signed to prevent tampering.</p>
+<p>For example, the cookie store uses this verifier to send data
+to the client. Although the data can be read by the client, he
+cannot tamper it.</p>
 
         </div>
       
@@ -62,7 +65,7 @@
 <tr>
   <td class="summary_signature"><a href="#secure_compare/2">secure_compare(left, right)</a></td>
   
-    <td class="summary_synopsis"><p>Compares the two binaries completely, byte by byte, to avoid timing attacks</p>
+    <td class="summary_synopsis"><p>Compares the two binaries in constant-time to avoid timing attacks</p>
 </td>
   
 </tr>
@@ -106,7 +109,8 @@
     </div>
   </div>
   
-  <div class="docstring"><p>Compares the two binaries completely, byte by byte, to avoid timing attacks.</p>
+  <div class="docstring"><p>Compares the two binaries in constant-time to avoid timing attacks.</p>
+<p>See: <a href="http://codahale.com/a-lesson-in-timing-attacks/">http://codahale.com/a-lesson-in-timing-attacks/</a></p>
 </div>
   
 </div>

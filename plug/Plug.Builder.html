@@ -20,7 +20,7 @@
     </script>
 
     <div id="content">
-      <div class="breadcrumbs">plug v0.5.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Builder.html">Builder</a></div>
+      <div class="breadcrumbs">plug v0.6.0 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Builder.html">Builder</a></div>
 
       <h1>
         Plug.Builder
@@ -46,7 +46,8 @@
       
         <div id="moduledoc" class="docstring">
           <p>Conveniences for building plugs.</p>
-<p>This module can be used into a module in order to build a plug stack:</p>
+<p>This module can be used into a module in order to build
+a plug stack:</p>
 <pre><code>defmodule MyApp do
   use Plug.Builder
 
@@ -57,8 +58,15 @@
     send_resp(conn, 200, body)
   end
 end</code></pre>
-<p><a href="Plug.Builder.html"><code>Plug.Builder</code></a> will define a <code>init/1</code> function (which is overridable) and a <code>call/2</code> function with the compiled stack. By implementing the Plug API, <a href="Plug.Builder.html"><code>Plug.Builder</code></a> guarantees this module can be handed to a web server or used as part of another stack.</p>
-<p>Note this module also exports a <a href="#compile/1"><code>compile/1</code></a> function for those willing to collect and compile their plugs manually.</p>
+<p><a href="Plug.Builder.html"><code class="inline">Plug.Builder</code></a> will define a <code class="inline">init/1</code> function (which is overridable)
+and a <code class="inline">call/2</code> function with the compiled stack. By implementing the
+Plug API, <a href="Plug.Builder.html"><code class="inline">Plug.Builder</code></a> guarantees this module can be handed to a web
+server or used as part of another stack.</p>
+<p>Note this module also exports a <a href="#compile/1"><code class="inline">compile/1</code></a> function for those willing
+to collect and compile their plugs manually.</p>
+<h2>Halting a Plug Stack</h2>
+<p>A Plug Stack can be halted with <code class="inline">Conn.halt/1</code>. The Builder will prevent
+further plugs downstream from being invoked and return current connection.</p>
 
         </div>
       
@@ -120,7 +128,9 @@ end</code></pre>
     </ul>
   
   <div class="docstring"><p>Compiles a plug stack.</p>
-<p>It expects a reversed stack (with the last plug coming first) and returns a tuple containing the reference to the connection as first argument and the compiled quote stack.</p>
+<p>It expects a reversed stack (with the last plug coming first)
+and returns a tuple containing the reference to the connection
+as first argument and the compiled quote stack.</p>
 </div>
   
 </div>

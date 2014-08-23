@@ -20,7 +20,7 @@
     </script>
 
     <div id="content">
-      <div class="breadcrumbs">plug v0.5.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Session.html">Session</a> &rarr; <a href="Plug.Session.COOKIE.html">COOKIE</a></div>
+      <div class="breadcrumbs">plug v0.6.0 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Session.html">Session</a> &rarr; <a href="Plug.Session.COOKIE.html">COOKIE</a></div>
 
       <h1>
         Plug.Session.COOKIE
@@ -42,13 +42,17 @@
       
         <div id="moduledoc" class="docstring">
           <p>Stores the session in a cookie.</p>
-<p>Implements a cookie store. This cookie store is based on <a href="Plug.MessageVerifier.html"><code>Plug.MessageVerifier</code></a> which signs each cookie to ensure they won't be tampered with.</p>
-<p>Notice the cookie contents are still visible and therefore private data should never be put into such store.</p>
-<h2 id="options">Options</h2>
+<p>Implements a cookie store. This cookie store is based on
+<a href="Plug.MessageVerifier.html"><code class="inline">Plug.MessageVerifier</code></a> which signs each cookie to ensure
+they won’t be tampered with.</p>
+<p>Notice the cookie contents are still visible and therefore
+private data should never be put into such store.</p>
+<h2>Options</h2>
 <ul>
-<li><code>:secret</code> - secret token used to sign the cookie;</li>
+<li><code class="inline">:secret</code> - secret token used to sign the cookie;
+</li>
 </ul>
-<h2 id="examples">Examples</h2>
+<h2>Examples</h2>
 <pre><code># Use the session plug with the table name
 plug Plug.Session, store: :cookie, key: &quot;_my_app_session&quot;, secret: &quot;a4f8d34f9&quot;</code></pre>
 
@@ -63,28 +67,28 @@ plug Plug.Session, store: :cookie, key: &quot;_my_app_session&quot;, secret: &qu
           <tr>
   <td class="summary_signature"><a href="#delete/2">delete(sid, opts)</a></td>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#delete/2"><code>Plug.Session.Store.delete/2</code></a></p>
+    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#delete/2"><code class="inline">Plug.Session.Store.delete/2</code></a></p>
 </td>
   
 </tr>
 <tr>
   <td class="summary_signature"><a href="#get/2">get(cookie, opts)</a></td>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#get/2"><code>Plug.Session.Store.get/2</code></a></p>
+    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#get/2"><code class="inline">Plug.Session.Store.get/2</code></a></p>
 </td>
   
 </tr>
 <tr>
   <td class="summary_signature"><a href="#init/1">init(opts)</a></td>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#init/1"><code>Plug.Session.Store.init/1</code></a></p>
+    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#init/1"><code class="inline">Plug.Session.Store.init/1</code></a></p>
 </td>
   
 </tr>
 <tr>
   <td class="summary_signature"><a href="#put/3">put(sid, term, opts)</a></td>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#put/3"><code>Plug.Session.Store.put/3</code></a></p>
+    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.Session.Store.html#put/3"><code class="inline">Plug.Session.Store.put/3</code></a></p>
 </td>
   
 </tr>
@@ -107,7 +111,7 @@ plug Plug.Session, store: :cookie, key: &quot;_my_app_session&quot;, secret: &qu
     </div>
   </div>
   
-  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#delete/2"><code>Plug.Session.Store.delete/2</code></a>.</p>
+  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#delete/2"><code class="inline">Plug.Session.Store.delete/2</code></a>.</p>
 </div>
   
 </div>
@@ -121,7 +125,7 @@ plug Plug.Session, store: :cookie, key: &quot;_my_app_session&quot;, secret: &qu
     </div>
   </div>
   
-  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#get/2"><code>Plug.Session.Store.get/2</code></a>.</p>
+  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#get/2"><code class="inline">Plug.Session.Store.get/2</code></a>.</p>
 </div>
   
 </div>
@@ -135,7 +139,7 @@ plug Plug.Session, store: :cookie, key: &quot;_my_app_session&quot;, secret: &qu
     </div>
   </div>
   
-  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#init/1"><code>Plug.Session.Store.init/1</code></a>.</p>
+  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#init/1"><code class="inline">Plug.Session.Store.init/1</code></a>.</p>
 </div>
   
 </div>
@@ -149,7 +153,7 @@ plug Plug.Session, store: :cookie, key: &quot;_my_app_session&quot;, secret: &qu
     </div>
   </div>
   
-  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#put/3"><code>Plug.Session.Store.put/3</code></a>.</p>
+  <div class="docstring"><p>Callback implementation of <a href="Plug.Session.Store.html#put/3"><code class="inline">Plug.Session.Store.put/3</code></a>.</p>
 </div>
   
 </div>

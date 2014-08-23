@@ -20,7 +20,7 @@
     </script>
 
     <div id="content">
-      <div class="breadcrumbs">plug v0.5.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Test.html">Test</a></div>
+      <div class="breadcrumbs">plug v0.6.0 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Test.html">Test</a></div>
 
       <h1>
         Plug.Test
@@ -42,7 +42,7 @@
       
         <div id="moduledoc" class="docstring">
           <p>Conveniences for testing plugs</p>
-<h2 id="examples">Examples</h2>
+<h2>Examples</h2>
 <p>This module can be used in your test cases:</p>
 <pre><code>use ExUnit.Case, async: true
 use Plug.Test</code></pre>
@@ -90,7 +90,14 @@ use Plug.Test</code></pre>
 <tr>
   <td class="summary_signature"><a href="#put_req_header/3">put_req_header(conn, key, value)</a></td>
   
-    <td class="summary_synopsis"><p>Puts a new request header. Previous entries of the same headers are removed</p>
+    <td class="summary_synopsis"><p>Puts a new request header</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#recycle/2">recycle(new_conn, old_conn)</a></td>
+  
+    <td class="summary_synopsis"><p>Recycles data from old connection into a new connection for subsequent requests</p>
 </td>
   
 </tr>
@@ -116,19 +123,29 @@ use Plug.Test</code></pre>
     <p>Specs:</p>
     <ul class="spec">
       
-        <li>conn(<a href="http://elixir-lang.org/docs/stable/elixir/String.Chars.html#t:t/0">String.Chars.t</a>, binary, binary | [] | %{} | nil, [{:headers, <a href="Plug.Conn.html#t:headers/0">Plug.Conn.headers</a>}]) :: <a href="Plug.Conn.html#t:t/0">Plug.Conn.t</a></li>
+        <li>conn(<a href="http://elixir-lang.org/docs/stable/elixir/String.Chars.html#t:t/0">String.Chars.t</a>, binary, params, [{:headers, <a href="Plug.Conn.html#t:headers/0">Plug.Conn.headers</a>}]) :: <a href="Plug.Conn.html#t:t/0">Plug.Conn.t</a></li>
       
     </ul>
   
   <div class="docstring"><p>Creates a test connection.</p>
-<p>The request <code>method</code> and <code>path</code> must be given as required arguments. <code>method</code> may be any value that implements <code>to_string/1</code> and it will properly converted and normalized.</p>
-<p>The <code>params_or_body</code> field must be one of:</p>
+<p>The request <code class="inline">method</code> and <code class="inline">path</code> must be given as required
+arguments. <code class="inline">method</code> may be any value that implements <code class="inline">to_string/1</code>
+and it will properly converted and normalized.</p>
+<p>The <code class="inline">params_or_body</code> field must be one of:</p>
 <ul>
-<li><code>nil</code> - meaning there is no body;</li>
-<li>a binary - containing a request body. For such cases, <code>:headers</code> must be given as option with a content-type;</li>
-<li>a map or list - containing the parameters which will automatically set the content-type to multipart. The map or list may be contain other lists or maps and all entries keywords and maps will be normalized to string keys;</li>
+<li><code class="inline">nil</code> - meaning there is no body;
+</li>
+<li>a binary - containing a request body. For such cases, <code class="inline">:headers</code>
+  must be given as option with a content-type;
+</li>
+<li>a map or list - containing the parameters which will automatically
+  set the content-type to multipart. The map or list may be contain
+  other lists or maps and all entries keywords and maps will be
+  normalized to string keys;
+</li>
 </ul>
-<p>The only option supported so far is <code>:headers</code> which expects a list of headers.</p>
+<p>The only option supported so far is <code class="inline">:headers</code> which expects a
+list of headers.</p>
 </div>
   
 </div>
@@ -212,7 +229,32 @@ use Plug.Test</code></pre>
       
     </ul>
   
-  <div class="docstring"><p>Puts a new request header. Previous entries of the same headers are removed.</p>
+  <div class="docstring"><p>Puts a new request header.</p>
+<p>Previous entries of the same headers are removed.</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="recycle/2">
+    <span class="signature"><strong>recycle(new_conn, old_conn)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#recycle/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+    <p>Specs:</p>
+    <ul class="spec">
+      
+        <li>recycle(<a href="Plug.Conn.html#t:t/0">Plug.Conn.t</a>, <a href="Plug.Conn.html#t:t/0">Plug.Conn.t</a>) :: <a href="Plug.Conn.html#t:t/0">Plug.Conn.t</a></li>
+      
+    </ul>
+  
+  <div class="docstring"><p>Recycles data from old connection into a new connection for subsequent requests.</p>
+<p>This function copies the cookie information in <code class="inline">old_conn</code>
+into <code class="inline">new_conn</code>, emulating multiple requests done by clients
+were cookies are always passed forward.</p>
 </div>
   
 </div>

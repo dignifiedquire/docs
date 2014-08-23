@@ -20,7 +20,7 @@
     </script>
 
     <div id="content">
-      <div class="breadcrumbs">plug v0.5.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Session.html">Session</a></div>
+      <div class="breadcrumbs">plug v0.6.0 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Session.html">Session</a></div>
 
       <h1>
         Plug.Session
@@ -42,24 +42,35 @@
       
         <div id="moduledoc" class="docstring">
           <p>A plug to handle session cookies and session stores.</p>
-<p>The session is accessed via functions on <a href="Plug.Conn.html"><code>Plug.Conn</code></a>. Cookies and session have to be fetched with <a href="Plug.Conn.html#fetch_session/1"><code>Plug.Conn.fetch_session/1</code></a> before the session can be accessed.</p>
-<h2 id="session-stores">Session stores</h2>
-<p>See <a href="Plug.Session.Store.html"><code>Plug.Session.Store</code></a> for the specification session stores are required to implement.</p>
+<p>The session is accessed via functions on <a href="Plug.Conn.html"><code class="inline">Plug.Conn</code></a>. Cookies and
+session have to be fetched with <a href="Plug.Conn.html#fetch_session/1"><code class="inline">Plug.Conn.fetch_session/1</code></a> before the
+session can be accessed.</p>
+<h2>Session stores</h2>
+<p>See <a href="Plug.Session.Store.html"><code class="inline">Plug.Session.Store</code></a> for the specification session stores are required to
+implement.</p>
 <p>Plug ships with the following session stores:</p>
 <ul>
-<li><a href="Plug.Session.ETS.html"><code>Plug.Session.ETS</code></a></li>
+<li><a href="Plug.Session.ETS.html"><code class="inline">Plug.Session.ETS</code></a>
+</li>
 </ul>
-<h2 id="options">Options</h2>
+<h2>Options</h2>
 <ul>
-<li><code>:store</code> - session store module (required);</li>
-<li><code>:key</code> - session cookie key (required);</li>
-<li><code>:domain</code> - see <code>Plug.Conn.put_resp_cookies/4</code>;</li>
-<li><code>:max_age</code> - see <code>Plug.Conn.put_resp_cookies/4</code>;</li>
-<li><code>:path</code> - see <code>Plug.Conn.put_resp_cookies/4</code>;</li>
-<li><code>:secure</code> - see <code>Plug.Conn.put_resp_cookies/4</code>;</li>
+<li><code class="inline">:store</code> - session store module (required);
+</li>
+<li><code class="inline">:key</code> - session cookie key (required);
+</li>
+<li><code class="inline">:domain</code> - see <code class="inline">Plug.Conn.put_resp_cookies/4</code>;
+</li>
+<li><code class="inline">:max_age</code> - see <code class="inline">Plug.Conn.put_resp_cookies/4</code>;
+</li>
+<li><code class="inline">:path</code> - see <code class="inline">Plug.Conn.put_resp_cookies/4</code>;
+</li>
+<li><code class="inline">:secure</code> - see <code class="inline">Plug.Conn.put_resp_cookies/4</code>;
+</li>
 </ul>
-<p>Additional options can be given to the session store, see the store's documentation for the options it accepts.</p>
-<h2 id="examples">Examples</h2>
+<p>Additional options can be given to the session store, see the store’s
+documentation for the options it accepts.</p>
+<h2>Examples</h2>
 <pre><code>plug Plug.Session, store: :ets, key: &quot;_my_app_session&quot;, secure: true, table: :session</code></pre>
 
         </div>
@@ -73,14 +84,14 @@
           <tr>
   <td class="summary_signature"><a href="#call/2">call(conn, config)</a></td>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.html#call/2"><code>Plug.call/2</code></a></p>
+    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.html#call/2"><code class="inline">Plug.call/2</code></a></p>
 </td>
   
 </tr>
 <tr>
   <td class="summary_signature"><a href="#init/1">init(opts)</a></td>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.html#init/1"><code>Plug.init/1</code></a></p>
+    <td class="summary_synopsis"><p>Callback implementation of <a href="Plug.html#init/1"><code class="inline">Plug.init/1</code></a></p>
 </td>
   
 </tr>
@@ -103,7 +114,7 @@
     </div>
   </div>
   
-  <div class="docstring"><p>Callback implementation of <a href="Plug.html#call/2"><code>Plug.call/2</code></a>.</p>
+  <div class="docstring"><p>Callback implementation of <a href="Plug.html#call/2"><code class="inline">Plug.call/2</code></a>.</p>
 </div>
   
 </div>
@@ -117,7 +128,7 @@
     </div>
   </div>
   
-  <div class="docstring"><p>Callback implementation of <a href="Plug.html#init/1"><code>Plug.init/1</code></a>.</p>
+  <div class="docstring"><p>Callback implementation of <a href="Plug.html#init/1"><code class="inline">Plug.init/1</code></a>.</p>
 </div>
   
 </div>

@@ -20,7 +20,7 @@
     </script>
 
     <div id="content">
-      <div class="breadcrumbs">plug v0.5.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Upload.html">Upload</a></div>
+      <div class="breadcrumbs">plug v0.6.0 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Plug.html">Plug</a> &rarr; <a href="Plug.Upload.html">Upload</a></div>
 
       <h1>
         Plug.Upload
@@ -44,12 +44,18 @@
       
         <div id="moduledoc" class="docstring">
           <p>A server that manages uploaded files.</p>
-<p>Uploaded files are stored in a temporary directory and removed from the directory after the process that requested the file dies.</p>
-<p>During the request, those files are represented with the Plug.Upload struct that contains three fields:</p>
+<p>Uploaded files are stored in a temporary directory
+and removed from the directory after the process that
+requested the file dies.</p>
+<p>During the request, those files are represented with
+the Plug.Upload struct that contains three fields:</p>
 <ul>
-<li><code>:path</code> - the path to the uploaded file on the filesystem</li>
-<li><code>:content_type</code> - the content type of the uploaded file</li>
-<li><code>:filename</code> - the filename of the uploaded file given in the request</li>
+<li><code class="inline">:path</code> - the path to the uploaded file on the filesystem
+</li>
+<li><code class="inline">:content_type</code> - the content type of the uploaded file
+</li>
+<li><code class="inline">:filename</code> - the filename of the uploaded file given in the request
+</li>
 </ul>
 
         </div>
@@ -63,14 +69,16 @@
           <tr>
   <td class="summary_signature"><a href="#random_file!/1">random_file!(prefix)</a></td>
   
-    <td class="summary_synopsis"><p>Requests a random file to be created in the upload directory with the given prefix. Raises on failure</p>
+    <td class="summary_synopsis"><p>Requests a random file to be created in the upload directory
+with the given prefix. Raises on failure</p>
 </td>
   
 </tr>
 <tr>
   <td class="summary_signature"><a href="#random_file/1">random_file(prefix)</a></td>
   
-    <td class="summary_synopsis"><p>Requests a random file to be created in the upload directory with the given prefix</p>
+    <td class="summary_synopsis"><p>Requests a random file to be created in the upload directory
+with the given prefix</p>
 </td>
   
 </tr>
@@ -90,7 +98,7 @@
           <h2>Types <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></h2>
           <div class="type_detail">
   <p class="typespec" id="t:t/0">
-    <a href="#t:t/0">t</a> :: %Plug.Upload{path: term, content_type: term, filename: term}
+    <a href="#t:t/0">t</a> :: %Plug.Upload{path: binary, filename: binary, content_type: binary | nil}
   </p>
   
 </div>
@@ -118,7 +126,8 @@
       
     </ul>
   
-  <div class="docstring"><p>Requests a random file to be created in the upload directory with the given prefix.</p>
+  <div class="docstring"><p>Requests a random file to be created in the upload directory
+with the given prefix.</p>
 </div>
   
 </div>
@@ -139,7 +148,8 @@
       
     </ul>
   
-  <div class="docstring"><p>Requests a random file to be created in the upload directory with the given prefix. Raises on failure.</p>
+  <div class="docstring"><p>Requests a random file to be created in the upload directory
+with the given prefix. Raises on failure.</p>
 </div>
   
 </div>
