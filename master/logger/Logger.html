@@ -56,7 +56,7 @@ supervised when plugged into Logger.</p></li>
 <li><p>Formats and truncates messages on the client
 to avoid clogging logger backends.</p></li>
 <li><p>Alternates between sync and async modes to remain
-performant when required but also apply back-pressure 
+performant when required but also apply back-pressure
 when under stress.</p></li>
 <li><p>Wraps OTP&#39;s <code>error_logger</code> to prevent it from
 overflowing.</p></li>
@@ -113,6 +113,8 @@ changed dynamically during runtime via <a href="Logger.html#configure/1"><code>L
 with severity less than the configured level will simply
 cause the message to be ignored. Keep in mind that each backend
 may have its specific level, too.</p></li>
+<li><p><code>:timeout</code> - the timeout for sync requests in miliseconds, defaults
+to 5000 miliseconds.</p></li>
 <li><p><code>:utc_log</code> - when <code>true</code>, uses UTC in logs. By default it uses
 local time (i.e. it defaults to <code>false</code>).</p></li>
 <li><p><code>:truncate</code> - the maximum message size to be logged. Defaults
@@ -269,7 +271,7 @@ and how to process the existing options.</p>
       
 
       
-        <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L1" class="view_source">Source</a>
+        <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L1" class="view_source">Source</a>
       
 
       
@@ -401,6 +403,12 @@ and how to process the existing options.</p>
   
 </div>
 <div class="type_detail">
+  <p class="typespec" id="t:message/0">
+    <a href="#t:message/0">message</a> :: <a href="http://elixir-lang.org/docs/stable/elixir/IO.html#t:chardata/0">IO.chardata</a> | <a href="http://elixir-lang.org/docs/stable/elixir/String.Chars.html#t:t/0">String.Chars.t</a>
+  </p>
+  
+</div>
+<div class="type_detail">
   <p class="typespec" id="t:level/0">
     <a href="#t:level/0">level</a> :: :error | :info | :warn | :debug
   </p>
@@ -434,7 +442,7 @@ the backend is added</li>
 </ul>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L305" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L308" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -450,7 +458,7 @@ the backend is added</li>
   <div class="docstring"><p>Adds a new translator.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L334" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L337" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -476,7 +484,7 @@ the backend is added</li>
 against <code>right</code> and returns <code>:lt</code>, <code>:eq</code> or <code>:gt</code>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L259" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L262" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -495,7 +503,7 @@ against <code>right</code> and returns <code>:lt</code>, <code>:eq</code> or <co
 documentation for the available options.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L277" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L280" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -521,7 +529,7 @@ documentation for the available options.</p>
 be configured at runtime.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L352" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L355" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -548,7 +556,7 @@ Logger prior to this call will be processed. This is useful
 for testing and it should not be called in production code.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L289" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L292" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -573,7 +581,7 @@ for testing and it should not be called in production code.</p>
 <p>The logger level can be changed via <a href="#configure/1"><code>configure/1</code></a>.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L246" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L250" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -589,7 +597,7 @@ for testing and it should not be called in production code.</p>
     <p>Specs:</p>
     <ul class="spec">
       
-        <li>log(<a href="#t:level/0">level</a>, <a href="http://elixir-lang.org/docs/stable/elixir/IO.html#t:chardata/0">IO.chardata</a> | (() -> <a href="http://elixir-lang.org/docs/stable/elixir/IO.html#t:chardata/0">IO.chardata</a>), <a href="http://elixir-lang.org/docs/stable/elixir/Keyword.html#t:t/0">Keyword.t</a>) :: :ok</li>
+        <li>log(<a href="#t:level/0">level</a>, <a href="#t:message/0">message</a> | (() -> <a href="#t:message/0">message</a>), <a href="http://elixir-lang.org/docs/stable/elixir/Keyword.html#t:t/0">Keyword.t</a>) :: :ok | {:error, :noproc} | {:error, :timeout} | {:error, term}</li>
       
     </ul>
   
@@ -605,7 +613,7 @@ desired.</p>
 or you want to explicitly avoid embedding metadata.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L369" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L373" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -621,7 +629,7 @@ or you want to explicitly avoid embedding metadata.</p>
   <div class="docstring"><p>Reads the current process metadata.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L236" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L240" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -637,7 +645,7 @@ or you want to explicitly avoid embedding metadata.</p>
   <div class="docstring"><p>Adds the given keyword list to the current process metadata.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L229" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L233" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -661,7 +669,7 @@ the backend is removed</li>
 </ul>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L325" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L328" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -677,7 +685,7 @@ the backend is removed</li>
   <div class="docstring"><p>Removes a translator.</p>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L341" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L344" class="view_source">Source</a>
   
 </div>
 
@@ -706,7 +714,7 @@ Logger.debug fn -&gt; &quot;expensive to calculate debug&quot; end
 </code></pre>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L431" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L441" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -728,7 +736,7 @@ Logger.error fn -&gt; &quot;expensive to calculate error&quot; end
 </code></pre>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L418" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L428" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -750,7 +758,7 @@ Logger.info fn -&gt; &quot;expensive to calculate info&quot; end
 </code></pre>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L405" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L415" class="view_source">Source</a>
   
 </div>
 <div class="detail">
@@ -772,7 +780,7 @@ Logger.warn fn -&gt; &quot;expensive to calculate warning&quot; end
 </code></pre>
 </div>
   
-    <a href="https://github.com/elixir-lang/elixir/blob/0792fe2c528ae6ca8d60abf74b9d5504901f7356/lib/logger/lib/logger.ex#L392" class="view_source">Source</a>
+    <a href="https://github.com/elixir-lang/elixir/blob/ae19491620d6c6a39eff49438581f2ef4cabc3ff/lib/logger/lib/logger.ex#L402" class="view_source">Source</a>
   
 </div>
 
