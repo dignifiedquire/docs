@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>ExUnit v0.15.2-dev Documentation</title>
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="js/highlight.js"></script>
+
+  <script src="js/app.js"></script>
+
+
+</head>
+<body>
+  <div id="header">
+    <div class="logo"></div>
+    <div class="title">
+      <h1>
+        
+        <a href="http://elixir-lang.org/docs.html" target="_top">ExUnit</a>
+        
+      </h1>
+      <h2>v0.15.2-dev</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="navigation">
+      <div class="nav">
+        <span><a target="_self" href="modules_list.html">Modules</a></span>
+        <span><a target="_self" href="exceptions_list.html">Exceptions</a></span>
+        <span><a target="_self" href="protocols_list.html">Protocols</a></span>
+      </div>
+      <div id="search">Search: <input type="text" /></div>
+      <ul id="modules-list" class="section">
+  <li>
+  <span class="title">
+    <a href="ExUnit.html" title="ExUnit">ExUnit</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="ExUnit.html#types">Types</a>
+    </li>
+    
+    
+    <li>
+      <a href="ExUnit.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.html#configuration/0">configuration/0</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.html#configure/1">configure/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.html#run/0">run/0</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.html#start/1">start/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.Assertions.html" title="ExUnit.Assertions">ExUnit.Assertions</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.Assertions.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="ExUnit.Assertions.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert/1">assert/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert/2">assert/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert/4">assert/4</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert_in_delta/4">assert_in_delta/4</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert_raise/2">assert_raise/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert_raise/3">assert_raise/3</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert_receive/3">assert_receive/3</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert_received/2">assert_received/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#catch_error/1">catch_error/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#catch_exit/1">catch_exit/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#catch_throw/1">catch_throw/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#flunk/1">flunk/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#refute/1">refute/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#refute/2">refute/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#refute_in_delta/4">refute_in_delta/4</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#refute_receive/3">refute_receive/3</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#refute_received/2">refute_received/2</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    <li>
+      <a href="ExUnit.Assertions.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.Callbacks.html" title="ExUnit.Callbacks">ExUnit.Callbacks</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.Callbacks.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="ExUnit.Callbacks.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.Callbacks.html#on_exit/2">on_exit/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Callbacks.html#setup/2">setup/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Callbacks.html#setup_all/2">setup_all/2</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    <li>
+      <a href="ExUnit.Callbacks.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.CaptureIO.html" title="ExUnit.CaptureIO">ExUnit.CaptureIO</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.CaptureIO.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="ExUnit.CaptureIO.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.CaptureIO.html#capture_io/1">capture_io/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.CaptureIO.html#capture_io/2">capture_io/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.CaptureIO.html#capture_io/3">capture_io/3</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.Case.html" title="ExUnit.Case">ExUnit.Case</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.Case.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    
+    <li>
+      <a href="ExUnit.Case.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.CaseTemplate.html" title="ExUnit.CaseTemplate">ExUnit.CaseTemplate</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.CaseTemplate.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    
+    <li>
+      <a href="ExUnit.CaseTemplate.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.DocTest.html" title="ExUnit.DocTest">ExUnit.DocTest</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.DocTest.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    
+    <li>
+      <a href="ExUnit.DocTest.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.Filters.html" title="ExUnit.Filters">ExUnit.Filters</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.Filters.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="ExUnit.Filters.html#types">Types</a>
+    </li>
+    
+    
+    <li>
+      <a href="ExUnit.Filters.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.Filters.html#eval/4">eval/4</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Filters.html#normalize/2">normalize/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Filters.html#parse/1">parse/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Filters.html#parse_path/1">parse_path/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.Formatter.html" title="ExUnit.Formatter">ExUnit.Formatter</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.Formatter.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="ExUnit.Formatter.html#types">Types</a>
+    </li>
+    
+    
+    <li>
+      <a href="ExUnit.Formatter.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.Formatter.html#format_filters/2">format_filters/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Formatter.html#format_test_case_failure/5">format_test_case_failure/5</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Formatter.html#format_test_failure/5">format_test_failure/5</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Formatter.html#format_time/2">format_time/2</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.Test.html" title="ExUnit.Test">ExUnit.Test</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.Test.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="ExUnit.Test.html#types">Types</a>
+    </li>
+    
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.TestCase.html" title="ExUnit.TestCase">ExUnit.TestCase</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.TestCase.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="ExUnit.TestCase.html#types">Types</a>
+    </li>
+    
+    
+    
+    
+  </ul>
+</li>
+
+</ul>
+
+      <ul id="protocols-list" class="section">
+  
+</ul>
+
+      <ul id="exceptions-list" class="section">
+  <li>
+  <span class="title">
+    <a href="ExUnit.AssertionError.html" title="ExUnit.AssertionError">ExUnit.AssertionError</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="ExUnit.AssertionError.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.AssertionError.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.AssertionError.html#message/1">message/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.AssertionError.html#no_value/0">no_value/0</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.DocTest.Error.html" title="ExUnit.DocTest.Error">ExUnit.DocTest.Error</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="ExUnit.DocTest.Error.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.DocTest.Error.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.DocTest.Error.html#message/1">message/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.TimeoutError.html" title="ExUnit.TimeoutError">ExUnit.TimeoutError</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="ExUnit.TimeoutError.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.TimeoutError.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.TimeoutError.html#message/1">message/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+
+</ul>
+
+    </div>
+
+    <div id="content">
+      <h1>
+  ExUnit.DocTest
+  
+  <a href="#content"></a>
+</h1>
+
+
+<div id="moduledoc" class="section">
+  <h2 class="section-title">
+    Introduction
+    <a href="#introduction" class="detail_link" title="Introduction">#</a>
+  </h2>
+  <div class="section-content">
+    <p>ExUnit.DocTest implements functionality similar to <a href="http://docs.python.org/2/library/doctest.html">Python&#39;s
+doctest</a>.</p>
+
+<p>In a nutshell, it allows us to generate tests from the code
+examples existing in a module/function/macro&#39;s documentation.
+In order to do that, one needs to invoke the <code>doctest/1</code> macro
+from their test case and write their examples according
+to some guidelines.</p>
+
+<p>The syntax for examples is as follows. Every new test starts
+on a new line, with an <code>iex&gt;</code> prefix. Multiline expressions
+can be employed if the following lines start with either
+<code>...&gt;</code> (recommended) or <code>iex&gt;</code> prefix.</p>
+
+<p>The expected result should start at the next line after <code>iex&gt;</code>
+or <code>...&gt;</code> line(s) and is terminated either by a newline, new
+<code>iex&gt;</code> prefix or end of the string literal.</p>
+
+<h2>Examples</h2>
+
+<p>Currently, the only way to run doctests is to include them into
+an ExUnit case with a <code>doctest</code> macro:</p>
+
+<pre><code>defmodule MyModule.Test do
+  use ExUnit.Case, async: true
+  doctest MyModule
+end
+</code></pre>
+
+<p>The <code>doctest</code> macro is going to loop through all functions and
+macros defined in <code>MyModule</code>, parsing their documentation in
+search of code examples.</p>
+
+<p>A very basic example is:</p>
+
+<pre><code>iex&gt; 1+1
+2
+</code></pre>
+
+<p>Expressions on multiple lines are also supported:</p>
+
+<pre><code>iex&gt; Enum.map [1, 2, 3], fn(x) -&gt;
+...&gt;   x * 2
+...&gt; end
+[2,4,6]
+</code></pre>
+
+<p>Multiple results can be checked within the same test:</p>
+
+<pre><code>iex&gt; a = 1
+1
+iex&gt; a + 1
+2
+</code></pre>
+
+<p>If you want to keep any two tests separate,
+add an empty line between them:</p>
+
+<pre><code>iex&gt; a = 1
+1
+
+iex&gt; a + 1  # will fail with a &quot;function a/0 undefined&quot; error
+2
+</code></pre>
+
+<p>Similarly to iex you can use numbers in your &quot;prompts&quot;:</p>
+
+<pre><code>iex(1)&gt; [1+2,
+...(1)&gt;  3]
+[3,3]
+</code></pre>
+
+<p>This is useful in two use cases:</p>
+
+<ul>
+<li>being able to refer to specific numbered scenarios</li>
+<li>copy-pasting examples from an actual iex session</li>
+</ul>
+
+<p>We also allow you to select or skip some functions when calling
+<code>doctest</code>. See the documentation for more info.</p>
+
+<h2>Opaque types</h2>
+
+<p>Some types internal structure are kept hidden and instead show a
+user-friendly structure when inspecting the value. The idiom in
+Elixir is to print those data types as <code>#Name&lt;...&gt;</code>. Doctest will
+test these values by doing a string compare.</p>
+
+<pre><code>iex&gt; Enum.into([a: 10, b: 20], HashDict.new)
+#HashDict&lt;[b: 20, a: 10]&gt;
+</code></pre>
+
+<p>The above example will be tested with the following match:
+<code>&quot;#HashDict&lt;[b: 20, a: 10]&gt;&quot; = inspect(Enum.into([a: 10, b: 20], HashDict.new))</code>.</p>
+
+<h2>Exceptions</h2>
+
+<p>You can also showcase expressions raising an exception, for example:</p>
+
+<pre><code>iex(1)&gt; String.to_atom((fn() -&gt; 1 end).())
+** (ArgumentError) argument error
+</code></pre>
+
+<p>What DocTest will be looking for is a line starting with <code>** (</code> and it
+will parse it accordingly to extract the exception name and message.
+At this moment, the exception parser would make the parser treat the next
+line as a start of a completely new expression (if it is prefixed with <code>iex&gt;</code>)
+or a no-op line with documentation. Thus, multiline messages are not
+supported.</p>
+
+<h2>When not to use doctest</h2>
+
+<p>In general, doctests are not recommended when your code examples contain
+side effects. For example, if a doctest prints to standard output, doctest
+will not try to capture the output.</p>
+
+<p>Similarly, doctests do not run in any kind of sandbox. So any module
+defined in a code example is going to linger throughout the whole test
+suite run.</p>
+
+  </div>
+  
+    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/ex_unit/lib/ex_unit/doc_test.ex#L1" class="view_source">Source</a>
+  
+</div>
+
+
+
+
+
+
+
+
+  <div id="macros_details" class="section">
+    <h2 class="section-title">
+      Macros
+      <a href="#macros" class="detail_link" title="Macros">#</a>
+    </h2>
+    <div class="detail">
+  <div class="detail_header" id="doctest/2">
+    <div class="title">
+      <h3>doctest(mod, opts \\ [])</h3>
+    </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#doctest/2" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/ex_unit/lib/ex_unit/doc_test.ex#L144" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (macro)
+      </span>
+    </div>
+
+  </div>
+  
+  <div class="docstring"><p>This macro is used to generate ExUnit test cases for doctests.</p>
+
+<p>Calling <code>doctest(Module)</code> will generate tests for all doctests found
+in the module <code>Module</code></p>
+
+<p>Options can also be supplied:</p>
+
+<ul>
+<li><p><code>:except</code> — generate tests for all functions except those listed
+(list of <code>{function, arity}</code> tuples).</p></li>
+<li><p><code>:only</code> — generate tests only for functions listed
+(list of <code>{function, arity}</code> tuples).</p></li>
+<li><p><code>:import</code> — when true, one can test a function defined in the module
+without referring to the module name. However, this is not feasible when
+there is a clash with a module like Kernel. In these cases, <code>import</code>
+should be set to <code>false</code> and a full <code>M.f</code> construct should be used.</p></li>
+</ul>
+
+<h2>Examples</h2>
+
+<pre><code>doctest MyModule, except: [trick_fun: 1]
+</code></pre>
+
+<p>This macro is auto-imported with every <a href="ExUnit.Case.html"><code>ExUnit.Case</code></a>.</p>
+</div>
+</div>
+
+  </div>
+
+
+
+
+    </div>
+  </div>
+</body>
+</html>
