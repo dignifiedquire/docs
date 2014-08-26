@@ -1,47 +1,222 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Logger.Formatter</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-    <script type="text/javascript" charset="utf-8">
-      relpath = '';
-      if (relpath != '') relpath += '/';
-    </script>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Logger v0.15.2-dev Documentation</title>
 
-    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
-  </head>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-  <body>
-    <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) document.body.className = 'frames';
-    </script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="js/highlight.js"></script>
 
-    <div id="content">
-      <div class="breadcrumbs">Logger v0.15.2-dev &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Logger.html">Logger</a> &rarr; <a href="Logger.Formatter.html">Formatter</a></div>
+  <script src="js/app.js"></script>
 
+
+</head>
+<body>
+  <div id="header">
+    <div class="logo"></div>
+    <div class="title">
       <h1>
-        Logger.Formatter
+        
+        <a href="http://elixir-lang.org/docs.html" target="_top">Logger</a>
         
       </h1>
+      <h2>v0.15.2-dev</h2>
+    </div>
+  </div>
 
-      <ul class="summary_links">
+  <div class="container">
+    <div id="navigation">
+      <div class="nav">
+        <span><a target="_self" href="modules_list.html">Modules</a></span>
+        <span><a target="_self" href="exceptions_list.html">Exceptions</a></span>
+        <span><a target="_self" href="protocols_list.html">Protocols</a></span>
+      </div>
+      <div id="search">Search: <input type="text" /></div>
+      <ul id="modules-list" class="section">
+  <li>
+  <span class="title">
+    <a href="Logger.html" title="Logger">Logger</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Logger.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="Logger.html#types">Types</a>
+    </li>
+    
+    
+    <li>
+      <a href="Logger.html#functions">Functions</a>
+      <ul class="functions">
         
-          <li><a href="#summary">Summary</a></li>
+          <li>
+            <a href="Logger.html#add_backend/2">add_backend/2</a>
+          </li>
         
+          <li>
+            <a href="Logger.html#add_translator/1">add_translator/1</a>
+          </li>
         
-          <li><a href="#functions_details">Functions</a></li>
+          <li>
+            <a href="Logger.html#compare_levels/2">compare_levels/2</a>
+          </li>
         
+          <li>
+            <a href="Logger.html#configure/1">configure/1</a>
+          </li>
         
+          <li>
+            <a href="Logger.html#configure_backend/2">configure_backend/2</a>
+          </li>
         
+          <li>
+            <a href="Logger.html#debug/2">debug/2</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#error/2">error/2</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#flush/0">flush/0</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#info/2">info/2</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#level/0">level/0</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#log/3">log/3</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#metadata/0">metadata/0</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#metadata/1">metadata/1</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#remove_backend/2">remove_backend/2</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#remove_translator/1">remove_translator/1</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#warn/2">warn/2</a>
+          </li>
         
       </ul>
+    </li>
+    
+    
+    <li>
+      <a href="Logger.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Logger.Formatter.html" title="Logger.Formatter">Logger.Formatter</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Logger.Formatter.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Logger.Formatter.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Logger.Formatter.html#compile/1">compile/1</a>
+          </li>
+        
+          <li>
+            <a href="Logger.Formatter.html#format/5">format/5</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Logger.Translator.html" title="Logger.Translator">Logger.Translator</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Logger.Translator.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Logger.Translator.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Logger.Translator.html#translate/4">translate/4</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
 
-      
-        <div id="moduledoc" class="docstring">
-          <p>Conveniences for formatting data for logs.</p>
+</ul>
+
+      <ul id="protocols-list" class="section">
+  
+</ul>
+
+      <ul id="exceptions-list" class="section">
+  
+</ul>
+
+    </div>
+
+    <div id="content">
+      <h1>
+  Logger.Formatter
+  
+  <a href="#content"></a>
+</h1>
+
+
+<div id="moduledoc" class="section">
+  <h2 class="section-title">
+    Introduction
+    <a href="#introduction" class="detail_link" title="Introduction">#</a>
+  </h2>
+  <div class="section-content">
+    <p>Conveniences for formatting data for logs.</p>
 
 <p>This module allows developers to specify a string that
 serves as template for log messages, for example:</p>
@@ -82,48 +257,45 @@ to the current process. The user can configure the backend to chose
 which metadata it wants to print and it will replace the <code>$metadata</code>
 value.</p>
 
-        </div>
-      
-
-      
-        <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger/formatter.ex#L3" class="view_source">Source</a>
-      
-
-      
-        <h2 id="summary">Summary<div class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></div></h2>
-        <table class="summary">
-          <tr>
-  <td class="summary_signature"><a href="#compile/1">compile(str)</a></td>
+  </div>
   
-    <td class="summary_synopsis"><p>Compiles a format string into an array that the <a href="#format/5"><code>format/5</code></a> can handle</p>
-</td>
+    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger/formatter.ex#L3" class="view_source">Source</a>
   
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#format/5">format(config, level, msg, ts, md)</a></td>
-  
-    <td class="summary_synopsis"><p>Takes a compiled format and injects the, level, timestamp, message and
-metadata listdict and returns a properly formatted string</p>
-</td>
-  
-</tr>
+</div>
 
-        </table>
-      
 
-      
 
-      
-        <div id="functions_details" class="details_list">
-          <h2>Functions</h2>
-          <div class="detail">
+
+
+
+  <div id="functions_details" class="section">
+    <h2 class="section-title">
+      Functions
+      <a href="#functions" class="detail_link" title="Functions">#</a>
+    </h2>
+    <div class="detail">
   <div class="detail_header" id="compile/1">
-    <span class="signature"><strong>compile(str)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#compile/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>compile(str)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#compile/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger/formatter.ex#L61" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
     <p>Specs:</p>
@@ -147,34 +319,45 @@ pass <code>nil</code>, it defaults to: <code>$time $metadata [$level] $levelpad$
 [:time, &quot; &quot;, :metadata, &quot; [&quot;, :level, &quot;] &quot;, :message, &quot;\n&quot;]
 </code></pre>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger/formatter.ex#L61" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="format/5">
-    <span class="signature"><strong>format(config, level, msg, ts, md)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#format/5" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>format(config, level, msg, ts, md)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#format/5" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger/formatter.ex#L83" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Takes a compiled format and injects the, level, timestamp, message and
 metadata listdict and returns a properly formatted string.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger/formatter.ex#L83" class="view_source">Source</a>
-  
 </div>
 
-        </div>
-      
+  </div>
 
-      
 
-      
+
+
+
+
     </div>
-  </body>
+  </div>
+</body>
 </html>

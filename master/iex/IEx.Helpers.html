@@ -1,49 +1,223 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>IEx.Helpers</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-    <script type="text/javascript" charset="utf-8">
-      relpath = '';
-      if (relpath != '') relpath += '/';
-    </script>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>IEx v0.15.2-dev Documentation</title>
 
-    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
-  </head>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-  <body>
-    <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) document.body.className = 'frames';
-    </script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="js/highlight.js"></script>
 
-    <div id="content">
-      <div class="breadcrumbs">IEx v0.15.2-dev &rarr; <a href="overview.html">Overview</a> &rarr; <a href="IEx.html">IEx</a> &rarr; <a href="IEx.Helpers.html">Helpers</a></div>
+  <script src="js/app.js"></script>
 
+
+</head>
+<body>
+  <div id="header">
+    <div class="logo"></div>
+    <div class="title">
       <h1>
-        IEx.Helpers
+        
+        <a href="http://elixir-lang.org/docs.html" target="_top">IEx</a>
         
       </h1>
+      <h2>v0.15.2-dev</h2>
+    </div>
+  </div>
 
-      <ul class="summary_links">
+  <div class="container">
+    <div id="navigation">
+      <div class="nav">
+        <span><a target="_self" href="modules_list.html">Modules</a></span>
+        <span><a target="_self" href="exceptions_list.html">Exceptions</a></span>
+        <span><a target="_self" href="protocols_list.html">Protocols</a></span>
+      </div>
+      <div id="search">Search: <input type="text" /></div>
+      <ul id="modules-list" class="section">
+  <li>
+  <span class="title">
+    <a href="IEx.html" title="IEx">IEx</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="IEx.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="IEx.html#functions">Functions</a>
+      <ul class="functions">
         
-          <li><a href="#summary">Summary</a></li>
+          <li>
+            <a href="IEx.html#after_spawn/0">after_spawn/0</a>
+          </li>
         
+          <li>
+            <a href="IEx.html#after_spawn/1">after_spawn/1</a>
+          </li>
         
-          <li><a href="#functions_details">Functions</a></li>
+          <li>
+            <a href="IEx.html#color/2">color/2</a>
+          </li>
         
+          <li>
+            <a href="IEx.html#configuration/0">configuration/0</a>
+          </li>
         
-          <li><a href="#macros_details">Macros</a></li>
+          <li>
+            <a href="IEx.html#configure/1">configure/1</a>
+          </li>
         
+          <li>
+            <a href="IEx.html#inspect_opts/0">inspect_opts/0</a>
+          </li>
         
+          <li>
+            <a href="IEx.html#pry/1">pry/1</a>
+          </li>
+        
+          <li>
+            <a href="IEx.html#started?/0">started?/0</a>
+          </li>
+        
+          <li>
+            <a href="IEx.html#width/0">width/0</a>
+          </li>
         
       </ul>
+    </li>
+    
+    
+    <li>
+      <a href="IEx.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="IEx.Helpers.html" title="IEx.Helpers">IEx.Helpers</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="IEx.Helpers.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="IEx.Helpers.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="IEx.Helpers.html#c/2">c/2</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#cd/1">cd/1</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#clear/0">clear/0</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#flush/0">flush/0</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#h/0">h/0</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#h/1">h/1</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#import_file/1">import_file/1</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#l/1">l/1</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#ls/1">ls/1</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#pwd/0">pwd/0</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#r/1">r/1</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#respawn/0">respawn/0</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#s/1">s/1</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#t/1">t/1</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#v/0">v/0</a>
+          </li>
+        
+          <li>
+            <a href="IEx.Helpers.html#v/1">v/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    <li>
+      <a href="IEx.Helpers.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
 
-      
-        <div id="moduledoc" class="docstring">
-          <p>Welcome to Interactive Elixir. You are currently
+</ul>
+
+      <ul id="protocols-list" class="section">
+  
+</ul>
+
+      <ul id="exceptions-list" class="section">
+  
+</ul>
+
+    </div>
+
+    <div id="content">
+      <h1>
+  IEx.Helpers
+  
+  <a href="#content"></a>
+</h1>
+
+
+<div id="moduledoc" class="section">
+  <h2 class="section-title">
+    Introduction
+    <a href="#introduction" class="detail_link" title="Introduction">#</a>
+  </h2>
+  <div class="section-content">
+    <p>Welcome to Interactive Elixir. You are currently
 seeing the documentation for the module <a href="IEx.Helpers.html"><code>IEx.Helpers</code></a>
 which provides many helpers to make Elixir&#39;s shell
 more joyful to work with.</p>
@@ -96,154 +270,45 @@ follow by a dot, then press tab to trigger autocomplete. For example:</p>
 
 <p>To learn more about IEx as a whole, just type <code>h(IEx)</code>.</p>
 
-        </div>
-      
+  </div>
+  
+    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L1" class="view_source">Source</a>
+  
+</div>
 
-      
-        <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L1" class="view_source">Source</a>
-      
 
-      
-        <h2 id="summary">Summary<div class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></div></h2>
-        <table class="summary">
-          <tr>
-  <td class="summary_signature"><a href="#c/2">c(files, path \\ &quot;.&quot;)</a></td>
-  
-    <td class="summary_synopsis"><p>Expects a list of files to compile and a path
-to write their object code to. It returns the name
-of the compiled modules</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#cd/1">cd(directory)</a></td>
-  
-    <td class="summary_synopsis"><p>Changes the current working directory to the given path</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#clear/0">clear()</a></td>
-  
-    <td class="summary_synopsis"><p>Clears the console screen</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#flush/0">flush()</a></td>
-  
-    <td class="summary_synopsis"><p>Flushes all messages sent to the shell and prints them out</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#h/0">h()</a></td>
-  
-    <td class="summary_synopsis"><p>Prints the documentation for <a href="IEx.Helpers.html"><code>IEx.Helpers</code></a></p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#h/1">h(other)</a></td>
-  
-    <td class="summary_synopsis"><p>Prints the documentation for the given module
-or for the given function/arity pair</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#import_file/1">import_file(path)</a></td>
-  
-    <td class="summary_synopsis"><p>Evaluates the contents of the file at <code>path</code> as if it were directly typed into
-the shell. <code>path</code> has to be a literal binary</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#l/1">l(module)</a></td>
-  
-    <td class="summary_synopsis"><p>Load the given module&#39;s beam code (and ensures any previous
-old version was properly purged before)</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#ls/1">ls(path \\ &quot;.&quot;)</a></td>
-  
-    <td class="summary_synopsis"><p>Produces a simple list of a directory&#39;s contents.
-If <code>path</code> points to a file, prints its full path</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#pwd/0">pwd()</a></td>
-  
-    <td class="summary_synopsis"><p>Prints the current working directory</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#r/1">r(module)</a></td>
-  
-    <td class="summary_synopsis"><p>Recompiles and reloads the specified module&#39;s source file</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#respawn/0">respawn()</a></td>
-  
-    <td class="summary_synopsis"><p>Respawns the current shell by starting a new
-process and a new scope. Returns true if it worked</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#s/1">s(other)</a></td>
-  
-    <td class="summary_synopsis"><p>Similar to <a href="#t/1"><code>t/1</code></a>, only for specs</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#t/1">t(module)</a></td>
-  
-    <td class="summary_synopsis"><p>When given a module, prints specifications (or simply specs) for all the
-types defined in it</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#v/0">v()</a></td>
-  
-    <td class="summary_synopsis"><p>Prints the history of expressions evaluated during the session along with
-their results</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#v/1">v(n)</a></td>
-  
-    <td class="summary_synopsis"><p>Retrieves the nth expression&#39;s value from the history</p>
-</td>
-  
-</tr>
 
-        </table>
-      
 
-      
 
-      
-        <div id="functions_details" class="details_list">
-          <h2>Functions</h2>
-          <div class="detail">
+
+  <div id="functions_details" class="section">
+    <h2 class="section-title">
+      Functions
+      <a href="#functions" class="detail_link" title="Functions">#</a>
+    </h2>
+    <div class="detail">
   <div class="detail_header" id="c/2">
-    <span class="signature"><strong>c(files, path \\ &quot;.&quot;)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#c/2" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>c(files, path \\ &quot;.&quot;)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#c/2" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L69" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Expects a list of files to compile and a path
@@ -261,34 +326,58 @@ c &quot;baz.ex&quot;
 #=&gt; [Baz]
 </code></pre>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L69" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="cd/1">
-    <span class="signature"><strong>cd(directory)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#cd/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>cd(directory)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#cd/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L348" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Changes the current working directory to the given path.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L348" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="clear/0">
-    <span class="signature"><strong>clear()</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#clear/0" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>clear()</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#clear/0" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L104" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Clears the console screen.</p>
@@ -297,100 +386,172 @@ c &quot;baz.ex&quot;
 on the shell, which means this function is by default
 unavailable on Windows machines.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L104" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="flush/0">
-    <span class="signature"><strong>flush()</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#flush/0" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>flush()</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#flush/0" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L315" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Flushes all messages sent to the shell and prints them out.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L315" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="h/0">
-    <span class="signature"><strong>h()</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#h/0" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>h()</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#h/0" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L116" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Prints the documentation for <a href="IEx.Helpers.html"><code>IEx.Helpers</code></a>.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L116" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="l/1">
-    <span class="signature"><strong>l(module)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#l/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>l(module)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#l/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L307" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Load the given module&#39;s beam code (and ensures any previous
 old version was properly purged before).</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L307" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="ls/1">
-    <span class="signature"><strong>ls(path \\ &quot;.&quot;)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#ls/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>ls(path \\ &quot;.&quot;)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#ls/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L360" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Produces a simple list of a directory&#39;s contents.
 If <code>path</code> points to a file, prints its full path.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L360" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="pwd/0">
-    <span class="signature"><strong>pwd()</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#pwd/0" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>pwd()</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#pwd/0" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L341" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Prints the current working directory.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L341" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="r/1">
-    <span class="signature"><strong>r(module)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#r/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>r(module)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#r/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L278" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Recompiles and reloads the specified module&#39;s source file.</p>
@@ -398,52 +559,88 @@ If <code>path</code> points to a file, prints its full path.</p>
 <p>Please note that all the modules defined in the same file as <code>module</code>
 are recompiled and reloaded.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L278" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="respawn/0">
-    <span class="signature"><strong>respawn()</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#respawn/0" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>respawn()</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#respawn/0" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L424" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Respawns the current shell by starting a new
 process and a new scope. Returns true if it worked.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L424" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="v/0">
-    <span class="signature"><strong>v()</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#v/0" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>v()</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#v/0" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L252" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Prints the history of expressions evaluated during the session along with
 their results.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L252" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="v/1">
-    <span class="signature"><strong>v(n)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#v/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>v(n)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#v/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L268" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Retrieves the nth expression&#39;s value from the history.</p>
@@ -451,25 +648,40 @@ their results.</p>
 <p>Use negative values to lookup expression values relative to the current one.
 For instance, v(-1) returns the result of the last evaluated expression.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L268" class="view_source">Source</a>
-  
 </div>
 
-        </div>
-      
+  </div>
 
-      
-        <div id="macros_details" class="details_list">
-          <h2>Macros</h2>
-          <div class="detail">
+
+
+  <div id="macros_details" class="section">
+    <h2 class="section-title">
+      Macros
+      <a href="#macros" class="detail_link" title="Macros">#</a>
+    </h2>
+    <div class="detail">
   <div class="detail_header" id="h/1">
-    <span class="signature"><strong>h(other)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(macro)</span>
-      <a href="#h/1" class="detail_link" title="Link to this macro">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>h(other)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#h/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L140" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (macro)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Prints the documentation for the given module
@@ -489,18 +701,30 @@ h Enum.all?/2
 h Enum.all?
 </code></pre>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L140" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="import_file/1">
-    <span class="signature"><strong>import_file(path)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(macro)</span>
-      <a href="#import_file/1" class="detail_link" title="Link to this macro">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>import_file(path)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#import_file/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L448" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (macro)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Evaluates the contents of the file at <code>path</code> as if it were directly typed into
@@ -520,18 +744,30 @@ iex(2)&gt; value
 13
 </code></pre>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L448" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="s/1">
-    <span class="signature"><strong>s(other)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(macro)</span>
-      <a href="#s/1" class="detail_link" title="Link to this macro">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>s(other)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#s/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L222" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (macro)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Similar to <a href="#t/1"><code>t/1</code></a>, only for specs.</p>
@@ -549,18 +785,30 @@ s(is_atom)
 s(is_atom/1)
 </code></pre>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L222" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="t/1">
-    <span class="signature"><strong>t(module)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(macro)</span>
-      <a href="#t/1" class="detail_link" title="Link to this macro">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>t(module)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#t/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L188" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (macro)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>When given a module, prints specifications (or simply specs) for all the
@@ -575,15 +823,14 @@ t(Enum.t/0)
 t(Enum.t)
 </code></pre>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/iex/lib/iex/helpers.ex#L188" class="view_source">Source</a>
-  
 </div>
 
-        </div>
-      
+  </div>
 
-      
+
+
+
     </div>
-  </body>
+  </div>
+</body>
 </html>

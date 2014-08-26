@@ -1,51 +1,222 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Logger</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-    <script type="text/javascript" charset="utf-8">
-      relpath = '';
-      if (relpath != '') relpath += '/';
-    </script>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Logger v0.15.2-dev Documentation</title>
 
-    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
-  </head>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-  <body>
-    <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) document.body.className = 'frames';
-    </script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="js/highlight.js"></script>
 
-    <div id="content">
-      <div class="breadcrumbs">Logger v0.15.2-dev &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Logger.html">Logger</a></div>
+  <script src="js/app.js"></script>
 
+
+</head>
+<body>
+  <div id="header">
+    <div class="logo"></div>
+    <div class="title">
       <h1>
-        Logger
+        
+        <a href="http://elixir-lang.org/docs.html" target="_top">Logger</a>
         
       </h1>
+      <h2>v0.15.2-dev</h2>
+    </div>
+  </div>
 
-      <ul class="summary_links">
+  <div class="container">
+    <div id="navigation">
+      <div class="nav">
+        <span><a target="_self" href="modules_list.html">Modules</a></span>
+        <span><a target="_self" href="exceptions_list.html">Exceptions</a></span>
+        <span><a target="_self" href="protocols_list.html">Protocols</a></span>
+      </div>
+      <div id="search">Search: <input type="text" /></div>
+      <ul id="modules-list" class="section">
+  <li>
+  <span class="title">
+    <a href="Logger.html" title="Logger">Logger</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Logger.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="Logger.html#types">Types</a>
+    </li>
+    
+    
+    <li>
+      <a href="Logger.html#functions">Functions</a>
+      <ul class="functions">
         
-          <li><a href="#summary">Summary</a></li>
+          <li>
+            <a href="Logger.html#add_backend/2">add_backend/2</a>
+          </li>
         
+          <li>
+            <a href="Logger.html#add_translator/1">add_translator/1</a>
+          </li>
         
-          <li><a href="#functions_details">Functions</a></li>
+          <li>
+            <a href="Logger.html#compare_levels/2">compare_levels/2</a>
+          </li>
         
+          <li>
+            <a href="Logger.html#configure/1">configure/1</a>
+          </li>
         
-          <li><a href="#macros_details">Macros</a></li>
+          <li>
+            <a href="Logger.html#configure_backend/2">configure_backend/2</a>
+          </li>
         
+          <li>
+            <a href="Logger.html#debug/2">debug/2</a>
+          </li>
         
+          <li>
+            <a href="Logger.html#error/2">error/2</a>
+          </li>
         
-          <li><a href="#types_details">Types</a></li>
+          <li>
+            <a href="Logger.html#flush/0">flush/0</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#info/2">info/2</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#level/0">level/0</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#log/3">log/3</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#metadata/0">metadata/0</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#metadata/1">metadata/1</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#remove_backend/2">remove_backend/2</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#remove_translator/1">remove_translator/1</a>
+          </li>
+        
+          <li>
+            <a href="Logger.html#warn/2">warn/2</a>
+          </li>
         
       </ul>
+    </li>
+    
+    
+    <li>
+      <a href="Logger.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Logger.Formatter.html" title="Logger.Formatter">Logger.Formatter</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Logger.Formatter.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Logger.Formatter.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Logger.Formatter.html#compile/1">compile/1</a>
+          </li>
+        
+          <li>
+            <a href="Logger.Formatter.html#format/5">format/5</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Logger.Translator.html" title="Logger.Translator">Logger.Translator</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Logger.Translator.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Logger.Translator.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Logger.Translator.html#translate/4">translate/4</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
 
-      
-        <div id="moduledoc" class="docstring">
-          <p>A logger for Elixir applications.</p>
+</ul>
+
+      <ul id="protocols-list" class="section">
+  
+</ul>
+
+      <ul id="exceptions-list" class="section">
+  
+</ul>
+
+    </div>
+
+    <div id="content">
+      <h1>
+  Logger
+  
+  <a href="#content"></a>
+</h1>
+
+
+<div id="moduledoc" class="section">
+  <h2 class="section-title">
+    Introduction
+    <a href="#introduction" class="detail_link" title="Introduction">#</a>
+  </h2>
+  <div class="section-content">
+    <p>A logger for Elixir applications.</p>
 
 <p>It includes many features:</p>
 
@@ -267,136 +438,21 @@ configuration values:</p>
 examples on how to handle the recommendations in this section
 and how to process the existing options.</p>
 
-        </div>
-      
+  </div>
+  
+    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L1" class="view_source">Source</a>
+  
+</div>
 
-      
-        <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L1" class="view_source">Source</a>
-      
 
-      
-        <h2 id="summary">Summary<div class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></div></h2>
-        <table class="summary">
-          <tr>
-  <td class="summary_signature"><a href="#add_backend/2">add_backend(backend, opts \\ [])</a></td>
-  
-    <td class="summary_synopsis"><p>Adds a new backend</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#add_translator/1">add_translator(translator)</a></td>
-  
-    <td class="summary_synopsis"><p>Adds a new translator</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#compare_levels/2">compare_levels(level, level)</a></td>
-  
-    <td class="summary_synopsis"><p>Compare log levels</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#configure/1">configure(options)</a></td>
-  
-    <td class="summary_synopsis"><p>Configures the logger</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#configure_backend/2">configure_backend(backend, options)</a></td>
-  
-    <td class="summary_synopsis"><p>Configures the given backend</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#debug/2">debug(chardata, metadata \\ [])</a></td>
-  
-    <td class="summary_synopsis"><p>Logs a debug message</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#error/2">error(chardata, metadata \\ [])</a></td>
-  
-    <td class="summary_synopsis"><p>Logs an error</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#flush/0">flush()</a></td>
-  
-    <td class="summary_synopsis"><p>Flushes the Logger</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#info/2">info(chardata, metadata \\ [])</a></td>
-  
-    <td class="summary_synopsis"><p>Logs some info</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#level/0">level()</a></td>
-  
-    <td class="summary_synopsis"><p>Retrieves the logger level</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#log/3">log(level, chardata, metadata \\ [])</a></td>
-  
-    <td class="summary_synopsis"><p>Logs a message</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#metadata/0">metadata()</a></td>
-  
-    <td class="summary_synopsis"><p>Reads the current process metadata</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#metadata/1">metadata(dict)</a></td>
-  
-    <td class="summary_synopsis"><p>Adds the given keyword list to the current process metadata</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#remove_backend/2">remove_backend(backend, opts \\ [])</a></td>
-  
-    <td class="summary_synopsis"><p>Removes a backend</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#remove_translator/1">remove_translator(translator)</a></td>
-  
-    <td class="summary_synopsis"><p>Removes a translator</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#warn/2">warn(chardata, metadata \\ [])</a></td>
-  
-    <td class="summary_synopsis"><p>Logs a warning</p>
-</td>
-  
-</tr>
 
-        </table>
-      
 
-      
-        <div id="types_details" class="details_list">
-          <h2>Types <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></h2>
-          <div class="type_detail">
+  <div id="types_details" class="section">
+    <h2 class="section-title">
+      Types
+      <a href="#types" class="detail_link" title="Types">#</a>
+    </h2>
+    <div class="type_detail">
   <p class="typespec" id="t:backend/0">
     <a href="#t:backend/0">backend</a> :: <a href="http://elixir-lang.org/docs/stable/elixir/GenEvent.html#t:handler/0">GenEvent.handler</a>
   </p>
@@ -415,20 +471,38 @@ and how to process the existing options.</p>
   
 </div>
 
-        </div>
-      
+  </div>
 
-      
-        <div id="functions_details" class="details_list">
-          <h2>Functions</h2>
-          <div class="detail">
+
+
+  <div id="functions_details" class="section">
+    <h2 class="section-title">
+      Functions
+      <a href="#functions" class="detail_link" title="Functions">#</a>
+    </h2>
+    <div class="detail">
   <div class="detail_header" id="add_backend/2">
-    <span class="signature"><strong>add_backend(backend, opts \\ [])</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#add_backend/2" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>add_backend(backend, opts \\ [])</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#add_backend/2" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L308" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Adds a new backend.</p>
@@ -441,34 +515,58 @@ to both Logger and Erlang&#39;s <code>error_logger</code> are processed before
 the backend is added</li>
 </ul>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L308" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="add_translator/1">
-    <span class="signature"><strong>add_translator(translator)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#add_translator/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>add_translator(translator)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#add_translator/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L337" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Adds a new translator.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L337" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="compare_levels/2">
-    <span class="signature"><strong>compare_levels(level, level)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#compare_levels/2" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>compare_levels(level, level)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#compare_levels/2" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L262" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
     <p>Specs:</p>
@@ -483,18 +581,30 @@ the backend is added</li>
 <p>Receives two log levels and compares the <code>left</code>
 against <code>right</code> and returns <code>:lt</code>, <code>:eq</code> or <code>:gt</code>.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L262" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="configure/1">
-    <span class="signature"><strong>configure(options)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#configure/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>configure(options)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#configure/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L280" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Configures the logger.</p>
@@ -502,18 +612,30 @@ against <code>right</code> and returns <code>:lt</code>, <code>:eq</code> or <co
 <p>See the &quot;Runtime Configuration&quot; section in <a href="Logger.html"><code>Logger</code></a> module
 documentation for the available options.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L280" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="configure_backend/2">
-    <span class="signature"><strong>configure_backend(backend, options)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#configure_backend/2" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>configure_backend(backend, options)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#configure_backend/2" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L355" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
     <p>Specs:</p>
@@ -528,18 +650,30 @@ documentation for the available options.</p>
 <p>The backends needs to be started and running in order to
 be configured at runtime.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L355" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="flush/0">
-    <span class="signature"><strong>flush()</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#flush/0" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>flush()</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#flush/0" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L292" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
     <p>Specs:</p>
@@ -555,18 +689,30 @@ be configured at runtime.</p>
 Logger prior to this call will be processed. This is useful
 for testing and it should not be called in production code.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L292" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="level/0">
-    <span class="signature"><strong>level()</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#level/0" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>level()</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#level/0" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L250" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
     <p>Specs:</p>
@@ -580,18 +726,30 @@ for testing and it should not be called in production code.</p>
 
 <p>The logger level can be changed via <a href="#configure/1"><code>configure/1</code></a>.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L250" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="log/3">
-    <span class="signature"><strong>log(level, chardata, metadata \\ [])</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#log/3" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>log(level, chardata, metadata \\ [])</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#log/3" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L373" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
     <p>Specs:</p>
@@ -612,50 +770,86 @@ desired.</p>
 <p>Use this function only when there is a need to log dynamically
 or you want to explicitly avoid embedding metadata.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L373" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="metadata/0">
-    <span class="signature"><strong>metadata()</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#metadata/0" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>metadata()</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#metadata/0" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L240" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Reads the current process metadata.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L240" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="metadata/1">
-    <span class="signature"><strong>metadata(dict)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#metadata/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>metadata(dict)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#metadata/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L233" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Adds the given keyword list to the current process metadata.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L233" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="remove_backend/2">
-    <span class="signature"><strong>remove_backend(backend, opts \\ [])</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#remove_backend/2" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>remove_backend(backend, opts \\ [])</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#remove_backend/2" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L328" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Removes a backend.</p>
@@ -668,41 +862,68 @@ to both Logger and Erlang&#39;s <code>error_logger</code> are processed before
 the backend is removed</li>
 </ul>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L328" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="remove_translator/1">
-    <span class="signature"><strong>remove_translator(translator)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#remove_translator/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>remove_translator(translator)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#remove_translator/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L344" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Removes a translator.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L344" class="view_source">Source</a>
-  
 </div>
 
-        </div>
-      
+  </div>
 
-      
-        <div id="macros_details" class="details_list">
-          <h2>Macros</h2>
-          <div class="detail">
+
+
+  <div id="macros_details" class="section">
+    <h2 class="section-title">
+      Macros
+      <a href="#macros" class="detail_link" title="Macros">#</a>
+    </h2>
+    <div class="detail">
   <div class="detail_header" id="debug/2">
-    <span class="signature"><strong>debug(chardata, metadata \\ [])</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(macro)</span>
-      <a href="#debug/2" class="detail_link" title="Link to this macro">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>debug(chardata, metadata \\ [])</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#debug/2" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L441" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (macro)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Logs a debug message.</p>
@@ -713,18 +934,30 @@ the backend is removed</li>
 Logger.debug fn -&gt; &quot;expensive to calculate debug&quot; end
 </code></pre>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L441" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="error/2">
-    <span class="signature"><strong>error(chardata, metadata \\ [])</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(macro)</span>
-      <a href="#error/2" class="detail_link" title="Link to this macro">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>error(chardata, metadata \\ [])</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#error/2" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L428" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (macro)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Logs an error.</p>
@@ -735,18 +968,30 @@ Logger.debug fn -&gt; &quot;expensive to calculate debug&quot; end
 Logger.error fn -&gt; &quot;expensive to calculate error&quot; end
 </code></pre>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L428" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="info/2">
-    <span class="signature"><strong>info(chardata, metadata \\ [])</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(macro)</span>
-      <a href="#info/2" class="detail_link" title="Link to this macro">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>info(chardata, metadata \\ [])</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#info/2" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L415" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (macro)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Logs some info.</p>
@@ -757,18 +1002,30 @@ Logger.error fn -&gt; &quot;expensive to calculate error&quot; end
 Logger.info fn -&gt; &quot;expensive to calculate info&quot; end
 </code></pre>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L415" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="warn/2">
-    <span class="signature"><strong>warn(chardata, metadata \\ [])</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(macro)</span>
-      <a href="#warn/2" class="detail_link" title="Link to this macro">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>warn(chardata, metadata \\ [])</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#warn/2" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L402" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (macro)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Logs a warning.</p>
@@ -779,15 +1036,14 @@ Logger.info fn -&gt; &quot;expensive to calculate info&quot; end
 Logger.warn fn -&gt; &quot;expensive to calculate warning&quot; end
 </code></pre>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/logger/lib/logger.ex#L402" class="view_source">Source</a>
-  
 </div>
 
-        </div>
-      
+  </div>
 
-      
+
+
+
     </div>
-  </body>
+  </div>
+</body>
 </html>

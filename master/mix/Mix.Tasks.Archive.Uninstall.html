@@ -1,100 +1,1923 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mix.Tasks.Archive.Uninstall</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-    <script type="text/javascript" charset="utf-8">
-      relpath = '';
-      if (relpath != '') relpath += '/';
-    </script>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Mix v0.15.2-dev Documentation</title>
 
-    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
-  </head>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-  <body>
-    <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) document.body.className = 'frames';
-    </script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="js/highlight.js"></script>
 
-    <div id="content">
-      <div class="breadcrumbs">Mix v0.15.2-dev &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Mix.html">Mix</a> &rarr; Tasks &rarr; <a href="Mix.Tasks.Archive.html">Archive</a> &rarr; <a href="Mix.Tasks.Archive.Uninstall.html">Uninstall</a></div>
+  <script src="js/app.js"></script>
 
+
+</head>
+<body>
+  <div id="header">
+    <div class="logo"></div>
+    <div class="title">
       <h1>
-        Mix.Tasks.Archive.Uninstall
+        
+        <a href="http://elixir-lang.org/docs.html" target="_top">Mix</a>
         
       </h1>
+      <h2>v0.15.2-dev</h2>
+    </div>
+  </div>
 
-      <ul class="summary_links">
+  <div class="container">
+    <div id="navigation">
+      <div class="nav">
+        <span><a target="_self" href="modules_list.html">Modules</a></span>
+        <span><a target="_self" href="exceptions_list.html">Exceptions</a></span>
+        <span><a target="_self" href="protocols_list.html">Protocols</a></span>
+      </div>
+      <div id="search">Search: <input type="text" /></div>
+      <ul id="modules-list" class="section">
+  <li>
+  <span class="title">
+    <a href="Mix.html" title="Mix">Mix</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.html#functions">Functions</a>
+      <ul class="functions">
         
-          <li><a href="#summary">Summary</a></li>
+          <li>
+            <a href="Mix.html#compilers/0">compilers/0</a>
+          </li>
         
+          <li>
+            <a href="Mix.html#env/0">env/0</a>
+          </li>
         
-          <li><a href="#functions_details">Functions</a></li>
+          <li>
+            <a href="Mix.html#env/1">env/1</a>
+          </li>
         
+          <li>
+            <a href="Mix.html#raise/1">raise/1</a>
+          </li>
         
+          <li>
+            <a href="Mix.html#raise/2">raise/2</a>
+          </li>
         
+          <li>
+            <a href="Mix.html#shell/0">shell/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.html#shell/1">shell/1</a>
+          </li>
         
       </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Archive.html" title="Mix.Archive">Mix.Archive</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Archive.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Archive.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Archive.html#create/2">create/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Archive.html#dir/1">dir/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Archive.html#ebin/1">ebin/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Archive.html#name/2">name/2</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Config.html" title="Mix.Config">Mix.Config</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Config.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Config.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Config.html#config/2">config/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Config.html#config/3">config/3</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Config.html#import_config/1">import_config/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Config.html#merge/2">merge/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Config.html#merge/3">merge/3</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Config.html#persist/1">persist/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Config.html#read!/1">read!/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Config.html#read_wildcard!/2">read_wildcard!/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Config.html#validate!/1">validate!/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    <li>
+      <a href="Mix.Config.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Generator.html" title="Mix.Generator">Mix.Generator</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Generator.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Generator.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Generator.html#create_directory/1">create_directory/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Generator.html#create_file/3">create_file/3</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Generator.html#embed_template/2">embed_template/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Generator.html#embed_text/2">embed_text/2</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    <li>
+      <a href="Mix.Generator.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Project.html" title="Mix.Project">Mix.Project</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Project.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Project.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Project.html#app_path/1">app_path/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Project.html#build_path/1">build_path/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Project.html#build_structure/2">build_structure/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Project.html#compile_path/1">compile_path/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Project.html#config/0">config/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Project.html#config_files/0">config_files/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Project.html#deps_path/1">deps_path/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Project.html#get/0">get/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Project.html#get!/0">get!/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Project.html#in_project/4">in_project/4</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Project.html#load_paths/1">load_paths/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Project.html#manifest_path/1">manifest_path/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Project.html#umbrella?/1">umbrella?/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.SCM.html" title="Mix.SCM">Mix.SCM</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.SCM.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="Mix.SCM.html#types">Types</a>
+    </li>
+    
+    
+    <li>
+      <a href="Mix.SCM.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.SCM.html#accepts_options/2">accepts_options/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.SCM.html#checked_out?/1">checked_out?/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.SCM.html#checkout/1">checkout/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.SCM.html#equal?/2">equal?/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.SCM.html#fetchable?/0">fetchable?/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.SCM.html#format/1">format/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.SCM.html#format_lock/1">format_lock/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.SCM.html#lock_status/1">lock_status/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.SCM.html#update/1">update/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.SCM.html#append/1">append/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.SCM.html#available/0">available/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.SCM.html#prepend/1">prepend/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+    <li>
+      <a href="Mix.SCM.html#callbacks">Callbacks</a>
+    </li>
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Shell.html" title="Mix.Shell">Mix.Shell</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Shell.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Shell.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Shell.html#cmd/1">cmd/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.html#cmd/2">cmd/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.html#error/1">error/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.html#info/1">info/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.html#print_app/0">print_app/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.html#prompt/1">prompt/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.html#yes?/1">yes?/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.html#cmd/2">cmd/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.html#printable_app_name/0">printable_app_name/0</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Shell.html#callbacks">Callbacks</a>
+    </li>
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Shell.IO.html" title="Mix.Shell.IO">Mix.Shell.IO</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Shell.IO.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Shell.IO.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Shell.IO.html#cmd/2">cmd/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.IO.html#error/1">error/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.IO.html#info/1">info/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.IO.html#print_app/0">print_app/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.IO.html#prompt/1">prompt/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.IO.html#yes?/1">yes?/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Shell.Process.html" title="Mix.Shell.Process">Mix.Shell.Process</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Shell.Process.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Shell.Process.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Shell.Process.html#cmd/2">cmd/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.Process.html#error/1">error/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.Process.html#flush/1">flush/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.Process.html#info/1">info/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.Process.html#print_app/0">print_app/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.Process.html#prompt/1">prompt/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Shell.Process.html#yes?/1">yes?/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Task.html" title="Mix.Task">Mix.Task</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Task.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="Mix.Task.html#types">Types</a>
+    </li>
+    
+    
+    <li>
+      <a href="Mix.Task.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Task.html#run/1">run/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#alias?/1">alias?/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#all_modules/0">all_modules/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#clear/0">clear/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#get/1">get/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#get!/1">get!/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#load_all/0">load_all/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#load_tasks/1">load_tasks/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#moduledoc/1">moduledoc/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#recursive/1">recursive/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#reenable/1">reenable/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#run/2">run/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#shortdoc/1">shortdoc/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#task?/1">task?/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Task.html#task_name/1">task_name/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Task.html#callbacks">Callbacks</a>
+    </li>
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.App.Start.html" title="Mix.Tasks.App.Start">Mix.Tasks.App.Start</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.App.Start.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.App.Start.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.App.Start.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Archive.html" title="Mix.Tasks.Archive">Mix.Tasks.Archive</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Archive.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Archive.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Archive.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Archive.Build.html" title="Mix.Tasks.Archive.Build">Mix.Tasks.Archive.Build</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Archive.Build.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Archive.Build.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Archive.Build.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Archive.Install.html" title="Mix.Tasks.Archive.Install">Mix.Tasks.Archive.Install</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Archive.Install.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Archive.Install.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Archive.Install.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Archive.Uninstall.html" title="Mix.Tasks.Archive.Uninstall">Mix.Tasks.Archive.Uninstall</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Archive.Uninstall.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Archive.Uninstall.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Archive.Uninstall.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Clean.html" title="Mix.Tasks.Clean">Mix.Tasks.Clean</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Clean.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Clean.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Clean.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Cmd.html" title="Mix.Tasks.Cmd">Mix.Tasks.Cmd</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Cmd.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Cmd.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Cmd.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Compile.html" title="Mix.Tasks.Compile">Mix.Tasks.Compile</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Compile.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Compile.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Compile.html#compilers/0">compilers/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Tasks.Compile.html#manifests/0">manifests/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Tasks.Compile.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Compile.App.html" title="Mix.Tasks.Compile.App">Mix.Tasks.Compile.App</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Compile.App.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Compile.App.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Compile.App.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Compile.Elixir.html" title="Mix.Tasks.Compile.Elixir">Mix.Tasks.Compile.Elixir</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Compile.Elixir.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Compile.Elixir.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Elixir.html#clean/0">clean/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Elixir.html#manifests/0">manifests/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Elixir.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Compile.Erlang.html" title="Mix.Tasks.Compile.Erlang">Mix.Tasks.Compile.Erlang</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Compile.Erlang.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Compile.Erlang.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Erlang.html#clean/0">clean/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Erlang.html#manifests/0">manifests/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Erlang.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Compile.Leex.html" title="Mix.Tasks.Compile.Leex">Mix.Tasks.Compile.Leex</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Compile.Leex.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Compile.Leex.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Leex.html#clean/0">clean/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Leex.html#manifests/0">manifests/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Leex.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Compile.Protocols.html" title="Mix.Tasks.Compile.Protocols">Mix.Tasks.Compile.Protocols</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Compile.Protocols.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Compile.Protocols.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Protocols.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Compile.Yecc.html" title="Mix.Tasks.Compile.Yecc">Mix.Tasks.Compile.Yecc</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Compile.Yecc.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Compile.Yecc.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Yecc.html#clean/0">clean/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Yecc.html#manifests/0">manifests/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Tasks.Compile.Yecc.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Deps.html" title="Mix.Tasks.Deps">Mix.Tasks.Deps</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Deps.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Deps.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Deps.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Deps.Check.html" title="Mix.Tasks.Deps.Check">Mix.Tasks.Deps.Check</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Deps.Check.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Deps.Check.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Deps.Check.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Deps.Clean.html" title="Mix.Tasks.Deps.Clean">Mix.Tasks.Deps.Clean</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Deps.Clean.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Deps.Clean.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Deps.Clean.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Deps.Compile.html" title="Mix.Tasks.Deps.Compile">Mix.Tasks.Deps.Compile</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Deps.Compile.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Deps.Compile.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Deps.Compile.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Deps.Get.html" title="Mix.Tasks.Deps.Get">Mix.Tasks.Deps.Get</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Deps.Get.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Deps.Get.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Deps.Get.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Deps.Loadpaths.html" title="Mix.Tasks.Deps.Loadpaths">Mix.Tasks.Deps.Loadpaths</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Deps.Loadpaths.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Deps.Loadpaths.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Deps.Loadpaths.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Deps.Unlock.html" title="Mix.Tasks.Deps.Unlock">Mix.Tasks.Deps.Unlock</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Deps.Unlock.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Deps.Unlock.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Deps.Unlock.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Deps.Update.html" title="Mix.Tasks.Deps.Update">Mix.Tasks.Deps.Update</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Deps.Update.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Deps.Update.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Deps.Update.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Do.html" title="Mix.Tasks.Do">Mix.Tasks.Do</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Do.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Do.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Do.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Escript.Build.html" title="Mix.Tasks.Escript.Build">Mix.Tasks.Escript.Build</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Escript.Build.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Escript.Build.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Escript.Build.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Help.html" title="Mix.Tasks.Help">Mix.Tasks.Help</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Help.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Help.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Help.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Iex.html" title="Mix.Tasks.Iex">Mix.Tasks.Iex</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Iex.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Iex.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Iex.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Loadconfig.html" title="Mix.Tasks.Loadconfig">Mix.Tasks.Loadconfig</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Loadconfig.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Loadconfig.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Loadconfig.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Loadpaths.html" title="Mix.Tasks.Loadpaths">Mix.Tasks.Loadpaths</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Loadpaths.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Loadpaths.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Loadpaths.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Local.html" title="Mix.Tasks.Local">Mix.Tasks.Local</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Local.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Local.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Local.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Local.Hex.html" title="Mix.Tasks.Local.Hex">Mix.Tasks.Local.Hex</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Local.Hex.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Local.Hex.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Local.Hex.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Local.Rebar.html" title="Mix.Tasks.Local.Rebar">Mix.Tasks.Local.Rebar</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Local.Rebar.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Local.Rebar.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Local.Rebar.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.New.html" title="Mix.Tasks.New">Mix.Tasks.New</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.New.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.New.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.New.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Run.html" title="Mix.Tasks.Run">Mix.Tasks.Run</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Run.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Run.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Run.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Tasks.Test.html" title="Mix.Tasks.Test">Mix.Tasks.Test</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Tasks.Test.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Tasks.Test.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Tasks.Test.html#run/1">run/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Utils.html" title="Mix.Utils">Mix.Utils</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="Mix.Utils.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="Mix.Utils.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Utils.html#camelize/1">camelize/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Utils.html#command_to_module/2">command_to_module/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Utils.html#command_to_module_name/1">command_to_module_name/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Utils.html#extract_files/2">extract_files/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Utils.html#extract_stale/2">extract_stale/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Utils.html#last_modified/1">last_modified/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Utils.html#mix_home/0">mix_home/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Utils.html#mix_paths/0">mix_paths/0</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Utils.html#module_name_to_command/2">module_name_to_command/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Utils.html#read_path!/1">read_path!/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Utils.html#stale?/2">stale?/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Utils.html#symlink_or_copy/2">symlink_or_copy/2</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Utils.html#underscore/1">underscore/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
 
-      
-        <div id="moduledoc" class="docstring">
-          <p>Uninstall local archives:</p>
+</ul>
+
+      <ul id="protocols-list" class="section">
+  
+</ul>
+
+      <ul id="exceptions-list" class="section">
+  <li>
+  <span class="title">
+    <a href="Mix.Config.LoadError.html" title="Mix.Config.LoadError">Mix.Config.LoadError</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="Mix.Config.LoadError.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Config.LoadError.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Config.LoadError.html#message/1">message/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.ElixirVersionError.html" title="Mix.ElixirVersionError">Mix.ElixirVersionError</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="Mix.ElixirVersionError.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.ElixirVersionError.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.ElixirVersionError.html#message/1">message/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.Error.html" title="Mix.Error">Mix.Error</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="Mix.Error.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.Error.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.Error.html#message/1">message/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.InvalidTaskError.html" title="Mix.InvalidTaskError">Mix.InvalidTaskError</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="Mix.InvalidTaskError.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.InvalidTaskError.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.InvalidTaskError.html#message/1">message/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.NoProjectError.html" title="Mix.NoProjectError">Mix.NoProjectError</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="Mix.NoProjectError.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.NoProjectError.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.NoProjectError.html#message/1">message/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="Mix.NoTaskError.html" title="Mix.NoTaskError">Mix.NoTaskError</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="Mix.NoTaskError.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="Mix.NoTaskError.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="Mix.NoTaskError.html#message/1">message/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+
+</ul>
+
+    </div>
+
+    <div id="content">
+      <h1>
+  Mix.Tasks.Archive.Uninstall
+  
+  <a href="#content"></a>
+</h1>
+
+
+<div id="moduledoc" class="section">
+  <h2 class="section-title">
+    Introduction
+    <a href="#introduction" class="detail_link" title="Introduction">#</a>
+  </h2>
+  <div class="section-content">
+    <p>Uninstall local archives:</p>
 
 <pre><code>mix archive.uninstall archive.ez
 </code></pre>
 
-        </div>
-      
-
-      
-        <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/mix/lib/mix/tasks/archive.uninstall.ex#L1" class="view_source">Source</a>
-      
-
-      
-        <h2 id="summary">Summary<div class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></div></h2>
-        <table class="summary">
-          <tr>
-  <td class="summary_signature"><a href="#run/1">run(argv)</a></td>
+  </div>
   
-    <td class="summary_synopsis"><p>Callback implementation of <a href="Mix.Task.html#run/1"><code>Mix.Task.run/1</code></a></p>
-</td>
+    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/mix/lib/mix/tasks/archive.uninstall.ex#L1" class="view_source">Source</a>
   
-</tr>
+</div>
 
-        </table>
-      
 
-      
 
-      
-        <div id="functions_details" class="details_list">
-          <h2>Functions</h2>
-          <div class="detail">
+
+
+
+  <div id="functions_details" class="section">
+    <h2 class="section-title">
+      Functions
+      <a href="#functions" class="detail_link" title="Functions">#</a>
+    </h2>
+    <div class="detail">
   <div class="detail_header" id="run/1">
-    <span class="signature"><strong>run(argv)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#run/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>run(argv)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#run/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/mix/lib/mix/tasks/archive.uninstall.ex#L13" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Callback implementation of <a href="Mix.Task.html#run/1"><code>Mix.Task.run/1</code></a>.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/mix/lib/mix/tasks/archive.uninstall.ex#L13" class="view_source">Source</a>
-  
 </div>
 
-        </div>
-      
+  </div>
 
-      
 
-      
+
+
+
+
     </div>
-  </body>
+  </div>
+</body>
 </html>

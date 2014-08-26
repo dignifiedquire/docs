@@ -1,45 +1,552 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>ExUnit.TestCase</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-    <script type="text/javascript" charset="utf-8">
-      relpath = '';
-      if (relpath != '') relpath += '/';
-    </script>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>ExUnit v0.15.2-dev Documentation</title>
 
-    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
-  </head>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-  <body>
-    <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) document.body.className = 'frames';
-    </script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="js/highlight.js"></script>
 
-    <div id="content">
-      <div class="breadcrumbs">ExUnit v0.15.2-dev &rarr; <a href="overview.html">Overview</a> &rarr; <a href="ExUnit.html">ExUnit</a> &rarr; <a href="ExUnit.TestCase.html">TestCase</a></div>
+  <script src="js/app.js"></script>
 
+
+</head>
+<body>
+  <div id="header">
+    <div class="logo"></div>
+    <div class="title">
       <h1>
-        ExUnit.TestCase
+        
+        <a href="http://elixir-lang.org/docs.html" target="_top">ExUnit</a>
         
       </h1>
+      <h2>v0.15.2-dev</h2>
+    </div>
+  </div>
 
-      <ul class="summary_links">
+  <div class="container">
+    <div id="navigation">
+      <div class="nav">
+        <span><a target="_self" href="modules_list.html">Modules</a></span>
+        <span><a target="_self" href="exceptions_list.html">Exceptions</a></span>
+        <span><a target="_self" href="protocols_list.html">Protocols</a></span>
+      </div>
+      <div id="search">Search: <input type="text" /></div>
+      <ul id="modules-list" class="section">
+  <li>
+  <span class="title">
+    <a href="ExUnit.html" title="ExUnit">ExUnit</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="ExUnit.html#types">Types</a>
+    </li>
+    
+    
+    <li>
+      <a href="ExUnit.html#functions">Functions</a>
+      <ul class="functions">
         
+          <li>
+            <a href="ExUnit.html#configuration/0">configuration/0</a>
+          </li>
         
+          <li>
+            <a href="ExUnit.html#configure/1">configure/1</a>
+          </li>
         
+          <li>
+            <a href="ExUnit.html#run/0">run/0</a>
+          </li>
         
-        
-          <li><a href="#types_details">Types</a></li>
+          <li>
+            <a href="ExUnit.html#start/1">start/1</a>
+          </li>
         
       </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.Assertions.html" title="ExUnit.Assertions">ExUnit.Assertions</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.Assertions.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="ExUnit.Assertions.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert/1">assert/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert/2">assert/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert/4">assert/4</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert_in_delta/4">assert_in_delta/4</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert_raise/2">assert_raise/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert_raise/3">assert_raise/3</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert_receive/3">assert_receive/3</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#assert_received/2">assert_received/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#catch_error/1">catch_error/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#catch_exit/1">catch_exit/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#catch_throw/1">catch_throw/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#flunk/1">flunk/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#refute/1">refute/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#refute/2">refute/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#refute_in_delta/4">refute_in_delta/4</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#refute_receive/3">refute_receive/3</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Assertions.html#refute_received/2">refute_received/2</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    <li>
+      <a href="ExUnit.Assertions.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.Callbacks.html" title="ExUnit.Callbacks">ExUnit.Callbacks</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.Callbacks.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="ExUnit.Callbacks.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.Callbacks.html#on_exit/2">on_exit/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Callbacks.html#setup/2">setup/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Callbacks.html#setup_all/2">setup_all/2</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    <li>
+      <a href="ExUnit.Callbacks.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.CaptureIO.html" title="ExUnit.CaptureIO">ExUnit.CaptureIO</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.CaptureIO.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="ExUnit.CaptureIO.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.CaptureIO.html#capture_io/1">capture_io/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.CaptureIO.html#capture_io/2">capture_io/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.CaptureIO.html#capture_io/3">capture_io/3</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.Case.html" title="ExUnit.Case">ExUnit.Case</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.Case.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    
+    <li>
+      <a href="ExUnit.Case.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.CaseTemplate.html" title="ExUnit.CaseTemplate">ExUnit.CaseTemplate</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.CaseTemplate.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    
+    <li>
+      <a href="ExUnit.CaseTemplate.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.DocTest.html" title="ExUnit.DocTest">ExUnit.DocTest</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.DocTest.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    
+    <li>
+      <a href="ExUnit.DocTest.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.Filters.html" title="ExUnit.Filters">ExUnit.Filters</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.Filters.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="ExUnit.Filters.html#types">Types</a>
+    </li>
+    
+    
+    <li>
+      <a href="ExUnit.Filters.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.Filters.html#eval/4">eval/4</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Filters.html#normalize/2">normalize/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Filters.html#parse/1">parse/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Filters.html#parse_path/1">parse_path/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.Formatter.html" title="ExUnit.Formatter">ExUnit.Formatter</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.Formatter.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="ExUnit.Formatter.html#types">Types</a>
+    </li>
+    
+    
+    <li>
+      <a href="ExUnit.Formatter.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.Formatter.html#format_filters/2">format_filters/2</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Formatter.html#format_test_case_failure/5">format_test_case_failure/5</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Formatter.html#format_test_failure/5">format_test_failure/5</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.Formatter.html#format_time/2">format_time/2</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.Test.html" title="ExUnit.Test">ExUnit.Test</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.Test.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="ExUnit.Test.html#types">Types</a>
+    </li>
+    
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.TestCase.html" title="ExUnit.TestCase">ExUnit.TestCase</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="ExUnit.TestCase.html#introduction">Introduction</a>
+      </li>
+    
+    
+    <li>
+      <a href="ExUnit.TestCase.html#types">Types</a>
+    </li>
+    
+    
+    
+    
+  </ul>
+</li>
 
-      
-        <div id="moduledoc" class="docstring">
-          <p>A struct that keeps information about the test case.</p>
+</ul>
+
+      <ul id="protocols-list" class="section">
+  
+</ul>
+
+      <ul id="exceptions-list" class="section">
+  <li>
+  <span class="title">
+    <a href="ExUnit.AssertionError.html" title="ExUnit.AssertionError">ExUnit.AssertionError</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="ExUnit.AssertionError.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.AssertionError.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.AssertionError.html#message/1">message/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.AssertionError.html#no_value/0">no_value/0</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.DocTest.Error.html" title="ExUnit.DocTest.Error">ExUnit.DocTest.Error</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="ExUnit.DocTest.Error.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.DocTest.Error.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.DocTest.Error.html#message/1">message/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="ExUnit.TimeoutError.html" title="ExUnit.TimeoutError">ExUnit.TimeoutError</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="ExUnit.TimeoutError.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="ExUnit.TimeoutError.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="ExUnit.TimeoutError.html#message/1">message/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+
+</ul>
+
+    </div>
+
+    <div id="content">
+      <h1>
+  ExUnit.TestCase
+  
+  <a href="#content"></a>
+</h1>
+
+
+<div id="moduledoc" class="section">
+  <h2 class="section-title">
+    Introduction
+    <a href="#introduction" class="detail_link" title="Introduction">#</a>
+  </h2>
+  <div class="section-content">
+    <p>A struct that keeps information about the test case.</p>
 
 <p>It is received by formatters and contains the following fields:</p>
 
@@ -49,33 +556,37 @@
 <li><code>:tests</code> - all tests for this case</li>
 </ul>
 
-        </div>
-      
+  </div>
+  
+    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/ex_unit/lib/ex_unit.ex#L91" class="view_source">Source</a>
+  
+</div>
 
-      
-        <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/ex_unit/lib/ex_unit.ex#L91" class="view_source">Source</a>
-      
 
-      
 
-      
-        <div id="types_details" class="details_list">
-          <h2>Types <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></h2>
-          <div class="type_detail">
+
+  <div id="types_details" class="section">
+    <h2 class="section-title">
+      Types
+      <a href="#types" class="detail_link" title="Types">#</a>
+    </h2>
+    <div class="type_detail">
   <p class="typespec" id="t:t/0">
     <a href="#t:t/0">t</a> :: %ExUnit.TestCase{name: module, state: <a href="ExUnit.html#t:state/0">ExUnit.state</a>, tests: [<a href="ExUnit.Test.html#t:t/0">ExUnit.Test.t</a>]}
   </p>
   
 </div>
 
-        </div>
-      
+  </div>
 
-      
 
-      
 
-      
+
+
+
+
+
     </div>
-  </body>
+  </div>
+</body>
 </html>

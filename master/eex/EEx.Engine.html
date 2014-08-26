@@ -1,51 +1,239 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>EEx.Engine</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-    <script type="text/javascript" charset="utf-8">
-      relpath = '';
-      if (relpath != '') relpath += '/';
-    </script>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>EEx v0.15.2-dev Documentation</title>
 
-    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
-  </head>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-  <body>
-    <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) document.body.className = 'frames';
-    </script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="js/highlight.js"></script>
 
-    <div id="content">
-      <div class="breadcrumbs">EEx v0.15.2-dev &rarr; <a href="overview.html">Overview</a> &rarr; <a href="EEx.html">EEx</a> &rarr; <a href="EEx.Engine.html">Engine</a></div>
+  <script src="js/app.js"></script>
 
+
+</head>
+<body>
+  <div id="header">
+    <div class="logo"></div>
+    <div class="title">
       <h1>
-        EEx.Engine
         
-          <small>behaviour</small>
+        <a href="http://elixir-lang.org/docs.html" target="_top">EEx</a>
         
       </h1>
+      <h2>v0.15.2-dev</h2>
+    </div>
+  </div>
 
-      <ul class="summary_links">
+  <div class="container">
+    <div id="navigation">
+      <div class="nav">
+        <span><a target="_self" href="modules_list.html">Modules</a></span>
+        <span><a target="_self" href="exceptions_list.html">Exceptions</a></span>
+        <span><a target="_self" href="protocols_list.html">Protocols</a></span>
+      </div>
+      <div id="search">Search: <input type="text" /></div>
+      <ul id="modules-list" class="section">
+  <li>
+  <span class="title">
+    <a href="EEx.html" title="EEx">EEx</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="EEx.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="EEx.html#functions">Functions</a>
+      <ul class="functions">
         
-          <li><a href="#summary">Summary</a></li>
+          <li>
+            <a href="EEx.html#compile_file/2">compile_file/2</a>
+          </li>
         
+          <li>
+            <a href="EEx.html#compile_string/2">compile_string/2</a>
+          </li>
         
-          <li><a href="#functions_details">Functions</a></li>
+          <li>
+            <a href="EEx.html#eval_file/3">eval_file/3</a>
+          </li>
         
+          <li>
+            <a href="EEx.html#eval_string/3">eval_string/3</a>
+          </li>
         
+          <li>
+            <a href="EEx.html#function_from_file/5">function_from_file/5</a>
+          </li>
         
-          <li><a href="#callbacks_details">Callbacks</a></li>
-        
+          <li>
+            <a href="EEx.html#function_from_string/5">function_from_string/5</a>
+          </li>
         
       </ul>
+    </li>
+    
+    
+    <li>
+      <a href="EEx.html#macros">Macros</a>
+    </li>
+    
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="EEx.Engine.html" title="EEx.Engine">EEx.Engine</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="EEx.Engine.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="EEx.Engine.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="EEx.Engine.html#handle_body/1">handle_body/1</a>
+          </li>
+        
+          <li>
+            <a href="EEx.Engine.html#handle_expr/3">handle_expr/3</a>
+          </li>
+        
+          <li>
+            <a href="EEx.Engine.html#handle_text/2">handle_text/2</a>
+          </li>
+        
+          <li>
+            <a href="EEx.Engine.html#handle_assign/1">handle_assign/1</a>
+          </li>
+        
+          <li>
+            <a href="EEx.Engine.html#handle_body/1">handle_body/1</a>
+          </li>
+        
+          <li>
+            <a href="EEx.Engine.html#handle_expr/3">handle_expr/3</a>
+          </li>
+        
+          <li>
+            <a href="EEx.Engine.html#handle_text/2">handle_text/2</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+    <li>
+      <a href="EEx.Engine.html#callbacks">Callbacks</a>
+    </li>
+    
+  </ul>
+</li>
+<li>
+  <span class="title">
+    <a href="EEx.SmartEngine.html" title="EEx.SmartEngine">EEx.SmartEngine</a>
+  </span>
+  <ul class="subsection">
+    
+      <li>
+        <a href="EEx.SmartEngine.html#introduction">Introduction</a>
+      </li>
+    
+    
+    
+    <li>
+      <a href="EEx.SmartEngine.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="EEx.SmartEngine.html#handle_body/1">handle_body/1</a>
+          </li>
+        
+          <li>
+            <a href="EEx.SmartEngine.html#handle_expr/3">handle_expr/3</a>
+          </li>
+        
+          <li>
+            <a href="EEx.SmartEngine.html#handle_text/2">handle_text/2</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
 
-      
-        <div id="moduledoc" class="docstring">
-          <p>Basic EEx engine that ships with Elixir.</p>
+</ul>
+
+      <ul id="protocols-list" class="section">
+  
+</ul>
+
+      <ul id="exceptions-list" class="section">
+  <li>
+  <span class="title">
+    <a href="EEx.SyntaxError.html" title="EEx.SyntaxError">EEx.SyntaxError</a>
+  </span>
+  <ul class="subsection">
+    
+    
+    
+    <li>
+      <a href="EEx.SyntaxError.html#functions">Functions</a>
+      <ul class="functions">
+        
+          <li>
+            <a href="EEx.SyntaxError.html#exception/1">exception/1</a>
+          </li>
+        
+          <li>
+            <a href="EEx.SyntaxError.html#message/1">message/1</a>
+          </li>
+        
+      </ul>
+    </li>
+    
+    
+    
+  </ul>
+</li>
+
+</ul>
+
+    </div>
+
+    <div id="content">
+      <h1>
+  EEx.Engine
+  
+  <small>behaviour</small>
+  
+  <a href="#content"></a>
+</h1>
+
+
+<div id="moduledoc" class="section">
+  <h2 class="section-title">
+    Introduction
+    <a href="#introduction" class="detail_link" title="Introduction">#</a>
+  </h2>
+  <div class="section-content">
+    <p>Basic EEx engine that ships with Elixir.</p>
 
 <p>An engine needs to implement three functions:</p>
 
@@ -69,62 +257,45 @@ implemented by default by this engine.</p></li>
 <p><a href="EEx.Engine.html"><code>EEx.Engine</code></a> can be used directly if one desires to use the
 default implementations for the functions above.</p>
 
-        </div>
-      
+  </div>
+  
+    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L1" class="view_source">Source</a>
+  
+</div>
 
-      
-        <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L1" class="view_source">Source</a>
-      
 
-      
-        <h2 id="summary">Summary<div class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></div></h2>
-        <table class="summary">
-          <tr>
-  <td class="summary_signature"><a href="#handle_assign/1">handle_assign(arg)</a></td>
-  
-    <td class="summary_synopsis"><p>Handles assigns in quoted expressions</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#handle_body/1">handle_body(quoted)</a></td>
-  
-    <td class="summary_synopsis"><p>The default implementation implementation simply returns the
-given expression</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#handle_expr/3">handle_expr(buffer, binary2, expr)</a></td>
-  
-    <td class="summary_synopsis"><p>Implements expressions according to the markers</p>
-</td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#handle_text/2">handle_text(buffer, text)</a></td>
-  
-    <td class="summary_synopsis"><p>The default implementation simply concatenates text to the buffer</p>
-</td>
-  
-</tr>
 
-        </table>
-      
 
-      
 
-      
-        <div id="functions_details" class="details_list">
-          <h2>Functions</h2>
-          <div class="detail">
+
+  <div id="functions_details" class="section">
+    <h2 class="section-title">
+      Functions
+      <a href="#functions" class="detail_link" title="Functions">#</a>
+    </h2>
+    <div class="detail">
   <div class="detail_header" id="handle_assign/1">
-    <span class="signature"><strong>handle_assign(arg)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#handle_assign/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>handle_assign(arg)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#handle_assign/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L67" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Handles assigns in quoted expressions.</p>
@@ -138,35 +309,59 @@ given expression</p>
 end
 </code></pre>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L67" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="handle_body/1">
-    <span class="signature"><strong>handle_body(quoted)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#handle_body/1" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>handle_body(quoted)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#handle_body/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L80" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>The default implementation implementation simply returns the
 given expression.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L80" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="handle_expr/3">
-    <span class="signature"><strong>handle_expr(buffer, binary2, expr)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#handle_expr/3" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>handle_expr(buffer, binary2, expr)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#handle_expr/3" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L99" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>Implements expressions according to the markers.</p>
@@ -177,43 +372,70 @@ given expression.</p>
 
 <p>All other markers are not implemented by this engine.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L99" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="handle_text/2">
-    <span class="signature"><strong>handle_text(buffer, text)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#handle_text/2" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>handle_text(buffer, text)</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#handle_text/2" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L87" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (function)
+      </span>
+    </div>
+
   </div>
   
   <div class="docstring"><p>The default implementation simply concatenates text to the buffer.</p>
 </div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L87" class="view_source">Source</a>
-  
 </div>
 
-        </div>
-      
+  </div>
 
-      
 
-      
-        <div id="callbacks_details" class="details_list">
-          <h2>Callbacks</h2>
-          <div class="detail">
+
+
+
+  <div id="callbacks_details" class="section">
+    <h2 class="section-title">
+      Callbacks
+      <a href="#callbacks" class="detail_link" title="Callbacks">#</a>
+    </h2>
+    <div class="detail">
   <div class="detail_header" id="handle_body/1">
-    <span class="signature"><strong>handle_body/1</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(callback)</span>
-      <a href="#handle_body/1" class="detail_link" title="Link to this callback">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>handle_body/1</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#handle_body/1" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L30" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (callback)
+      </span>
+    </div>
+
   </div>
   
     <p>Specs:</p>
@@ -224,18 +446,30 @@ given expression.</p>
     </ul>
   
   <div class="docstring"></div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L30" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="handle_expr/3">
-    <span class="signature"><strong>handle_expr/3</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(callback)</span>
-      <a href="#handle_expr/3" class="detail_link" title="Link to this callback">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>handle_expr/3</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#handle_expr/3" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L32" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (callback)
+      </span>
+    </div>
+
   </div>
   
     <p>Specs:</p>
@@ -246,18 +480,30 @@ given expression.</p>
     </ul>
   
   <div class="docstring"></div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L32" class="view_source">Source</a>
-  
 </div>
 <div class="detail">
   <div class="detail_header" id="handle_text/2">
-    <span class="signature"><strong>handle_text/2</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(callback)</span>
-      <a href="#handle_text/2" class="detail_link" title="Link to this callback">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    <div class="title">
+      <h3>handle_text/2</h3>
     </div>
+    <div class="detail_header_links">
+      <span>
+        <a href="#handle_text/2" class="detail_link" title="Direct Link">
+          <i class="fa fa-link"></i>
+        </a>
+      </span>
+      
+        <span>
+          <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L31" class="view_source" title="View Source">
+            <i class="fa fa-code"></i>
+          </a>
+        </span>
+      
+      <span class="detail_type">
+        (callback)
+      </span>
+    </div>
+
   </div>
   
     <p>Specs:</p>
@@ -268,13 +514,12 @@ given expression.</p>
     </ul>
   
   <div class="docstring"></div>
-  
-    <a href="https://github.com/elixir-lang/elixir/blob/b8528f6c8e64c7ee981940f53fac72fb42dfcecb/lib/eex/lib/eex/engine.ex#L31" class="view_source">Source</a>
-  
 </div>
 
-        </div>
-      
+  </div>
+
+
     </div>
-  </body>
+  </div>
+</body>
 </html>
