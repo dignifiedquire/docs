@@ -6229,10 +6229,10 @@ available through the functions:</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>alive?(pid) :: boolean</li>
+        <li><code>alive?(pid) :: boolean</code></li>
       
     </ul>
   
@@ -6267,10 +6267,10 @@ is not exiting and has not exited. Otherwise, returns false.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>delete(term) :: term | nil</li>
+        <li><code>delete(term) :: term | nil</code></li>
       
     </ul>
   
@@ -6302,10 +6302,10 @@ is not exiting and has not exited. Otherwise, returns false.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>demonitor(reference, options :: [:flush | :info]) :: boolean</li>
+        <li><code>demonitor(reference, options :: [:flush | :info]) :: boolean</code></li>
       
     </ul>
   
@@ -6343,10 +6343,10 @@ If the monitoring is already turned off, nothing happens.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>exit(pid, term) :: true</li>
+        <li><code>exit(pid, term) :: true</code></li>
       
     </ul>
   
@@ -6399,10 +6399,10 @@ If the monitoring is already turned off, nothing happens.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>flag(process_flag, term) :: term</li>
+        <li><code>flag(process_flag, term) :: term</code></li>
       
     </ul>
   
@@ -6437,10 +6437,10 @@ Returns the old value of the flag.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>flag(pid, process_flag, term) :: term</li>
+        <li><code>flag(pid, process_flag, term) :: term</code></li>
       
     </ul>
   
@@ -6476,10 +6476,10 @@ only a subset of those allowed in <a href="#flag/2"><code>flag/2</code></a>, nam
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>get :: [{term, term}]</li>
+        <li><code>get :: [{term, term}]</code></li>
       
     </ul>
   
@@ -6511,10 +6511,10 @@ only a subset of those allowed in <a href="#flag/2"><code>flag/2</code></a>, nam
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>get(term, default :: term) :: term</li>
+        <li><code>get(term, default :: term) :: term</code></li>
       
     </ul>
   
@@ -6546,10 +6546,10 @@ only a subset of those allowed in <a href="#flag/2"><code>flag/2</code></a>, nam
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>get_keys(term) :: [term]</li>
+        <li><code>get_keys(term) :: [term]</code></li>
       
     </ul>
   
@@ -6581,10 +6581,10 @@ only a subset of those allowed in <a href="#flag/2"><code>flag/2</code></a>, nam
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>group_leader :: pid</li>
+        <li><code>group_leader :: pid</code></li>
       
     </ul>
   
@@ -6616,10 +6616,10 @@ only a subset of those allowed in <a href="#flag/2"><code>flag/2</code></a>, nam
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>group_leader(pid, leader :: pid) :: true</li>
+        <li><code>group_leader(pid, leader :: pid) :: true</code></li>
       
     </ul>
   
@@ -6652,10 +6652,10 @@ started from a certain shell should have a group leader other than <code>:init</
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>info(pid) :: <a href="Keyword.html#t:t/0">Keyword.t</a></li>
+        <li><code>info(pid) :: <a href="Keyword.html#t:t/0">Keyword.t</a></code></li>
       
     </ul>
   
@@ -6691,10 +6691,10 @@ Use this only for debugging information.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>info(pid, atom) :: {atom, term} | nil</li>
+        <li><code>info(pid, atom) :: {atom, term} | nil</code></li>
       
     </ul>
   
@@ -6729,10 +6729,10 @@ or <code>nil</code> if the process is not alive.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>link(pid | port) :: true</li>
+        <li><code>link(pid | port) :: true</code></li>
       
     </ul>
   
@@ -6769,10 +6769,10 @@ or <code>nil</code> if the process is not alive.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>list :: [pid]</li>
+        <li><code>list :: [pid]</code></li>
       
     </ul>
   
@@ -6811,10 +6811,10 @@ but its process identifier will be part of the result returned.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>monitor(pid | {reg_name :: atom, node :: atom} | reg_name :: atom) :: reference</li>
+        <li><code>monitor(pid | {reg_name :: atom, node :: atom} | reg_name :: atom) :: reference</code></li>
       
     </ul>
   
@@ -6851,10 +6851,10 @@ It returns the monitor reference.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>put(term, term) :: term | nil</li>
+        <li><code>put(term, term) :: term | nil</code></li>
       
     </ul>
   
@@ -6886,10 +6886,10 @@ It returns the monitor reference.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>register(pid | port, atom) :: true</li>
+        <li><code>register(pid | port, atom) :: true</code></li>
       
     </ul>
   
@@ -6927,10 +6927,10 @@ already registered (check with <a href="#whereis/1"><code>whereis/1</code></a>).
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>registered :: [atom]</li>
+        <li><code>registered :: [atom]</code></li>
       
     </ul>
   
@@ -6962,10 +6962,10 @@ already registered (check with <a href="#whereis/1"><code>whereis/1</code></a>).
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>send(dest, msg, [option]) :: result when dest: pid | port | atom | {atom, node}, msg: any, option: :noconnect | :nosuspend, result: :ok | :noconnect | :nosuspend</li>
+        <li><code>send(dest, msg, [option]) :: result when dest: pid | port | atom | {atom, node}, msg: any, option: :noconnect | :nosuspend, result: :ok | :noconnect | :nosuspend</code></li>
       
     </ul>
   
@@ -7012,10 +7012,10 @@ sender to be suspended the message is not sent and <code>:nosuspend</code> is re
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>send_after(pid | atom, term, non_neg_integer) :: reference</li>
+        <li><code>send_after(pid | atom, term, non_neg_integer) :: reference</code></li>
       
     </ul>
   
@@ -7061,10 +7061,10 @@ on delivery).</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>spawn((() -> any), <a href="#t:spawn_opts/0">spawn_opts</a>) :: pid | {pid, reference}</li>
+        <li><code>spawn((() -> any), <a href="#t:spawn_opts/0">spawn_opts</a>) :: pid | {pid, reference}</code></li>
       
     </ul>
   
@@ -7107,10 +7107,10 @@ check <a href="http://www.erlang.org/doc/man/erlang.html#spawn_opt-4">http://www
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>spawn(module, atom, list, <a href="#t:spawn_opts/0">spawn_opts</a>) :: pid | {pid, reference}</li>
+        <li><code>spawn(module, atom, list, <a href="#t:spawn_opts/0">spawn_opts</a>) :: pid | {pid, reference}</code></li>
       
     </ul>
   
@@ -7153,10 +7153,10 @@ check <a href="http://www.erlang.org/doc/man/erlang.html#spawn_opt-4">http://www
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>unlink(pid | port) :: true</li>
+        <li><code>unlink(pid | port) :: true</code></li>
       
     </ul>
   
@@ -7194,10 +7194,10 @@ fail, even if there is no link or <code>id</code> does not exist</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>unregister(atom) :: true</li>
+        <li><code>unregister(atom) :: true</code></li>
       
     </ul>
   
@@ -7231,10 +7231,10 @@ fail, even if there is no link or <code>id</code> does not exist</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>whereis(atom) :: pid | port | nil</li>
+        <li><code>whereis(atom) :: pid | port | nil</code></li>
       
     </ul>
   

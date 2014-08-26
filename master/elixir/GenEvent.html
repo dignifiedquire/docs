@@ -6435,10 +6435,10 @@ the <a href="GenServer.html"><code>GenServer</code></a> module.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>ack_notify(<a href="#t:manager/0">manager</a>, term) :: :ok</li>
+        <li><code>ack_notify(<a href="#t:manager/0">manager</a>, term) :: :ok</code></li>
       
     </ul>
   
@@ -6477,10 +6477,10 @@ to Elixir&#39;s GenEvent and does not work with Erlang ones.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>add_handler(<a href="#t:manager/0">manager</a>, <a href="#t:handler/0">handler</a>, term, [{:monitor, boolean}]) :: :ok | {:error, term}</li>
+        <li><code>add_handler(<a href="#t:manager/0">manager</a>, <a href="#t:handler/0">handler</a>, term, [{:monitor, boolean}]) :: :ok | {:error, term}</code></li>
       
     </ul>
   
@@ -6559,10 +6559,10 @@ module (it is not backwards compatible with Erlang&#39;s <code>:gen_event</code>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>call(<a href="#t:manager/0">manager</a>, <a href="#t:handler/0">handler</a>, term, timeout) :: term | {:error, term}</li>
+        <li><code>call(<a href="#t:manager/0">manager</a>, <a href="#t:handler/0">handler</a>, term, timeout) :: term | {:error, term}</code></li>
       
     </ul>
   
@@ -6602,10 +6602,10 @@ If the specified event handler is not installed, the function returns
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>notify(<a href="#t:manager/0">manager</a>, term) :: :ok</li>
+        <li><code>notify(<a href="#t:manager/0">manager</a>, term) :: :ok</code></li>
       
     </ul>
   
@@ -6644,10 +6644,10 @@ event manager does not exist, unless it is specified as an atom.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>remove_handler(<a href="#t:manager/0">manager</a>, <a href="#t:handler/0">handler</a>, term) :: term | {:error, term}</li>
+        <li><code>remove_handler(<a href="#t:manager/0">manager</a>, <a href="#t:handler/0">handler</a>, term) :: term | {:error, term}</code></li>
       
     </ul>
   
@@ -6683,10 +6683,10 @@ installed, the function returns <code>{:error, :module_not_found}</code>.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>start(<a href="#t:options/0">options</a>) :: <a href="#t:on_start/0">on_start</a></li>
+        <li><code>start(<a href="#t:options/0">options</a>) :: <a href="#t:on_start/0">on_start</a></code></li>
       
     </ul>
   
@@ -6720,10 +6720,10 @@ installed, the function returns <code>{:error, :module_not_found}</code>.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>start_link(<a href="#t:options/0">options</a>) :: <a href="#t:on_start/0">on_start</a></li>
+        <li><code>start_link(<a href="#t:options/0">options</a>) :: <a href="#t:on_start/0">on_start</a></code></li>
       
     </ul>
   
@@ -6769,10 +6769,10 @@ process exits with <code>:normal</code> reason.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>stop(<a href="#t:manager/0">manager</a>) :: :ok</li>
+        <li><code>stop(<a href="#t:manager/0">manager</a>) :: :ok</code></li>
       
     </ul>
   
@@ -6807,10 +6807,10 @@ for each installed event handler.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>stream(<a href="#t:manager/0">manager</a>, <a href="Keyword.html#t:t/0">Keyword.t</a>) :: <a href="GenEvent.Stream.html#t:t/0">GenEvent.Stream.t</a></li>
+        <li><code>stream(<a href="#t:manager/0">manager</a>, <a href="Keyword.html#t:t/0">Keyword.t</a>) :: <a href="GenEvent.Stream.html#t:t/0">GenEvent.Stream.t</a></code></li>
       
     </ul>
   
@@ -6855,10 +6855,10 @@ with Erlang ones.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>swap_handler(<a href="#t:manager/0">manager</a>, <a href="#t:handler/0">handler</a>, term, <a href="#t:handler/0">handler</a>, term, [{:monitor, boolean}]) :: :ok | {:error, term}</li>
+        <li><code>swap_handler(<a href="#t:manager/0">manager</a>, <a href="#t:handler/0">handler</a>, term, <a href="#t:handler/0">handler</a>, term, [{:monitor, boolean}]) :: :ok | {:error, term}</code></li>
       
     </ul>
   
@@ -6907,10 +6907,10 @@ function returns <code>:ok</code>.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>sync_notify(<a href="#t:manager/0">manager</a>, term) :: :ok</li>
+        <li><code>sync_notify(<a href="#t:manager/0">manager</a>, term) :: :ok</code></li>
       
     </ul>
   
@@ -6947,10 +6947,10 @@ invokes the <code>handle_event/2</code> on each installed event handler.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>which_handlers(<a href="#t:manager/0">manager</a>) :: [<a href="#t:handler/0">handler</a>]</li>
+        <li><code>which_handlers(<a href="#t:manager/0">manager</a>) :: [<a href="#t:handler/0">handler</a>]</code></li>
       
     </ul>
   

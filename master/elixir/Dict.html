@@ -6326,10 +6326,10 @@ end
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>delete(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: <a href="#t:t/0">t</a></li>
+        <li><code>delete(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -6374,10 +6374,10 @@ true
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>drop(<a href="#t:t/0">t</a>, [<a href="#t:key/0">key</a>]) :: <a href="#t:t/0">t</a></li>
+        <li><code>drop(<a href="#t:t/0">t</a>, [<a href="#t:key/0">key</a>]) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -6423,10 +6423,10 @@ iex&gt; Dict.to_list(dict) |&gt; Enum.sort
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>equal?(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: boolean</li>
+        <li><code>equal?(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: boolean</code></li>
       
     </ul>
   
@@ -6475,10 +6475,10 @@ false
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>fetch(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: <a href="#t:value/0">value</a></li>
+        <li><code>fetch(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: <a href="#t:value/0">value</a></code></li>
       
     </ul>
   
@@ -6520,10 +6520,10 @@ iex&gt; Dict.fetch(dict, :b)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>fetch!(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: <a href="#t:value/0">value</a> | no_return</li>
+        <li><code>fetch!(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: <a href="#t:value/0">value</a> | no_return</code></li>
       
     </ul>
   
@@ -6563,10 +6563,10 @@ iex&gt; Dict.fetch!(dict, :a)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>get(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: <a href="#t:value/0">value</a></li>
+        <li><code>get(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: <a href="#t:value/0">value</a></code></li>
       
     </ul>
   
@@ -6610,10 +6610,10 @@ iex&gt; Dict.get(dict, :b, 3)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>has_key?(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: boolean</li>
+        <li><code>has_key?(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: boolean</code></li>
       
     </ul>
   
@@ -6654,10 +6654,10 @@ false
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>keys(<a href="#t:t/0">t</a>) :: [<a href="#t:key/0">key</a>]</li>
+        <li><code>keys(<a href="#t:t/0">t</a>) :: [<a href="#t:key/0">key</a>]</code></li>
       
     </ul>
   
@@ -6697,10 +6697,10 @@ iex&gt; Enum.sort(Dict.keys(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>merge(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>, (<a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>, <a href="#t:value/0">value</a> -> <a href="#t:value/0">value</a>)) :: <a href="#t:t/0">t</a></li>
+        <li><code>merge(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>, (<a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>, <a href="#t:value/0">value</a> -> <a href="#t:value/0">value</a>)) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -6757,10 +6757,10 @@ iex&gt; [a: Dict.get(dict, :a), b: Dict.get(dict, :b), d: Dict.get(dict, :d)]
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>pop(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: {<a href="#t:value/0">value</a>, <a href="#t:t/0">t</a>}</li>
+        <li><code>pop(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: {<a href="#t:value/0">value</a>, <a href="#t:t/0">t</a>}</code></li>
       
     </ul>
   
@@ -6811,10 +6811,10 @@ iex&gt; {v, Enum.sort(dict)}
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>put(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: <a href="#t:t/0">t</a></li>
+        <li><code>put(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -6855,10 +6855,10 @@ iex&gt; Dict.get(dict, :a)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>put_new(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: <a href="#t:t/0">t</a></li>
+        <li><code>put_new(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -6898,10 +6898,10 @@ iex&gt; Dict.get(dict, :a)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>size(<a href="#t:t/0">t</a>) :: non_neg_integer</li>
+        <li><code>size(<a href="#t:t/0">t</a>) :: non_neg_integer</code></li>
       
     </ul>
   
@@ -6940,10 +6940,10 @@ iex&gt; Dict.size(dict)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>split(<a href="#t:t/0">t</a>, [<a href="#t:key/0">key</a>]) :: {<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>}</li>
+        <li><code>split(<a href="#t:t/0">t</a>, [<a href="#t:key/0">key</a>]) :: {<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>}</code></li>
       
     </ul>
   
@@ -6997,10 +6997,10 @@ iex&gt; {Dict.to_list(dict1) |&gt; Enum.sort, Dict.to_list(dict2)}
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>take(<a href="#t:t/0">t</a>, [<a href="#t:key/0">key</a>]) :: <a href="#t:t/0">t</a></li>
+        <li><code>take(<a href="#t:t/0">t</a>, [<a href="#t:key/0">key</a>]) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -7045,10 +7045,10 @@ iex&gt; Dict.to_list(dict)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>to_list(<a href="#t:t/0">t</a>) :: list</li>
+        <li><code>to_list(<a href="#t:t/0">t</a>) :: list</code></li>
       
     </ul>
   
@@ -7081,10 +7081,10 @@ No particular order is enforced.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>update(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>, (<a href="#t:value/0">value</a> -> <a href="#t:value/0">value</a>)) :: <a href="#t:t/0">t</a></li>
+        <li><code>update(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>, (<a href="#t:value/0">value</a> -> <a href="#t:value/0">value</a>)) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -7126,10 +7126,10 @@ iex&gt; Dict.get(dict, :c)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>update!(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, (<a href="#t:value/0">value</a> -> <a href="#t:value/0">value</a>)) :: <a href="#t:t/0">t</a></li>
+        <li><code>update!(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, (<a href="#t:value/0">value</a> -> <a href="#t:value/0">value</a>)) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -7170,10 +7170,10 @@ iex&gt; Dict.get(dict, :a)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>values(<a href="#t:t/0">t</a>) :: [<a href="#t:value/0">value</a>]</li>
+        <li><code>values(<a href="#t:t/0">t</a>) :: [<a href="#t:value/0">value</a>]</code></li>
       
     </ul>
   
@@ -7225,10 +7225,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>delete(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: <a href="#t:t/0">t</a></li>
+        <li><code>delete(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -7259,10 +7259,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>drop(<a href="#t:t/0">t</a>, <a href="Enum.html#t:t/0">Enum.t</a>) :: <a href="#t:t/0">t</a></li>
+        <li><code>drop(<a href="#t:t/0">t</a>, <a href="Enum.html#t:t/0">Enum.t</a>) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -7293,10 +7293,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>equal?(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: boolean</li>
+        <li><code>equal?(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: boolean</code></li>
       
     </ul>
   
@@ -7327,10 +7327,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>fetch(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: {:ok, <a href="#t:value/0">value</a>} | :error</li>
+        <li><code>fetch(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: {:ok, <a href="#t:value/0">value</a>} | :error</code></li>
       
     </ul>
   
@@ -7361,10 +7361,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>fetch!(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: <a href="#t:value/0">value</a> | no_return</li>
+        <li><code>fetch!(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: <a href="#t:value/0">value</a> | no_return</code></li>
       
     </ul>
   
@@ -7395,10 +7395,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>get(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: <a href="#t:value/0">value</a></li>
+        <li><code>get(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: <a href="#t:value/0">value</a></code></li>
       
     </ul>
   
@@ -7429,10 +7429,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>get(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: <a href="#t:value/0">value</a></li>
+        <li><code>get(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: <a href="#t:value/0">value</a></code></li>
       
     </ul>
   
@@ -7463,10 +7463,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>has_key?(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: boolean</li>
+        <li><code>has_key?(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: boolean</code></li>
       
     </ul>
   
@@ -7497,10 +7497,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>keys(<a href="#t:t/0">t</a>) :: [<a href="#t:key/0">key</a>]</li>
+        <li><code>keys(<a href="#t:t/0">t</a>) :: [<a href="#t:key/0">key</a>]</code></li>
       
     </ul>
   
@@ -7531,10 +7531,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>merge(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: <a href="#t:t/0">t</a></li>
+        <li><code>merge(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -7565,10 +7565,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>merge(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>, (<a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>, <a href="#t:value/0">value</a> -> <a href="#t:value/0">value</a>)) :: <a href="#t:t/0">t</a></li>
+        <li><code>merge(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>, (<a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>, <a href="#t:value/0">value</a> -> <a href="#t:value/0">value</a>)) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -7599,10 +7599,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>new :: <a href="#t:t/0">t</a></li>
+        <li><code>new :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -7633,10 +7633,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>pop(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: {<a href="#t:value/0">value</a>, <a href="#t:t/0">t</a>}</li>
+        <li><code>pop(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>) :: {<a href="#t:value/0">value</a>, <a href="#t:t/0">t</a>}</code></li>
       
     </ul>
   
@@ -7667,10 +7667,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>pop(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: {<a href="#t:value/0">value</a>, <a href="#t:t/0">t</a>}</li>
+        <li><code>pop(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: {<a href="#t:value/0">value</a>, <a href="#t:t/0">t</a>}</code></li>
       
     </ul>
   
@@ -7701,10 +7701,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>put(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: <a href="#t:t/0">t</a></li>
+        <li><code>put(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -7735,10 +7735,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>put_new(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: <a href="#t:t/0">t</a></li>
+        <li><code>put_new(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -7769,10 +7769,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>size(<a href="#t:t/0">t</a>) :: non_neg_integer</li>
+        <li><code>size(<a href="#t:t/0">t</a>) :: non_neg_integer</code></li>
       
     </ul>
   
@@ -7803,10 +7803,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>split(<a href="#t:t/0">t</a>, <a href="Enum.html#t:t/0">Enum.t</a>) :: {<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>}</li>
+        <li><code>split(<a href="#t:t/0">t</a>, <a href="Enum.html#t:t/0">Enum.t</a>) :: {<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>}</code></li>
       
     </ul>
   
@@ -7837,10 +7837,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>take(<a href="#t:t/0">t</a>, <a href="Enum.html#t:t/0">Enum.t</a>) :: <a href="#t:t/0">t</a></li>
+        <li><code>take(<a href="#t:t/0">t</a>, <a href="Enum.html#t:t/0">Enum.t</a>) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -7871,10 +7871,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>to_list(<a href="#t:t/0">t</a>) :: list</li>
+        <li><code>to_list(<a href="#t:t/0">t</a>) :: list</code></li>
       
     </ul>
   
@@ -7905,10 +7905,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>update(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>, (<a href="#t:value/0">value</a> -> <a href="#t:value/0">value</a>)) :: <a href="#t:t/0">t</a></li>
+        <li><code>update(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, <a href="#t:value/0">value</a>, (<a href="#t:value/0">value</a> -> <a href="#t:value/0">value</a>)) :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -7939,10 +7939,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>update!(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, (<a href="#t:value/0">value</a> -> <a href="#t:value/0">value</a>)) :: <a href="#t:t/0">t</a> | no_return</li>
+        <li><code>update!(<a href="#t:t/0">t</a>, <a href="#t:key/0">key</a>, (<a href="#t:value/0">value</a> -> <a href="#t:value/0">value</a>)) :: <a href="#t:t/0">t</a> | no_return</code></li>
       
     </ul>
   
@@ -7973,10 +7973,10 @@ iex&gt; Enum.sort(Dict.values(dict))
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>values(<a href="#t:t/0">t</a>) :: [<a href="#t:value/0">value</a>]</li>
+        <li><code>values(<a href="#t:t/0">t</a>) :: [<a href="#t:value/0">value</a>]</code></li>
       
     </ul>
   

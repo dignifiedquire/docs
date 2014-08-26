@@ -6401,10 +6401,10 @@ Read more about it in the <a href="GenServer.html"><code>GenServer</code></a> do
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>count_children(<a href="#t:supervisor/0">supervisor</a>) :: [specs: non_neg_integer, active: non_neg_integer, supervisors: non_neg_integer, workers: non_neg_integer]</li>
+        <li><code>count_children(<a href="#t:supervisor/0">supervisor</a>) :: [specs: non_neg_integer, active: non_neg_integer, supervisors: non_neg_integer, workers: non_neg_integer]</code></li>
       
     </ul>
   
@@ -6448,10 +6448,10 @@ is still alive</p></li>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>delete_child(<a href="#t:supervisor/0">supervisor</a>, <a href="Supervisor.Spec.html#t:child_id/0">Supervisor.Spec.child_id</a>) :: :ok | {:error, error} when error: :not_found | :simple_one_for_one | :running | :restarting</li>
+        <li><code>delete_child(<a href="#t:supervisor/0">supervisor</a>, <a href="Supervisor.Spec.html#t:child_id/0">Supervisor.Spec.child_id</a>) :: :ok | {:error, error} when error: :not_found | :simple_one_for_one | :running | :restarting</code></li>
       
     </ul>
   
@@ -6492,10 +6492,10 @@ process is running or being restarted.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>restart_child(<a href="#t:supervisor/0">supervisor</a>, <a href="Supervisor.Spec.html#t:child_id/0">Supervisor.Spec.child_id</a>) :: {:ok, <a href="#t:child/0">child</a>} | {:ok, <a href="#t:child/0">child</a>, term} | {:error, error} when error: :not_found | :simple_one_for_one | :running | :restarting | term</li>
+        <li><code>restart_child(<a href="#t:supervisor/0">supervisor</a>, <a href="Supervisor.Spec.html#t:child_id/0">Supervisor.Spec.child_id</a>) :: {:ok, <a href="#t:child/0">child</a>} | {:ok, <a href="#t:child/0">child</a>, term} | {:error, error} when error: :not_found | :simple_one_for_one | :running | :restarting | term</code></li>
       
     </ul>
   
@@ -6548,10 +6548,10 @@ or if it fails, the function returns <code>{:error, error}</code>.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>start_child(<a href="#t:supervisor/0">supervisor</a>, <a href="Supervisor.Spec.html#t:spec/0">Supervisor.Spec.spec</a> | [term]) :: <a href="#t:on_start_child/0">on_start_child</a></li>
+        <li><code>start_child(<a href="#t:supervisor/0">supervisor</a>, <a href="Supervisor.Spec.html#t:spec/0">Supervisor.Spec.spec</a> | [term]) :: <a href="#t:on_start_child/0">on_start_child</a></code></li>
       
     </ul>
   
@@ -6609,10 +6609,10 @@ and child specification.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>start_link([tuple], <a href="#t:options/0">options</a>) :: <a href="#t:on_start/0">on_start</a></li>
+        <li><code>start_link([tuple], <a href="#t:options/0">options</a>) :: <a href="#t:on_start/0">on_start</a></code></li>
       
     </ul>
   
@@ -6669,10 +6669,10 @@ exits with <code>:normal</code> reason.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>start_link(module, term, <a href="#t:options/0">options</a>) :: <a href="#t:on_start/0">on_start</a></li>
+        <li><code>start_link(module, term, <a href="#t:options/0">options</a>) :: <a href="#t:on_start/0">on_start</a></code></li>
       
     </ul>
   
@@ -6721,10 +6721,10 @@ section in the <a href="GenServer.html"><code>GenServer</code></a> module docs.<
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>terminate_child(<a href="#t:supervisor/0">supervisor</a>, pid | <a href="Supervisor.Spec.html#t:child_id/0">Supervisor.Spec.child_id</a>) :: :ok | {:error, error} when error: :not_found | :simple_one_for_one</li>
+        <li><code>terminate_child(<a href="#t:supervisor/0">supervisor</a>, pid | <a href="Supervisor.Spec.html#t:child_id/0">Supervisor.Spec.child_id</a>) :: :ok | {:error, error} when error: :not_found | :simple_one_for_one</code></li>
       
     </ul>
   
@@ -6771,10 +6771,10 @@ pid, the function returns <code>{:error, :not_found}</code>.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>which_children(<a href="#t:supervisor/0">supervisor</a>) :: [{<a href="Supervisor.Spec.html#t:child_id/0">Supervisor.Spec.child_id</a> | :undefined, <a href="#t:child/0">child</a> | :restarting, <a href="Supervisor.Spec.html#t:worker/0">Supervisor.Spec.worker</a>, <a href="Supervisor.Spec.html#t:modules/0">Supervisor.Spec.modules</a>}]</li>
+        <li><code>which_children(<a href="#t:supervisor/0">supervisor</a>) :: [{<a href="Supervisor.Spec.html#t:child_id/0">Supervisor.Spec.child_id</a> | :undefined, <a href="#t:child/0">child</a> | :restarting, <a href="Supervisor.Spec.html#t:worker/0">Supervisor.Spec.worker</a>, <a href="Supervisor.Spec.html#t:modules/0">Supervisor.Spec.modules</a>}]</code></li>
       
     </ul>
   

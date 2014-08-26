@@ -6291,10 +6291,10 @@ about such options and other performance considerations.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>cd(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>cd(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -6328,10 +6328,10 @@ about such options and other performance considerations.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>cd!(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | no_return</li>
+        <li><code>cd!(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | no_return</code></li>
       
     </ul>
   
@@ -6363,10 +6363,10 @@ about such options and other performance considerations.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>cd!(<a href="Path.html#t:t/0">Path.t</a>, (() -> res)) :: res | no_return when res: var</li>
+        <li><code>cd!(<a href="Path.html#t:t/0">Path.t</a>, (() -> res)) :: res | no_return when res: var</code></li>
       
     </ul>
   
@@ -6403,10 +6403,10 @@ directory fails.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>chgrp(<a href="Path.html#t:t/0">Path.t</a>, integer) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>chgrp(<a href="Path.html#t:t/0">Path.t</a>, integer) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -6440,10 +6440,10 @@ for a given <code>file</code>. Returns <code>:ok</code> on success, or
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>chgrp!(<a href="Path.html#t:t/0">Path.t</a>, integer) :: :ok | no_return</li>
+        <li><code>chgrp!(<a href="Path.html#t:t/0">Path.t</a>, integer) :: :ok | no_return</code></li>
       
     </ul>
   
@@ -6475,10 +6475,10 @@ for a given <code>file</code>. Returns <code>:ok</code> on success, or
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>chmod(<a href="Path.html#t:t/0">Path.t</a>, integer) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>chmod(<a href="Path.html#t:t/0">Path.t</a>, integer) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -6512,10 +6512,10 @@ on failure.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>chmod!(<a href="Path.html#t:t/0">Path.t</a>, integer) :: :ok | no_return</li>
+        <li><code>chmod!(<a href="Path.html#t:t/0">Path.t</a>, integer) :: :ok | no_return</code></li>
       
     </ul>
   
@@ -6547,10 +6547,10 @@ on failure.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>chown(<a href="Path.html#t:t/0">Path.t</a>, integer) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>chown(<a href="Path.html#t:t/0">Path.t</a>, integer) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -6584,10 +6584,10 @@ or <code>{:error, reason}</code> on failure.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>chown!(<a href="Path.html#t:t/0">Path.t</a>, integer) :: :ok | no_return</li>
+        <li><code>chown!(<a href="Path.html#t:t/0">Path.t</a>, integer) :: :ok | no_return</code></li>
       
     </ul>
   
@@ -6619,10 +6619,10 @@ or <code>{:error, reason}</code> on failure.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>close(<a href="#t:io_device/0">io_device</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a> | :badarg | :terminated}</li>
+        <li><code>close(<a href="#t:io_device/0">io_device</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a> | :badarg | :terminated}</code></li>
       
     </ul>
   
@@ -6659,10 +6659,10 @@ See <a href="#open/2"><code>open/2</code></a>.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>copy(<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a>, pos_integer | :infinity) :: {:ok, non_neg_integer} | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>copy(<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a>, pos_integer | :infinity) :: {:ok, non_neg_integer} | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -6713,10 +6713,10 @@ the file mode after copy.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>copy!(<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a>, pos_integer | :infinity) :: non_neg_integer | no_return</li>
+        <li><code>copy!(<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a>, pos_integer | :infinity) :: non_neg_integer | no_return</code></li>
       
     </ul>
   
@@ -6749,10 +6749,10 @@ Returns the <code>bytes_copied</code> otherwise.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>cp(<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a>, (<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a> -> boolean)) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>cp(<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a>, (<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a> -> boolean)) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -6800,10 +6800,10 @@ error will be returned.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>cp!(<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a>, (<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a> -> boolean)) :: :ok | no_return</li>
+        <li><code>cp!(<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a>, (<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a> -> boolean)) :: :ok | no_return</code></li>
       
     </ul>
   
@@ -6836,10 +6836,10 @@ Returns the list of copied files otherwise.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>cp_r(<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a>, (<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a> -> boolean)) :: {:ok, [binary]} | {:error, <a href="#t:posix/0">posix</a>, binary}</li>
+        <li><code>cp_r(<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a>, (<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a> -> boolean)) :: {:ok, [binary]} | {:error, <a href="#t:posix/0">posix</a>, binary}</code></li>
       
     </ul>
   
@@ -6911,10 +6911,10 @@ end
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>cp_r!(<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a>, (<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a> -> boolean)) :: [binary] | no_return</li>
+        <li><code>cp_r!(<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a>, (<a href="Path.html#t:t/0">Path.t</a>, <a href="Path.html#t:t/0">Path.t</a> -> boolean)) :: [binary] | no_return</code></li>
       
     </ul>
   
@@ -6947,10 +6947,10 @@ Returns the list of copied files otherwise.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>cwd :: {:ok, binary} | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>cwd :: {:ok, binary} | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -6987,10 +6987,10 @@ of success, <code>{:error, reason}</code> otherwise.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>cwd! :: binary | no_return</li>
+        <li><code>cwd! :: binary | no_return</code></li>
       
     </ul>
   
@@ -7022,10 +7022,10 @@ of success, <code>{:error, reason}</code> otherwise.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>dir?(<a href="Path.html#t:t/0">Path.t</a>) :: boolean</li>
+        <li><code>dir?(<a href="Path.html#t:t/0">Path.t</a>) :: boolean</code></li>
       
     </ul>
   
@@ -7057,10 +7057,10 @@ of success, <code>{:error, reason}</code> otherwise.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>exists?(<a href="Path.html#t:t/0">Path.t</a>) :: boolean</li>
+        <li><code>exists?(<a href="Path.html#t:t/0">Path.t</a>) :: boolean</code></li>
       
     </ul>
   
@@ -7138,10 +7138,10 @@ If the operating system does not support symlinks, returns
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>ls(<a href="Path.html#t:t/0">Path.t</a>) :: {:ok, [binary]} | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>ls(<a href="Path.html#t:t/0">Path.t</a>) :: {:ok, [binary]} | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -7176,10 +7176,10 @@ If the operating system does not support symlinks, returns
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>ls!(<a href="Path.html#t:t/0">Path.t</a>) :: [binary] | no_return</li>
+        <li><code>ls!(<a href="Path.html#t:t/0">Path.t</a>) :: [binary] | no_return</code></li>
       
     </ul>
   
@@ -7212,10 +7212,10 @@ in case of an error.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>mkdir(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>mkdir(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -7260,10 +7260,10 @@ Returns <code>:ok</code> if successful, or <code>{:error, reason}</code> if an e
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>mkdir!(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | no_return</li>
+        <li><code>mkdir!(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | no_return</code></li>
       
     </ul>
   
@@ -7295,10 +7295,10 @@ Returns <code>:ok</code> if successful, or <code>{:error, reason}</code> if an e
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>mkdir_p(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>mkdir_p(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -7340,10 +7340,10 @@ Returns <code>:ok</code> if successful, or <code>{:error, reason}</code> if an e
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>mkdir_p!(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | no_return</li>
+        <li><code>mkdir_p!(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | no_return</code></li>
       
     </ul>
   
@@ -7375,10 +7375,10 @@ Returns <code>:ok</code> if successful, or <code>{:error, reason}</code> if an e
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>open(<a href="Path.html#t:t/0">Path.t</a>, list) :: {:ok, <a href="#t:io_device/0">io_device</a>} | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>open(<a href="Path.html#t:t/0">Path.t</a>, list) :: {:ok, <a href="#t:io_device/0">io_device</a>} | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -7473,10 +7473,10 @@ File.close(file)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>open(<a href="Path.html#t:t/0">Path.t</a>, list, (<a href="#t:io_device/0">io_device</a> -> res)) :: {:ok, res} | {:error, <a href="#t:posix/0">posix</a>} when res: var</li>
+        <li><code>open(<a href="Path.html#t:t/0">Path.t</a>, list, (<a href="#t:io_device/0">io_device</a> -> res)) :: {:ok, res} | {:error, <a href="#t:posix/0">posix</a>} when res: var</code></li>
       
     </ul>
   
@@ -7527,10 +7527,10 @@ end)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>open!(<a href="Path.html#t:t/0">Path.t</a>, list) :: <a href="#t:io_device/0">io_device</a> | no_return</li>
+        <li><code>open!(<a href="Path.html#t:t/0">Path.t</a>, list) :: <a href="#t:io_device/0">io_device</a> | no_return</code></li>
       
     </ul>
   
@@ -7564,10 +7564,10 @@ end)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>open!(<a href="Path.html#t:t/0">Path.t</a>, list, (<a href="#t:io_device/0">io_device</a> -> res)) :: res | no_return when res: var</li>
+        <li><code>open!(<a href="Path.html#t:t/0">Path.t</a>, list, (<a href="#t:io_device/0">io_device</a> -> res)) :: res | no_return when res: var</code></li>
       
     </ul>
   
@@ -7601,10 +7601,10 @@ end)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>read(<a href="Path.html#t:t/0">Path.t</a>) :: {:ok, binary} | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>read(<a href="Path.html#t:t/0">Path.t</a>) :: {:ok, binary} | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -7651,10 +7651,10 @@ of <code>path</code>, or <code>{:error, reason}</code> if an error occurs.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>read!(<a href="Path.html#t:t/0">Path.t</a>) :: binary | no_return</li>
+        <li><code>read!(<a href="Path.html#t:t/0">Path.t</a>) :: binary | no_return</code></li>
       
     </ul>
   
@@ -7687,10 +7687,10 @@ of <code>path</code>, or <code>{:error, reason}</code> if an error occurs.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>regular?(<a href="Path.html#t:t/0">Path.t</a>) :: boolean</li>
+        <li><code>regular?(<a href="Path.html#t:t/0">Path.t</a>) :: boolean</code></li>
       
     </ul>
   
@@ -7727,10 +7727,10 @@ of <code>path</code>, or <code>{:error, reason}</code> if an error occurs.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>rm(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>rm(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -7785,10 +7785,10 @@ File.rm(&#39;tmp_dir/&#39;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>rm!(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | no_return</li>
+        <li><code>rm!(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | no_return</code></li>
       
     </ul>
   
@@ -7820,10 +7820,10 @@ File.rm(&#39;tmp_dir/&#39;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>rm_rf(<a href="Path.html#t:t/0">Path.t</a>) :: {:ok, [binary]} | {:error, <a href="#t:posix/0">posix</a>, binary}</li>
+        <li><code>rm_rf(<a href="Path.html#t:t/0">Path.t</a>) :: {:ok, [binary]} | {:error, <a href="#t:posix/0">posix</a>, binary}</code></li>
       
     </ul>
   
@@ -7870,10 +7870,10 @@ File.rm_rf &quot;unknown&quot;
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>rm_rf!(<a href="Path.html#t:t/0">Path.t</a>) :: [binary] | no_return</li>
+        <li><code>rm_rf!(<a href="Path.html#t:t/0">Path.t</a>) :: [binary] | no_return</code></li>
       
     </ul>
   
@@ -7906,10 +7906,10 @@ otherwise the list of files or directories removed.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>rmdir(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>rmdir(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -7951,10 +7951,10 @@ File.rmdir(&#39;file.txt&#39;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>rmdir!(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>rmdir!(<a href="Path.html#t:t/0">Path.t</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -7986,10 +7986,10 @@ File.rmdir(&#39;file.txt&#39;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>stat(<a href="Path.html#t:t/0">Path.t</a>, <a href="#t:stat_options/0">stat_options</a>) :: {:ok, <a href="File.Stat.html#t:t/0">File.Stat.t</a>} | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>stat(<a href="Path.html#t:t/0">Path.t</a>, <a href="#t:stat_options/0">stat_options</a>) :: {:ok, <a href="File.Stat.html#t:t/0">File.Stat.t</a>} | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -8032,10 +8032,10 @@ the same reasons as <a href="#read/1"><code>read/1</code></a> if a failure occur
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>stat!(<a href="Path.html#t:t/0">Path.t</a>, <a href="#t:stat_options/0">stat_options</a>) :: <a href="File.Stat.html#t:t/0">File.Stat.t</a> | no_return</li>
+        <li><code>stat!(<a href="Path.html#t:t/0">Path.t</a>, <a href="#t:stat_options/0">stat_options</a>) :: <a href="File.Stat.html#t:t/0">File.Stat.t</a> | no_return</code></li>
       
     </ul>
   
@@ -8118,10 +8118,10 @@ is meant to be written to under a tight loop.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>touch(<a href="Path.html#t:t/0">Path.t</a>, :calendar.datetime) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>touch(<a href="Path.html#t:t/0">Path.t</a>, :calendar.datetime) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -8154,10 +8154,10 @@ the given file. File is created if it doesn’t exist.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>touch!(<a href="Path.html#t:t/0">Path.t</a>, :calendar.datetime) :: :ok | no_return</li>
+        <li><code>touch!(<a href="Path.html#t:t/0">Path.t</a>, :calendar.datetime) :: :ok | no_return</code></li>
       
     </ul>
   
@@ -8190,10 +8190,10 @@ Returns <code>:ok</code> otherwise.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>write(<a href="Path.html#t:t/0">Path.t</a>, iodata, list) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>write(<a href="Path.html#t:t/0">Path.t</a>, iodata, list) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -8249,10 +8249,10 @@ then calling this function multiple times.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>write!(<a href="Path.html#t:t/0">Path.t</a>, iodata, list) :: :ok | no_return</li>
+        <li><code>write!(<a href="Path.html#t:t/0">Path.t</a>, iodata, list) :: :ok | no_return</code></li>
       
     </ul>
   
@@ -8284,10 +8284,10 @@ then calling this function multiple times.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>write_stat(<a href="Path.html#t:t/0">Path.t</a>, <a href="File.Stat.html#t:t/0">File.Stat.t</a>, <a href="#t:stat_options/0">stat_options</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</li>
+        <li><code>write_stat(<a href="Path.html#t:t/0">Path.t</a>, <a href="File.Stat.html#t:t/0">File.Stat.t</a>, <a href="#t:stat_options/0">stat_options</a>) :: :ok | {:error, <a href="#t:posix/0">posix</a>}</code></li>
       
     </ul>
   
@@ -8320,10 +8320,10 @@ path. Returns <code>:ok</code> or <code>{:error, reason}</code>.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>write_stat!(<a href="Path.html#t:t/0">Path.t</a>, <a href="File.Stat.html#t:t/0">File.Stat.t</a>, <a href="#t:stat_options/0">stat_options</a>) :: :ok | no_return</li>
+        <li><code>write_stat!(<a href="Path.html#t:t/0">Path.t</a>, <a href="File.Stat.html#t:t/0">File.Stat.t</a>, <a href="#t:stat_options/0">stat_options</a>) :: :ok | no_return</code></li>
       
     </ul>
   

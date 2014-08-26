@@ -6220,10 +6220,10 @@ that require it (like <code>wildcard/1</code> and <a href="#expand/1"><code>expa
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>absname(<a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>absname(<a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6273,10 +6273,10 @@ Path.absname(&quot;../x&quot;).
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>absname(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>absname(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6321,10 +6321,10 @@ iex&gt; Path.absname(&quot;../x&quot;, &quot;bar&quot;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>basename(<a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>basename(<a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6369,10 +6369,10 @@ iex&gt; Path.basename(&quot;/&quot;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>basename(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>basename(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6418,10 +6418,10 @@ iex&gt; Path.basename(&quot;~/foo/bar.old.ex&quot;, &quot;.ex&quot;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>dirname(<a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>dirname(<a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6461,10 +6461,10 @@ Path.dirname(&quot;/foo/bar/baz.ex&quot;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>expand(<a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>expand(<a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6503,10 +6503,10 @@ any <code>.</code> and <code>..</code> characters and a leading <code>~</code>.<
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>expand(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>expand(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6557,10 +6557,10 @@ Path.expand(&quot;/foo/bar/../bar&quot;, &quot;/baz&quot;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>extname(<a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>extname(<a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6601,10 +6601,10 @@ iex&gt; Path.extname(&quot;~/foo/bar&quot;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>join([<a href="#t:t/0">t</a>]) :: binary</li>
+        <li><code>join([<a href="#t:t/0">t</a>]) :: binary</code></li>
       
     </ul>
   
@@ -6651,10 +6651,10 @@ iex&gt; Path.join([&quot;/&quot;, &quot;foo&quot;, &quot;bar/&quot;])
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>join(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>join(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6695,10 +6695,10 @@ and any trailing slash is removed on join.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>relative(<a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>relative(<a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6745,10 +6745,10 @@ Path.relative(&quot;/bar/foo.ex&quot;)      #=&gt; &quot;bar/foo.ex&quot;
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>relative_to(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>relative_to(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6799,10 +6799,10 @@ iex&gt; Path.relative_to(&quot;/usr/local/foo&quot;, &quot;/etc&quot;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>relative_to_cwd(<a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>relative_to_cwd(<a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6836,10 +6836,10 @@ cannot be retrieved, returns the full path.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>rootname(<a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>rootname(<a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6880,10 +6880,10 @@ iex&gt; Path.rootname(&quot;/foo/bar.ex&quot;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>rootname(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: binary</li>
+        <li><code>rootname(<a href="#t:t/0">t</a>, <a href="#t:t/0">t</a>) :: binary</code></li>
       
     </ul>
   
@@ -6925,10 +6925,10 @@ iex&gt; Path.rootname(&quot;/foo/bar.erl&quot;, &quot;.ex&quot;)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>split(<a href="#t:t/0">t</a>) :: [binary]</li>
+        <li><code>split(<a href="#t:t/0">t</a>) :: [binary]</code></li>
       
     </ul>
   
@@ -6978,10 +6978,10 @@ in lowercase.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>type(<a href="#t:t/0">t</a>) :: :absolute | :relative | :volumerelative</li>
+        <li><code>type(<a href="#t:t/0">t</a>) :: :absolute | :relative | :volumerelative</code></li>
       
     </ul>
   

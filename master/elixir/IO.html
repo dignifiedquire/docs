@@ -6249,10 +6249,10 @@ it is treated as a shortcut for <code>Process.group_leader</code></p></li>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>binread(<a href="#t:device/0">device</a>, :all | :line | non_neg_integer) :: iodata | <a href="#t:nodata/0">nodata</a></li>
+        <li><code>binread(<a href="#t:device/0">device</a>, :all | :line | non_neg_integer) :: iodata | <a href="#t:nodata/0">nodata</a></code></li>
       
     </ul>
   
@@ -6301,10 +6301,10 @@ as it will return the wrong result.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>binstream(<a href="#t:device/0">device</a>, :line | pos_integer) :: <a href="Enumerable.html#t:t/0">Enumerable.t</a></li>
+        <li><code>binstream(<a href="#t:device/0">device</a>, :line | pos_integer) :: <a href="Enumerable.html#t:t/0">Enumerable.t</a></code></li>
       
     </ul>
   
@@ -6349,10 +6349,10 @@ mode as it will return the wrong result.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>binwrite(<a href="#t:device/0">device</a>, iodata) :: :ok | {:error, term}</li>
+        <li><code>binwrite(<a href="#t:device/0">device</a>, iodata) :: :ok | {:error, term}</code></li>
       
     </ul>
   
@@ -6390,10 +6390,10 @@ as it will return the wrong result.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>chardata_to_string(<a href="#t:chardata/0">chardata</a>) :: <a href="String.html#t:t/0">String.t</a> | no_return</li>
+        <li><code>chardata_to_string(<a href="#t:chardata/0">chardata</a>) :: <a href="String.html#t:t/0">String.t</a> | no_return</code></li>
       
     </ul>
   
@@ -6438,12 +6438,12 @@ iex&gt; IO.chardata_to_string([0x0061, &quot;bc&quot;])
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>getn(<a href="#t:device/0">device</a>, <a href="#t:chardata/0">chardata</a> | <a href="String.Chars.html#t:t/0">String.Chars.t</a>) :: <a href="#t:chardata/0">chardata</a> | <a href="#t:nodata/0">nodata</a></li>
+        <li><code>getn(<a href="#t:device/0">device</a>, <a href="#t:chardata/0">chardata</a> | <a href="String.Chars.html#t:t/0">String.Chars.t</a>) :: <a href="#t:chardata/0">chardata</a> | <a href="#t:nodata/0">nodata</a></code></li>
       
-        <li>getn(<a href="#t:chardata/0">chardata</a> | <a href="String.Chars.html#t:t/0">String.Chars.t</a>, pos_integer) :: <a href="#t:chardata/0">chardata</a> | <a href="#t:nodata/0">nodata</a></li>
+        <li><code>getn(<a href="#t:chardata/0">chardata</a> | <a href="String.Chars.html#t:t/0">String.Chars.t</a>, pos_integer) :: <a href="#t:chardata/0">chardata</a> | <a href="#t:nodata/0">nodata</a></code></li>
       
     </ul>
   
@@ -6487,10 +6487,10 @@ NFS volume</p></li>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>getn(<a href="#t:device/0">device</a>, <a href="#t:chardata/0">chardata</a> | <a href="String.Chars.html#t:t/0">String.Chars.t</a>, pos_integer) :: <a href="#t:chardata/0">chardata</a> | <a href="#t:nodata/0">nodata</a></li>
+        <li><code>getn(<a href="#t:device/0">device</a>, <a href="#t:chardata/0">chardata</a> | <a href="String.Chars.html#t:t/0">String.Chars.t</a>, pos_integer) :: <a href="#t:chardata/0">chardata</a> | <a href="#t:nodata/0">nodata</a></code></li>
       
     </ul>
   
@@ -6525,10 +6525,10 @@ Otherwise, <code>count</code> is the number of raw bytes to be retrieved.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>gets(<a href="#t:device/0">device</a>, <a href="#t:chardata/0">chardata</a> | <a href="String.Chars.html#t:t/0">String.Chars.t</a>) :: <a href="#t:chardata/0">chardata</a> | <a href="#t:nodata/0">nodata</a></li>
+        <li><code>gets(<a href="#t:device/0">device</a>, <a href="#t:chardata/0">chardata</a> | <a href="String.Chars.html#t:t/0">String.Chars.t</a>) :: <a href="#t:chardata/0">chardata</a> | <a href="#t:nodata/0">nodata</a></code></li>
       
     </ul>
   
@@ -6569,10 +6569,10 @@ NFS volume</p></li>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>inspect(term, <a href="Keyword.html#t:t/0">Keyword.t</a>) :: term</li>
+        <li><code>inspect(term, <a href="Keyword.html#t:t/0">Keyword.t</a>) :: term</code></li>
       
     </ul>
   
@@ -6613,10 +6613,10 @@ passing the <code>:width</code> option.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>inspect(<a href="#t:device/0">device</a>, term, <a href="Keyword.html#t:t/0">Keyword.t</a>) :: term</li>
+        <li><code>inspect(<a href="#t:device/0">device</a>, term, <a href="Keyword.html#t:t/0">Keyword.t</a>) :: term</code></li>
       
     </ul>
   
@@ -6648,10 +6648,10 @@ passing the <code>:width</code> option.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>iodata_length(iodata) :: non_neg_integer</li>
+        <li><code>iodata_length(iodata) :: non_neg_integer</code></li>
       
     </ul>
   
@@ -6691,10 +6691,10 @@ passing the <code>:width</code> option.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>iodata_to_binary(iodata) :: binary</li>
+        <li><code>iodata_to_binary(iodata) :: binary</code></li>
       
     </ul>
   
@@ -6749,10 +6749,10 @@ iex&gt; IO.iodata_to_binary(bin)
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>puts(<a href="#t:device/0">device</a>, <a href="#t:chardata/0">chardata</a> | <a href="String.Chars.html#t:t/0">String.Chars.t</a>) :: :ok</li>
+        <li><code>puts(<a href="#t:device/0">device</a>, <a href="#t:chardata/0">chardata</a> | <a href="String.Chars.html#t:t/0">String.Chars.t</a>) :: :ok</code></li>
       
     </ul>
   
@@ -6786,10 +6786,10 @@ to be a chardata.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>read(<a href="#t:device/0">device</a>, :all | :line | non_neg_integer) :: <a href="#t:chardata/0">chardata</a> | <a href="#t:nodata/0">nodata</a></li>
+        <li><code>read(<a href="#t:device/0">device</a>, :all | :line | non_neg_integer) :: <a href="#t:chardata/0">chardata</a> | <a href="#t:nodata/0">nodata</a></code></li>
       
     </ul>
   
@@ -6835,10 +6835,10 @@ empty string in case the device has reached EOF.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>stream(<a href="#t:device/0">device</a>, :line | pos_integer) :: <a href="Enumerable.html#t:t/0">Enumerable.t</a></li>
+        <li><code>stream(<a href="#t:device/0">device</a>, :line | pos_integer) :: <a href="Enumerable.html#t:t/0">Enumerable.t</a></code></li>
       
     </ul>
   
@@ -6891,10 +6891,10 @@ from the command line:</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>write(<a href="#t:device/0">device</a>, <a href="#t:chardata/0">chardata</a> | <a href="String.Chars.html#t:t/0">String.Chars.t</a>) :: :ok</li>
+        <li><code>write(<a href="#t:device/0">device</a>, <a href="#t:chardata/0">chardata</a> | <a href="String.Chars.html#t:t/0">String.Chars.t</a>) :: :ok</code></li>
       
     </ul>
   

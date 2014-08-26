@@ -6216,10 +6216,10 @@ about inlined functions, check out the <a href="Kernel.html"><code>Kernel</code>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>alive? :: boolean</li>
+        <li><code>alive? :: boolean</code></li>
       
     </ul>
   
@@ -6253,10 +6253,10 @@ about inlined functions, check out the <a href="Kernel.html"><code>Kernel</code>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>connect(<a href="#t:t/0">t</a>) :: boolean | :ignored</li>
+        <li><code>connect(<a href="#t:t/0">t</a>) :: boolean | :ignored</code></li>
       
     </ul>
   
@@ -6293,10 +6293,10 @@ about inlined functions, check out the <a href="Kernel.html"><code>Kernel</code>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>disconnect(<a href="#t:t/0">t</a>) :: boolean | :ignored</li>
+        <li><code>disconnect(<a href="#t:t/0">t</a>) :: boolean | :ignored</code></li>
       
     </ul>
   
@@ -6365,10 +6365,10 @@ If the local node is not alive, the function returns <code>:ignored</code>.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>list :: [<a href="#t:t/0">t</a>]</li>
+        <li><code>list :: [<a href="#t:t/0">t</a>]</code></li>
       
     </ul>
   
@@ -6403,10 +6403,10 @@ the local node.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>list(state | [state]) :: [<a href="#t:t/0">t</a>]</li>
+        <li><code>list(state | [state]) :: [<a href="#t:t/0">t</a>]</code></li>
       
     </ul>
   
@@ -6443,10 +6443,10 @@ satisfying the disjunction(s) of the list elements.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>monitor(<a href="#t:t/0">t</a>, boolean) :: true</li>
+        <li><code>monitor(<a href="#t:t/0">t</a>, boolean) :: true</code></li>
       
     </ul>
   
@@ -6483,10 +6483,10 @@ If <code>flag</code> is <code>false</code>, monitoring is turned off.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>monitor(<a href="#t:t/0">t</a>, boolean, [:allow_passive_connect]) :: true</li>
+        <li><code>monitor(<a href="#t:t/0">t</a>, boolean, [:allow_passive_connect]) :: true</code></li>
       
     </ul>
   
@@ -6521,10 +6521,10 @@ option to be given, namely <code>:allow_passive_connect</code>.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>ping(<a href="#t:t/0">t</a>) :: :pong | :pang</li>
+        <li><code>ping(<a href="#t:t/0">t</a>) :: :pong | :pang</code></li>
       
     </ul>
   
@@ -6564,10 +6564,10 @@ option to be given, namely <code>:allow_passive_connect</code>.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>self :: <a href="#t:t/0">t</a></li>
+        <li><code>self :: <a href="#t:t/0">t</a></code></li>
       
     </ul>
   
@@ -6634,10 +6634,10 @@ the function also sets the cookie of all other unknown nodes to <code>cookie</co
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>spawn(<a href="#t:t/0">t</a>, (() -> any)) :: pid</li>
+        <li><code>spawn(<a href="#t:t/0">t</a>, (() -> any)) :: pid</code></li>
       
     </ul>
   
@@ -6675,10 +6675,10 @@ the list of available options.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>spawn(<a href="#t:t/0">t</a>, (() -> any), <a href="Process.html#t:spawn_opts/0">Process.spawn_opts</a>) :: pid | {pid, reference}</li>
+        <li><code>spawn(<a href="#t:t/0">t</a>, (() -> any), <a href="Process.html#t:spawn_opts/0">Process.spawn_opts</a>) :: pid | {pid, reference}</code></li>
       
     </ul>
   
@@ -6717,10 +6717,10 @@ available options.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>spawn(<a href="#t:t/0">t</a>, module, atom, [any]) :: pid</li>
+        <li><code>spawn(<a href="#t:t/0">t</a>, module, atom, [any]) :: pid</code></li>
       
     </ul>
   
@@ -6759,10 +6759,10 @@ available options.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>spawn(<a href="#t:t/0">t</a>, module, atom, [any], <a href="Process.html#t:spawn_opts/0">Process.spawn_opts</a>) :: pid | {pid, reference}</li>
+        <li><code>spawn(<a href="#t:t/0">t</a>, module, atom, [any], <a href="Process.html#t:spawn_opts/0">Process.spawn_opts</a>) :: pid | {pid, reference}</code></li>
       
     </ul>
   
@@ -6801,10 +6801,10 @@ available options.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>spawn_link(<a href="#t:t/0">t</a>, (() -> any)) :: pid</li>
+        <li><code>spawn_link(<a href="#t:t/0">t</a>, (() -> any)) :: pid</code></li>
       
     </ul>
   
@@ -6842,10 +6842,10 @@ signal with exit reason <code>:noconnection</code> will be received).</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>spawn_link(<a href="#t:t/0">t</a>, module, atom, [any]) :: pid</li>
+        <li><code>spawn_link(<a href="#t:t/0">t</a>, module, atom, [any]) :: pid</code></li>
       
     </ul>
   
@@ -6884,10 +6884,10 @@ signal with exit reason <code>:noconnection</code> will be received).</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>start(node, :longnames | :shortnames, non_neg_integer) :: {:ok, pid} | {:error, term}</li>
+        <li><code>start(node, :longnames | :shortnames, non_neg_integer) :: {:ok, pid} | {:error, term}</code></li>
       
     </ul>
   
@@ -6922,10 +6922,10 @@ related processes.</p>
 
   </div>
   
-    <p>Specs:</p>
-    <ul class="spec">
+    <h4>Specs</h4>
+    <ul>
       
-        <li>stop :: :ok | {:error, term}</li>
+        <li><code>stop :: :ok | {:error, term}</code></li>
       
     </ul>
   
