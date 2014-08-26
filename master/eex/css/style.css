@@ -80,6 +80,28 @@ div.container {
     text-decoration: none;
     color: #3C4151;
     font-weight: 300; }
+  #navigation div.switcher {
+    margin-left: 10px;
+    margin-bottom: 10px; }
+    #navigation div.switcher a {
+      font-weight: 500;
+      color: #959cad;
+      border-left: 1px solid #ced2d9;
+      padding: 0;
+      margin: 0;
+      padding-left: 4px;
+      padding-right: 4px; }
+      #navigation div.switcher a:first-child {
+        border: none;
+        padding: 0; }
+      #navigation div.switcher a.active {
+        color: #3c4151;
+        font-weight: bold; }
+  #navigation div.search input {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 70%; }
   #navigation ul.section {
     margin-top: 10px;
     margin-bottom: 10px;
