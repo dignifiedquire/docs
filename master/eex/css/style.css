@@ -44,6 +44,28 @@ body {
     color: #3C4151; }
   body a {
     text-decoration: none; }
+  body .fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    -moz-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear; }
+    body .fade.in {
+      opacity: 1; }
+  body .collapse {
+    display: none; }
+    body .collapse.in {
+      display: block; }
+    tr body .collapse.in {
+      display: table-row; }
+    tbody body .collapse.in {
+      display: table-row-group; }
+  body .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.35s ease;
+    -moz-transition: height 0.35s ease;
+    transition: height 0.35s ease; }
 
 div.container {
   max-width: 68em;
@@ -55,19 +77,34 @@ div.container {
     clear: both; }
 
 #header {
+  position: fixed;
   width: 100%;
   padding: 20px;
   height: 70px;
   background: #4C5264;
   margin-bottom: 50px; }
+  #header .wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3px; }
+    #header .wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+  #header .logo {
+    float: left;
+    margin-right: 18px;
+    margin-top: -4px;
+    padding-left: 10px; }
   #header .title {
-    margin-left: 50px; }
+    float: left; }
     #header .title h1 {
       padding-bottom: 4px; }
       #header .title h1 a {
         color: #FFFFFF;
         text-decoration: none;
-        font-size: 20px; }
+        font-size: 18px; }
     #header .title h2 {
       color: #959CAD;
       font-weight: 300;
@@ -77,7 +114,8 @@ div.container {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%; }
+  width: 23.23176%;
+  margin-top: 120px; }
   #navigation:last-child {
     margin-right: 0; }
   #navigation a {
@@ -129,11 +167,15 @@ div.container {
         padding-left: 10px;
         border-left: 2px solid #B3B8C4; }
 
+.affix {
+  position: fixed; }
+
 #content {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 74.41059%;
+  margin-top: 120px;
   color: #3C4151;
   font-size: 18px;
   font-family: 'Source Serif Pro', serif;

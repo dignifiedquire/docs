@@ -9,21 +9,25 @@
 
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="js/highlight.js"></script>
+  <script src="js/bootstrap.js"></script>
 
   <script src="js/app.js"></script>
-
 
 </head>
 <body>
   <div id="header">
-    <div class="logo"></div>
-    <div class="title">
-      <h1>
-        
-        <a href="http://elixir-lang.org/docs.html" target="_top">IEx</a>
-        
-      </h1>
-      <h2>v0.15.2-dev</h2>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+      </div>
+      <div class="title">
+        <h1>
+          
+          <a href="http://elixir-lang.org/docs.html" target="_top">IEx</a>
+          
+        </h1>
+        <h2>v 0.15.2-dev</h2>
+      </div>
     </div>
   </div>
 
@@ -36,11 +40,13 @@
       </div>
       <div class="search"><input type="text" placeholder="search"/></div>
       <ul id="modules-list" class="section">
-  <li>
+  <li id="nav-IEx">
   <span class="title">
-    <a href="IEx.html" title="IEx">IEx</a>
+    <a href="IEx.html" title="IEx" data-toggle="collapse" data-parent="#nav-IEx" data-target="#subnav-IEx">
+      IEx
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-IEx" class="subsection collapse ">
     
       <li>
         <a href="IEx.html#introduction">Introduction</a>
@@ -99,11 +105,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-IEx-Helpers">
   <span class="title">
-    <a href="IEx.Helpers.html" title="IEx.Helpers">IEx.Helpers</a>
+    <a href="IEx.Helpers.html" title="IEx.Helpers" data-toggle="collapse" data-parent="#nav-IEx-Helpers" data-target="#subnav-IEx-Helpers">
+      IEx.Helpers
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-IEx-Helpers" class="subsection collapse ">
     
       <li>
         <a href="IEx.Helpers.html#introduction">Introduction</a>

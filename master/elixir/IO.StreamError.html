@@ -9,21 +9,25 @@
 
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="js/highlight.js"></script>
+  <script src="js/bootstrap.js"></script>
 
   <script src="js/app.js"></script>
-
 
 </head>
 <body>
   <div id="header">
-    <div class="logo"></div>
-    <div class="title">
-      <h1>
-        
-        <a href="http://elixir-lang.org/docs.html" target="_top">Elixir</a>
-        
-      </h1>
-      <h2>v0.15.2-dev</h2>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+      </div>
+      <div class="title">
+        <h1>
+          
+          <a href="http://elixir-lang.org/docs.html" target="_top">Elixir</a>
+          
+        </h1>
+        <h2>v 0.15.2-dev</h2>
+      </div>
     </div>
   </div>
 
@@ -36,11 +40,13 @@
       </div>
       <div class="search"><input type="text" placeholder="search"/></div>
       <ul id="modules-list" class="section">
-  <li>
+  <li id="nav-Agent">
   <span class="title">
-    <a href="Agent.html" title="Agent">Agent</a>
+    <a href="Agent.html" title="Agent" data-toggle="collapse" data-parent="#nav-Agent" data-target="#subnav-Agent">
+      Agent
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Agent" class="subsection collapse ">
     
       <li>
         <a href="Agent.html#introduction">Introduction</a>
@@ -115,11 +121,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Application">
   <span class="title">
-    <a href="Application.html" title="Application">Application</a>
+    <a href="Application.html" title="Application" data-toggle="collapse" data-parent="#nav-Application" data-target="#subnav-Application">
+      Application
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Application" class="subsection collapse ">
     
       <li>
         <a href="Application.html#introduction">Introduction</a>
@@ -198,11 +206,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Atom">
   <span class="title">
-    <a href="Atom.html" title="Atom">Atom</a>
+    <a href="Atom.html" title="Atom" data-toggle="collapse" data-parent="#nav-Atom" data-target="#subnav-Atom">
+      Atom
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Atom" class="subsection collapse ">
     
     
     
@@ -225,11 +235,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Base">
   <span class="title">
-    <a href="Base.html" title="Base">Base</a>
+    <a href="Base.html" title="Base" data-toggle="collapse" data-parent="#nav-Base" data-target="#subnav-Base">
+      Base
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Base" class="subsection collapse ">
     
       <li>
         <a href="Base.html#introduction">Introduction</a>
@@ -308,11 +320,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Behaviour">
   <span class="title">
-    <a href="Behaviour.html" title="Behaviour">Behaviour</a>
+    <a href="Behaviour.html" title="Behaviour" data-toggle="collapse" data-parent="#nav-Behaviour" data-target="#subnav-Behaviour">
+      Behaviour
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Behaviour" class="subsection collapse ">
     
       <li>
         <a href="Behaviour.html#introduction">Introduction</a>
@@ -328,11 +342,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Bitwise">
   <span class="title">
-    <a href="Bitwise.html" title="Bitwise">Bitwise</a>
+    <a href="Bitwise.html" title="Bitwise" data-toggle="collapse" data-parent="#nav-Bitwise" data-target="#subnav-Bitwise">
+      Bitwise
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Bitwise" class="subsection collapse ">
     
       <li>
         <a href="Bitwise.html#introduction">Introduction</a>
@@ -348,11 +364,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Code">
   <span class="title">
-    <a href="Code.html" title="Code">Code</a>
+    <a href="Code.html" title="Code" data-toggle="collapse" data-parent="#nav-Code" data-target="#subnav-Code">
+      Code
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Code" class="subsection collapse ">
     
       <li>
         <a href="Code.html#introduction">Introduction</a>
@@ -463,11 +481,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Dict">
   <span class="title">
-    <a href="Dict.html" title="Dict">Dict</a>
+    <a href="Dict.html" title="Dict" data-toggle="collapse" data-parent="#nav-Dict" data-target="#subnav-Dict">
+      Dict
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Dict" class="subsection collapse ">
     
       <li>
         <a href="Dict.html#introduction">Introduction</a>
@@ -662,11 +682,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Enum">
   <span class="title">
-    <a href="Enum.html" title="Enum">Enum</a>
+    <a href="Enum.html" title="Enum" data-toggle="collapse" data-parent="#nav-Enum" data-target="#subnav-Enum">
+      Enum
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Enum" class="subsection collapse ">
     
       <li>
         <a href="Enum.html#introduction">Introduction</a>
@@ -929,11 +951,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Exception">
   <span class="title">
-    <a href="Exception.html" title="Exception">Exception</a>
+    <a href="Exception.html" title="Exception" data-toggle="collapse" data-parent="#nav-Exception" data-target="#subnav-Exception">
+      Exception
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Exception" class="subsection collapse ">
     
       <li>
         <a href="Exception.html#introduction">Introduction</a>
@@ -1000,11 +1024,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-File">
   <span class="title">
-    <a href="File.html" title="File">File</a>
+    <a href="File.html" title="File" data-toggle="collapse" data-parent="#nav-File" data-target="#subnav-File">
+      File
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-File" class="subsection collapse ">
     
       <li>
         <a href="File.html#introduction">Introduction</a>
@@ -1223,11 +1249,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-File-Stat">
   <span class="title">
-    <a href="File.Stat.html" title="File.Stat">File.Stat</a>
+    <a href="File.Stat.html" title="File.Stat" data-toggle="collapse" data-parent="#nav-File-Stat" data-target="#subnav-File-Stat">
+      File.Stat
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-File-Stat" class="subsection collapse ">
     
       <li>
         <a href="File.Stat.html#introduction">Introduction</a>
@@ -1258,11 +1286,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-File-Stream">
   <span class="title">
-    <a href="File.Stream.html" title="File.Stream">File.Stream</a>
+    <a href="File.Stream.html" title="File.Stream" data-toggle="collapse" data-parent="#nav-File-Stream" data-target="#subnav-File-Stream">
+      File.Stream
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-File-Stream" class="subsection collapse ">
     
       <li>
         <a href="File.Stream.html#introduction">Introduction</a>
@@ -1278,11 +1308,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Float">
   <span class="title">
-    <a href="Float.html" title="Float">Float</a>
+    <a href="Float.html" title="Float" data-toggle="collapse" data-parent="#nav-Float" data-target="#subnav-Float">
+      Float
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Float" class="subsection collapse ">
     
       <li>
         <a href="Float.html#introduction">Introduction</a>
@@ -1333,11 +1365,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-GenEvent">
   <span class="title">
-    <a href="GenEvent.html" title="GenEvent">GenEvent</a>
+    <a href="GenEvent.html" title="GenEvent" data-toggle="collapse" data-parent="#nav-GenEvent" data-target="#subnav-GenEvent">
+      GenEvent
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-GenEvent" class="subsection collapse ">
     
       <li>
         <a href="GenEvent.html#introduction">Introduction</a>
@@ -1408,11 +1442,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-GenEvent-Stream">
   <span class="title">
-    <a href="GenEvent.Stream.html" title="GenEvent.Stream">GenEvent.Stream</a>
+    <a href="GenEvent.Stream.html" title="GenEvent.Stream" data-toggle="collapse" data-parent="#nav-GenEvent-Stream" data-target="#subnav-GenEvent-Stream">
+      GenEvent.Stream
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-GenEvent-Stream" class="subsection collapse ">
     
       <li>
         <a href="GenEvent.Stream.html#introduction">Introduction</a>
@@ -1428,11 +1464,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-GenServer">
   <span class="title">
-    <a href="GenServer.html" title="GenServer">GenServer</a>
+    <a href="GenServer.html" title="GenServer" data-toggle="collapse" data-parent="#nav-GenServer" data-target="#subnav-GenServer">
+      GenServer
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-GenServer" class="subsection collapse ">
     
       <li>
         <a href="GenServer.html#introduction">Introduction</a>
@@ -1483,11 +1521,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-HashDict">
   <span class="title">
-    <a href="HashDict.html" title="HashDict">HashDict</a>
+    <a href="HashDict.html" title="HashDict" data-toggle="collapse" data-parent="#nav-HashDict" data-target="#subnav-HashDict">
+      HashDict
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-HashDict" class="subsection collapse ">
     
       <li>
         <a href="HashDict.html#introduction">Introduction</a>
@@ -1590,11 +1630,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-HashSet">
   <span class="title">
-    <a href="HashSet.html" title="HashSet">HashSet</a>
+    <a href="HashSet.html" title="HashSet" data-toggle="collapse" data-parent="#nav-HashSet" data-target="#subnav-HashSet">
+      HashSet
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-HashSet" class="subsection collapse ">
     
       <li>
         <a href="HashSet.html#introduction">Introduction</a>
@@ -1665,11 +1707,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-IO">
   <span class="title">
-    <a href="IO.html" title="IO">IO</a>
+    <a href="IO.html" title="IO" data-toggle="collapse" data-parent="#nav-IO" data-target="#subnav-IO">
+      IO
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-IO" class="subsection collapse ">
     
       <li>
         <a href="IO.html#introduction">Introduction</a>
@@ -1752,11 +1796,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-IO-ANSI">
   <span class="title">
-    <a href="IO.ANSI.html" title="IO.ANSI">IO.ANSI</a>
+    <a href="IO.ANSI.html" title="IO.ANSI" data-toggle="collapse" data-parent="#nav-IO-ANSI" data-target="#subnav-IO-ANSI">
+      IO.ANSI
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-IO-ANSI" class="subsection collapse ">
     
       <li>
         <a href="IO.ANSI.html#introduction">Introduction</a>
@@ -1991,11 +2037,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-IO-Stream">
   <span class="title">
-    <a href="IO.Stream.html" title="IO.Stream">IO.Stream</a>
+    <a href="IO.Stream.html" title="IO.Stream" data-toggle="collapse" data-parent="#nav-IO-Stream" data-target="#subnav-IO-Stream">
+      IO.Stream
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-IO-Stream" class="subsection collapse ">
     
       <li>
         <a href="IO.Stream.html#introduction">Introduction</a>
@@ -2011,11 +2059,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Inspect-Algebra">
   <span class="title">
-    <a href="Inspect.Algebra.html" title="Inspect.Algebra">Inspect.Algebra</a>
+    <a href="Inspect.Algebra.html" title="Inspect.Algebra" data-toggle="collapse" data-parent="#nav-Inspect-Algebra" data-target="#subnav-Inspect-Algebra">
+      Inspect.Algebra
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Inspect-Algebra" class="subsection collapse ">
     
       <li>
         <a href="Inspect.Algebra.html#introduction">Introduction</a>
@@ -2106,11 +2156,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Inspect-Opts">
   <span class="title">
-    <a href="Inspect.Opts.html" title="Inspect.Opts">Inspect.Opts</a>
+    <a href="Inspect.Opts.html" title="Inspect.Opts" data-toggle="collapse" data-parent="#nav-Inspect-Opts" data-target="#subnav-Inspect-Opts">
+      Inspect.Opts
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Inspect-Opts" class="subsection collapse ">
     
       <li>
         <a href="Inspect.Opts.html#introduction">Introduction</a>
@@ -2126,11 +2178,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Integer">
   <span class="title">
-    <a href="Integer.html" title="Integer">Integer</a>
+    <a href="Integer.html" title="Integer" data-toggle="collapse" data-parent="#nav-Integer" data-target="#subnav-Integer">
+      Integer
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Integer" class="subsection collapse ">
     
       <li>
         <a href="Integer.html#introduction">Introduction</a>
@@ -2181,11 +2235,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Kernel">
   <span class="title">
-    <a href="Kernel.html" title="Kernel">Kernel</a>
+    <a href="Kernel.html" title="Kernel" data-toggle="collapse" data-parent="#nav-Kernel" data-target="#subnav-Kernel">
+      Kernel
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Kernel" class="subsection collapse ">
     
       <li>
         <a href="Kernel.html#introduction">Introduction</a>
@@ -2688,11 +2744,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Kernel-ParallelCompiler">
   <span class="title">
-    <a href="Kernel.ParallelCompiler.html" title="Kernel.ParallelCompiler">Kernel.ParallelCompiler</a>
+    <a href="Kernel.ParallelCompiler.html" title="Kernel.ParallelCompiler" data-toggle="collapse" data-parent="#nav-Kernel-ParallelCompiler" data-target="#subnav-Kernel-ParallelCompiler">
+      Kernel.ParallelCompiler
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Kernel-ParallelCompiler" class="subsection collapse ">
     
       <li>
         <a href="Kernel.ParallelCompiler.html#introduction">Introduction</a>
@@ -2719,11 +2777,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Kernel-ParallelRequire">
   <span class="title">
-    <a href="Kernel.ParallelRequire.html" title="Kernel.ParallelRequire">Kernel.ParallelRequire</a>
+    <a href="Kernel.ParallelRequire.html" title="Kernel.ParallelRequire" data-toggle="collapse" data-parent="#nav-Kernel-ParallelRequire" data-target="#subnav-Kernel-ParallelRequire">
+      Kernel.ParallelRequire
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Kernel-ParallelRequire" class="subsection collapse ">
     
       <li>
         <a href="Kernel.ParallelRequire.html#introduction">Introduction</a>
@@ -2746,11 +2806,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Kernel-SpecialForms">
   <span class="title">
-    <a href="Kernel.SpecialForms.html" title="Kernel.SpecialForms">Kernel.SpecialForms</a>
+    <a href="Kernel.SpecialForms.html" title="Kernel.SpecialForms" data-toggle="collapse" data-parent="#nav-Kernel-SpecialForms" data-target="#subnav-Kernel-SpecialForms">
+      Kernel.SpecialForms
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Kernel-SpecialForms" class="subsection collapse ">
     
       <li>
         <a href="Kernel.SpecialForms.html#introduction">Introduction</a>
@@ -2766,11 +2828,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Kernel-Typespec">
   <span class="title">
-    <a href="Kernel.Typespec.html" title="Kernel.Typespec">Kernel.Typespec</a>
+    <a href="Kernel.Typespec.html" title="Kernel.Typespec" data-toggle="collapse" data-parent="#nav-Kernel-Typespec" data-target="#subnav-Kernel-Typespec">
+      Kernel.Typespec
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Kernel-Typespec" class="subsection collapse ">
     
       <li>
         <a href="Kernel.Typespec.html#introduction">Introduction</a>
@@ -2857,11 +2921,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Keyword">
   <span class="title">
-    <a href="Keyword.html" title="Keyword">Keyword</a>
+    <a href="Keyword.html" title="Keyword" data-toggle="collapse" data-parent="#nav-Keyword" data-target="#subnav-Keyword">
+      Keyword
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Keyword" class="subsection collapse ">
     
       <li>
         <a href="Keyword.html#introduction">Introduction</a>
@@ -2988,11 +3054,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-List">
   <span class="title">
-    <a href="List.html" title="List">List</a>
+    <a href="List.html" title="List" data-toggle="collapse" data-parent="#nav-List" data-target="#subnav-List">
+      List
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-List" class="subsection collapse ">
     
       <li>
         <a href="List.html#introduction">Introduction</a>
@@ -3123,11 +3191,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Macro">
   <span class="title">
-    <a href="Macro.html" title="Macro">Macro</a>
+    <a href="Macro.html" title="Macro" data-toggle="collapse" data-parent="#nav-Macro" data-target="#subnav-Macro">
+      Macro
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Macro" class="subsection collapse ">
     
       <li>
         <a href="Macro.html#introduction">Introduction</a>
@@ -3222,11 +3292,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Macro-Env">
   <span class="title">
-    <a href="Macro.Env.html" title="Macro.Env">Macro.Env</a>
+    <a href="Macro.Env.html" title="Macro.Env" data-toggle="collapse" data-parent="#nav-Macro-Env" data-target="#subnav-Macro-Env">
+      Macro.Env
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Macro-Env" class="subsection collapse ">
     
       <li>
         <a href="Macro.Env.html#introduction">Introduction</a>
@@ -3265,11 +3337,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Map">
   <span class="title">
-    <a href="Map.html" title="Map">Map</a>
+    <a href="Map.html" title="Map" data-toggle="collapse" data-parent="#nav-Map" data-target="#subnav-Map">
+      Map
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Map" class="subsection collapse ">
     
       <li>
         <a href="Map.html#introduction">Introduction</a>
@@ -3376,11 +3450,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Module">
   <span class="title">
-    <a href="Module.html" title="Module">Module</a>
+    <a href="Module.html" title="Module" data-toggle="collapse" data-parent="#nav-Module" data-target="#subnav-Module">
+      Module
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Module" class="subsection collapse ">
     
       <li>
         <a href="Module.html#introduction">Introduction</a>
@@ -3479,11 +3555,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Node">
   <span class="title">
-    <a href="Node.html" title="Node">Node</a>
+    <a href="Node.html" title="Node" data-toggle="collapse" data-parent="#nav-Node" data-target="#subnav-Node">
+      Node
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Node" class="subsection collapse ">
     
       <li>
         <a href="Node.html#introduction">Introduction</a>
@@ -3582,11 +3660,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-OptionParser">
   <span class="title">
-    <a href="OptionParser.html" title="OptionParser">OptionParser</a>
+    <a href="OptionParser.html" title="OptionParser" data-toggle="collapse" data-parent="#nav-OptionParser" data-target="#subnav-OptionParser">
+      OptionParser
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-OptionParser" class="subsection collapse ">
     
       <li>
         <a href="OptionParser.html#introduction">Introduction</a>
@@ -3629,11 +3709,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Path">
   <span class="title">
-    <a href="Path.html" title="Path">Path</a>
+    <a href="Path.html" title="Path" data-toggle="collapse" data-parent="#nav-Path" data-target="#subnav-Path">
+      Path
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Path" class="subsection collapse ">
     
       <li>
         <a href="Path.html#introduction">Introduction</a>
@@ -3728,11 +3810,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Port">
   <span class="title">
-    <a href="Port.html" title="Port">Port</a>
+    <a href="Port.html" title="Port" data-toggle="collapse" data-parent="#nav-Port" data-target="#subnav-Port">
+      Port
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Port" class="subsection collapse ">
     
       <li>
         <a href="Port.html#introduction">Introduction</a>
@@ -3787,11 +3871,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Process">
   <span class="title">
-    <a href="Process.html" title="Process">Process</a>
+    <a href="Process.html" title="Process" data-toggle="collapse" data-parent="#nav-Process" data-target="#subnav-Process">
+      Process
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Process" class="subsection collapse ">
     
       <li>
         <a href="Process.html#introduction">Introduction</a>
@@ -3918,11 +4004,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Protocol">
   <span class="title">
-    <a href="Protocol.html" title="Protocol">Protocol</a>
+    <a href="Protocol.html" title="Protocol" data-toggle="collapse" data-parent="#nav-Protocol" data-target="#subnav-Protocol">
+      Protocol
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Protocol" class="subsection collapse ">
     
       <li>
         <a href="Protocol.html#introduction">Introduction</a>
@@ -3977,11 +4065,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Range">
   <span class="title">
-    <a href="Range.html" title="Range">Range</a>
+    <a href="Range.html" title="Range" data-toggle="collapse" data-parent="#nav-Range" data-target="#subnav-Range">
+      Range
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Range" class="subsection collapse ">
     
       <li>
         <a href="Range.html#introduction">Introduction</a>
@@ -4012,11 +4102,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Record">
   <span class="title">
-    <a href="Record.html" title="Record">Record</a>
+    <a href="Record.html" title="Record" data-toggle="collapse" data-parent="#nav-Record" data-target="#subnav-Record">
+      Record
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Record" class="subsection collapse ">
     
       <li>
         <a href="Record.html#introduction">Introduction</a>
@@ -4032,11 +4124,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Regex">
   <span class="title">
-    <a href="Regex.html" title="Regex">Regex</a>
+    <a href="Regex.html" title="Regex" data-toggle="collapse" data-parent="#nav-Regex" data-target="#subnav-Regex">
+      Regex
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Regex" class="subsection collapse ">
     
       <li>
         <a href="Regex.html#introduction">Introduction</a>
@@ -4115,11 +4209,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Set">
   <span class="title">
-    <a href="Set.html" title="Set">Set</a>
+    <a href="Set.html" title="Set" data-toggle="collapse" data-parent="#nav-Set" data-target="#subnav-Set">
+      Set
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Set" class="subsection collapse ">
     
       <li>
         <a href="Set.html#introduction">Introduction</a>
@@ -4238,11 +4334,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Stream">
   <span class="title">
-    <a href="Stream.html" title="Stream">Stream</a>
+    <a href="Stream.html" title="Stream" data-toggle="collapse" data-parent="#nav-Stream" data-target="#subnav-Stream">
+      Stream
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Stream" class="subsection collapse ">
     
       <li>
         <a href="Stream.html#introduction">Introduction</a>
@@ -4389,11 +4487,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-String">
   <span class="title">
-    <a href="String.html" title="String">String</a>
+    <a href="String.html" title="String" data-toggle="collapse" data-parent="#nav-String" data-target="#subnav-String">
+      String
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-String" class="subsection collapse ">
     
       <li>
         <a href="String.html#introduction">Introduction</a>
@@ -4588,11 +4688,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-StringIO">
   <span class="title">
-    <a href="StringIO.html" title="StringIO">StringIO</a>
+    <a href="StringIO.html" title="StringIO" data-toggle="collapse" data-parent="#nav-StringIO" data-target="#subnav-StringIO">
+      StringIO
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-StringIO" class="subsection collapse ">
     
       <li>
         <a href="StringIO.html#introduction">Introduction</a>
@@ -4623,11 +4725,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Supervisor">
   <span class="title">
-    <a href="Supervisor.html" title="Supervisor">Supervisor</a>
+    <a href="Supervisor.html" title="Supervisor" data-toggle="collapse" data-parent="#nav-Supervisor" data-target="#subnav-Supervisor">
+      Supervisor
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Supervisor" class="subsection collapse ">
     
       <li>
         <a href="Supervisor.html#introduction">Introduction</a>
@@ -4682,11 +4786,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Supervisor-Spec">
   <span class="title">
-    <a href="Supervisor.Spec.html" title="Supervisor.Spec">Supervisor.Spec</a>
+    <a href="Supervisor.Spec.html" title="Supervisor.Spec" data-toggle="collapse" data-parent="#nav-Supervisor-Spec" data-target="#subnav-Supervisor-Spec">
+      Supervisor.Spec
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Supervisor-Spec" class="subsection collapse ">
     
       <li>
         <a href="Supervisor.Spec.html#introduction">Introduction</a>
@@ -4721,11 +4827,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-System">
   <span class="title">
-    <a href="System.html" title="System">System</a>
+    <a href="System.html" title="System" data-toggle="collapse" data-parent="#nav-System" data-target="#subnav-System">
+      System
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-System" class="subsection collapse ">
     
       <li>
         <a href="System.html#introduction">Introduction</a>
@@ -4828,11 +4936,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Task">
   <span class="title">
-    <a href="Task.html" title="Task">Task</a>
+    <a href="Task.html" title="Task" data-toggle="collapse" data-parent="#nav-Task" data-target="#subnav-Task">
+      Task
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Task" class="subsection collapse ">
     
       <li>
         <a href="Task.html#introduction">Introduction</a>
@@ -4891,11 +5001,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Task-Supervisor">
   <span class="title">
-    <a href="Task.Supervisor.html" title="Task.Supervisor">Task.Supervisor</a>
+    <a href="Task.Supervisor.html" title="Task.Supervisor" data-toggle="collapse" data-parent="#nav-Task-Supervisor" data-target="#subnav-Task-Supervisor">
+      Task.Supervisor
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Task-Supervisor" class="subsection collapse ">
     
       <li>
         <a href="Task.Supervisor.html#introduction">Introduction</a>
@@ -4942,11 +5054,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Tuple">
   <span class="title">
-    <a href="Tuple.html" title="Tuple">Tuple</a>
+    <a href="Tuple.html" title="Tuple" data-toggle="collapse" data-parent="#nav-Tuple" data-target="#subnav-Tuple">
+      Tuple
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Tuple" class="subsection collapse ">
     
       <li>
         <a href="Tuple.html#introduction">Introduction</a>
@@ -4981,11 +5095,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-URI">
   <span class="title">
-    <a href="URI.html" title="URI">URI</a>
+    <a href="URI.html" title="URI" data-toggle="collapse" data-parent="#nav-URI" data-target="#subnav-URI">
+      URI
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-URI" class="subsection collapse ">
     
       <li>
         <a href="URI.html#introduction">Introduction</a>
@@ -5064,11 +5180,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Version">
   <span class="title">
-    <a href="Version.html" title="Version">Version</a>
+    <a href="Version.html" title="Version" data-toggle="collapse" data-parent="#nav-Version" data-target="#subnav-Version">
+      Version
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Version" class="subsection collapse ">
     
       <li>
         <a href="Version.html#introduction">Introduction</a>
@@ -5111,11 +5229,13 @@
 </ul>
 
       <ul id="protocols-list" class="section">
-  <li>
+  <li id="nav-Access">
   <span class="title">
-    <a href="Access.html" title="Access">Access</a>
+    <a href="Access.html" title="Access" data-toggle="collapse" data-parent="#nav-Access" data-target="#subnav-Access">
+      Access
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Access" class="subsection collapse ">
     
       <li>
         <a href="Access.html#introduction">Introduction</a>
@@ -5146,11 +5266,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Collectable">
   <span class="title">
-    <a href="Collectable.html" title="Collectable">Collectable</a>
+    <a href="Collectable.html" title="Collectable" data-toggle="collapse" data-parent="#nav-Collectable" data-target="#subnav-Collectable">
+      Collectable
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Collectable" class="subsection collapse ">
     
       <li>
         <a href="Collectable.html#introduction">Introduction</a>
@@ -5181,11 +5303,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Enumerable">
   <span class="title">
-    <a href="Enumerable.html" title="Enumerable">Enumerable</a>
+    <a href="Enumerable.html" title="Enumerable" data-toggle="collapse" data-parent="#nav-Enumerable" data-target="#subnav-Enumerable">
+      Enumerable
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Enumerable" class="subsection collapse ">
     
       <li>
         <a href="Enumerable.html#introduction">Introduction</a>
@@ -5220,11 +5344,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Inspect">
   <span class="title">
-    <a href="Inspect.html" title="Inspect">Inspect</a>
+    <a href="Inspect.html" title="Inspect" data-toggle="collapse" data-parent="#nav-Inspect" data-target="#subnav-Inspect">
+      Inspect
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Inspect" class="subsection collapse ">
     
       <li>
         <a href="Inspect.html#introduction">Introduction</a>
@@ -5251,11 +5377,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-List-Chars">
   <span class="title">
-    <a href="List.Chars.html" title="List.Chars">List.Chars</a>
+    <a href="List.Chars.html" title="List.Chars" data-toggle="collapse" data-parent="#nav-List-Chars" data-target="#subnav-List-Chars">
+      List.Chars
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-List-Chars" class="subsection collapse ">
     
       <li>
         <a href="List.Chars.html#introduction">Introduction</a>
@@ -5282,11 +5410,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Range-Iterator">
   <span class="title">
-    <a href="Range.Iterator.html" title="Range.Iterator">Range.Iterator</a>
+    <a href="Range.Iterator.html" title="Range.Iterator" data-toggle="collapse" data-parent="#nav-Range-Iterator" data-target="#subnav-Range-Iterator">
+      Range.Iterator
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Range-Iterator" class="subsection collapse ">
     
       <li>
         <a href="Range.Iterator.html#introduction">Introduction</a>
@@ -5317,11 +5447,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-String-Chars">
   <span class="title">
-    <a href="String.Chars.html" title="String.Chars">String.Chars</a>
+    <a href="String.Chars.html" title="String.Chars" data-toggle="collapse" data-parent="#nav-String-Chars" data-target="#subnav-String-Chars">
+      String.Chars
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-String-Chars" class="subsection collapse ">
     
       <li>
         <a href="String.Chars.html#introduction">Introduction</a>
@@ -5352,11 +5484,13 @@
 </ul>
 
       <ul id="exceptions-list" class="section">
-  <li>
+  <li id="nav-ArgumentError">
   <span class="title">
-    <a href="ArgumentError.html" title="ArgumentError">ArgumentError</a>
+    <a href="ArgumentError.html" title="ArgumentError" data-toggle="collapse" data-parent="#nav-ArgumentError" data-target="#subnav-ArgumentError">
+      ArgumentError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ArgumentError" class="subsection collapse ">
     
     
     
@@ -5379,11 +5513,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ArithmeticError">
   <span class="title">
-    <a href="ArithmeticError.html" title="ArithmeticError">ArithmeticError</a>
+    <a href="ArithmeticError.html" title="ArithmeticError" data-toggle="collapse" data-parent="#nav-ArithmeticError" data-target="#subnav-ArithmeticError">
+      ArithmeticError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ArithmeticError" class="subsection collapse ">
     
     
     
@@ -5406,11 +5542,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-BadArityError">
   <span class="title">
-    <a href="BadArityError.html" title="BadArityError">BadArityError</a>
+    <a href="BadArityError.html" title="BadArityError" data-toggle="collapse" data-parent="#nav-BadArityError" data-target="#subnav-BadArityError">
+      BadArityError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-BadArityError" class="subsection collapse ">
     
     
     
@@ -5433,11 +5571,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-BadFunctionError">
   <span class="title">
-    <a href="BadFunctionError.html" title="BadFunctionError">BadFunctionError</a>
+    <a href="BadFunctionError.html" title="BadFunctionError" data-toggle="collapse" data-parent="#nav-BadFunctionError" data-target="#subnav-BadFunctionError">
+      BadFunctionError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-BadFunctionError" class="subsection collapse ">
     
     
     
@@ -5460,11 +5600,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-BadStructError">
   <span class="title">
-    <a href="BadStructError.html" title="BadStructError">BadStructError</a>
+    <a href="BadStructError.html" title="BadStructError" data-toggle="collapse" data-parent="#nav-BadStructError" data-target="#subnav-BadStructError">
+      BadStructError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-BadStructError" class="subsection collapse ">
     
     
     
@@ -5487,11 +5629,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-CaseClauseError">
   <span class="title">
-    <a href="CaseClauseError.html" title="CaseClauseError">CaseClauseError</a>
+    <a href="CaseClauseError.html" title="CaseClauseError" data-toggle="collapse" data-parent="#nav-CaseClauseError" data-target="#subnav-CaseClauseError">
+      CaseClauseError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-CaseClauseError" class="subsection collapse ">
     
     
     
@@ -5514,11 +5658,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Code-LoadError">
   <span class="title">
-    <a href="Code.LoadError.html" title="Code.LoadError">Code.LoadError</a>
+    <a href="Code.LoadError.html" title="Code.LoadError" data-toggle="collapse" data-parent="#nav-Code-LoadError" data-target="#subnav-Code-LoadError">
+      Code.LoadError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Code-LoadError" class="subsection collapse ">
     
     
     
@@ -5541,11 +5687,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-CompileError">
   <span class="title">
-    <a href="CompileError.html" title="CompileError">CompileError</a>
+    <a href="CompileError.html" title="CompileError" data-toggle="collapse" data-parent="#nav-CompileError" data-target="#subnav-CompileError">
+      CompileError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-CompileError" class="subsection collapse ">
     
     
     
@@ -5568,11 +5716,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-CondClauseError">
   <span class="title">
-    <a href="CondClauseError.html" title="CondClauseError">CondClauseError</a>
+    <a href="CondClauseError.html" title="CondClauseError" data-toggle="collapse" data-parent="#nav-CondClauseError" data-target="#subnav-CondClauseError">
+      CondClauseError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-CondClauseError" class="subsection collapse ">
     
     
     
@@ -5595,11 +5745,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Enum-EmptyError">
   <span class="title">
-    <a href="Enum.EmptyError.html" title="Enum.EmptyError">Enum.EmptyError</a>
+    <a href="Enum.EmptyError.html" title="Enum.EmptyError" data-toggle="collapse" data-parent="#nav-Enum-EmptyError" data-target="#subnav-Enum-EmptyError">
+      Enum.EmptyError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Enum-EmptyError" class="subsection collapse ">
     
     
     
@@ -5622,11 +5774,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Enum-OutOfBoundsError">
   <span class="title">
-    <a href="Enum.OutOfBoundsError.html" title="Enum.OutOfBoundsError">Enum.OutOfBoundsError</a>
+    <a href="Enum.OutOfBoundsError.html" title="Enum.OutOfBoundsError" data-toggle="collapse" data-parent="#nav-Enum-OutOfBoundsError" data-target="#subnav-Enum-OutOfBoundsError">
+      Enum.OutOfBoundsError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Enum-OutOfBoundsError" class="subsection collapse ">
     
     
     
@@ -5649,11 +5803,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ErlangError">
   <span class="title">
-    <a href="ErlangError.html" title="ErlangError">ErlangError</a>
+    <a href="ErlangError.html" title="ErlangError" data-toggle="collapse" data-parent="#nav-ErlangError" data-target="#subnav-ErlangError">
+      ErlangError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ErlangError" class="subsection collapse ">
     
     
     
@@ -5676,11 +5832,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-File-CopyError">
   <span class="title">
-    <a href="File.CopyError.html" title="File.CopyError">File.CopyError</a>
+    <a href="File.CopyError.html" title="File.CopyError" data-toggle="collapse" data-parent="#nav-File-CopyError" data-target="#subnav-File-CopyError">
+      File.CopyError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-File-CopyError" class="subsection collapse ">
     
     
     
@@ -5703,11 +5861,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-File-Error">
   <span class="title">
-    <a href="File.Error.html" title="File.Error">File.Error</a>
+    <a href="File.Error.html" title="File.Error" data-toggle="collapse" data-parent="#nav-File-Error" data-target="#subnav-File-Error">
+      File.Error
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-File-Error" class="subsection collapse ">
     
     
     
@@ -5730,11 +5890,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-FunctionClauseError">
   <span class="title">
-    <a href="FunctionClauseError.html" title="FunctionClauseError">FunctionClauseError</a>
+    <a href="FunctionClauseError.html" title="FunctionClauseError" data-toggle="collapse" data-parent="#nav-FunctionClauseError" data-target="#subnav-FunctionClauseError">
+      FunctionClauseError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-FunctionClauseError" class="subsection collapse ">
     
     
     
@@ -5757,11 +5919,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-IO-StreamError">
   <span class="title">
-    <a href="IO.StreamError.html" title="IO.StreamError">IO.StreamError</a>
+    <a href="IO.StreamError.html" title="IO.StreamError" data-toggle="collapse" data-parent="#nav-IO-StreamError" data-target="#subnav-IO-StreamError">
+      IO.StreamError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-IO-StreamError" class="subsection collapse in">
     
     
     
@@ -5784,11 +5948,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-KeyError">
   <span class="title">
-    <a href="KeyError.html" title="KeyError">KeyError</a>
+    <a href="KeyError.html" title="KeyError" data-toggle="collapse" data-parent="#nav-KeyError" data-target="#subnav-KeyError">
+      KeyError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-KeyError" class="subsection collapse ">
     
     
     
@@ -5811,11 +5977,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-MatchError">
   <span class="title">
-    <a href="MatchError.html" title="MatchError">MatchError</a>
+    <a href="MatchError.html" title="MatchError" data-toggle="collapse" data-parent="#nav-MatchError" data-target="#subnav-MatchError">
+      MatchError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-MatchError" class="subsection collapse ">
     
     
     
@@ -5838,11 +6006,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Protocol-UndefinedError">
   <span class="title">
-    <a href="Protocol.UndefinedError.html" title="Protocol.UndefinedError">Protocol.UndefinedError</a>
+    <a href="Protocol.UndefinedError.html" title="Protocol.UndefinedError" data-toggle="collapse" data-parent="#nav-Protocol-UndefinedError" data-target="#subnav-Protocol-UndefinedError">
+      Protocol.UndefinedError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Protocol-UndefinedError" class="subsection collapse ">
     
     
     
@@ -5865,11 +6035,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Regex-CompileError">
   <span class="title">
-    <a href="Regex.CompileError.html" title="Regex.CompileError">Regex.CompileError</a>
+    <a href="Regex.CompileError.html" title="Regex.CompileError" data-toggle="collapse" data-parent="#nav-Regex-CompileError" data-target="#subnav-Regex-CompileError">
+      Regex.CompileError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Regex-CompileError" class="subsection collapse ">
     
     
     
@@ -5892,11 +6064,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-RuntimeError">
   <span class="title">
-    <a href="RuntimeError.html" title="RuntimeError">RuntimeError</a>
+    <a href="RuntimeError.html" title="RuntimeError" data-toggle="collapse" data-parent="#nav-RuntimeError" data-target="#subnav-RuntimeError">
+      RuntimeError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-RuntimeError" class="subsection collapse ">
     
     
     
@@ -5919,11 +6093,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-SyntaxError">
   <span class="title">
-    <a href="SyntaxError.html" title="SyntaxError">SyntaxError</a>
+    <a href="SyntaxError.html" title="SyntaxError" data-toggle="collapse" data-parent="#nav-SyntaxError" data-target="#subnav-SyntaxError">
+      SyntaxError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-SyntaxError" class="subsection collapse ">
     
     
     
@@ -5946,11 +6122,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-SystemLimitError">
   <span class="title">
-    <a href="SystemLimitError.html" title="SystemLimitError">SystemLimitError</a>
+    <a href="SystemLimitError.html" title="SystemLimitError" data-toggle="collapse" data-parent="#nav-SystemLimitError" data-target="#subnav-SystemLimitError">
+      SystemLimitError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-SystemLimitError" class="subsection collapse ">
     
     
     
@@ -5973,11 +6151,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-TokenMissingError">
   <span class="title">
-    <a href="TokenMissingError.html" title="TokenMissingError">TokenMissingError</a>
+    <a href="TokenMissingError.html" title="TokenMissingError" data-toggle="collapse" data-parent="#nav-TokenMissingError" data-target="#subnav-TokenMissingError">
+      TokenMissingError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-TokenMissingError" class="subsection collapse ">
     
     
     
@@ -6000,11 +6180,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-TryClauseError">
   <span class="title">
-    <a href="TryClauseError.html" title="TryClauseError">TryClauseError</a>
+    <a href="TryClauseError.html" title="TryClauseError" data-toggle="collapse" data-parent="#nav-TryClauseError" data-target="#subnav-TryClauseError">
+      TryClauseError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-TryClauseError" class="subsection collapse ">
     
     
     
@@ -6027,11 +6209,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-UndefinedFunctionError">
   <span class="title">
-    <a href="UndefinedFunctionError.html" title="UndefinedFunctionError">UndefinedFunctionError</a>
+    <a href="UndefinedFunctionError.html" title="UndefinedFunctionError" data-toggle="collapse" data-parent="#nav-UndefinedFunctionError" data-target="#subnav-UndefinedFunctionError">
+      UndefinedFunctionError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-UndefinedFunctionError" class="subsection collapse ">
     
     
     
@@ -6054,11 +6238,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-UnicodeConversionError">
   <span class="title">
-    <a href="UnicodeConversionError.html" title="UnicodeConversionError">UnicodeConversionError</a>
+    <a href="UnicodeConversionError.html" title="UnicodeConversionError" data-toggle="collapse" data-parent="#nav-UnicodeConversionError" data-target="#subnav-UnicodeConversionError">
+      UnicodeConversionError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-UnicodeConversionError" class="subsection collapse ">
     
     
     
@@ -6081,11 +6267,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Version-InvalidRequirementError">
   <span class="title">
-    <a href="Version.InvalidRequirementError.html" title="Version.InvalidRequirementError">Version.InvalidRequirementError</a>
+    <a href="Version.InvalidRequirementError.html" title="Version.InvalidRequirementError" data-toggle="collapse" data-parent="#nav-Version-InvalidRequirementError" data-target="#subnav-Version-InvalidRequirementError">
+      Version.InvalidRequirementError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Version-InvalidRequirementError" class="subsection collapse ">
     
     
     
@@ -6108,11 +6296,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Version-InvalidVersionError">
   <span class="title">
-    <a href="Version.InvalidVersionError.html" title="Version.InvalidVersionError">Version.InvalidVersionError</a>
+    <a href="Version.InvalidVersionError.html" title="Version.InvalidVersionError" data-toggle="collapse" data-parent="#nav-Version-InvalidVersionError" data-target="#subnav-Version-InvalidVersionError">
+      Version.InvalidVersionError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Version-InvalidVersionError" class="subsection collapse ">
     
     
     

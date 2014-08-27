@@ -9,21 +9,25 @@
 
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="js/highlight.js"></script>
+  <script src="js/bootstrap.js"></script>
 
   <script src="js/app.js"></script>
-
 
 </head>
 <body>
   <div id="header">
-    <div class="logo"></div>
-    <div class="title">
-      <h1>
-        
-        <a href="http://elixir-lang.org/docs.html" target="_top">Mix</a>
-        
-      </h1>
-      <h2>v0.15.2-dev</h2>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+      </div>
+      <div class="title">
+        <h1>
+          
+          <a href="http://elixir-lang.org/docs.html" target="_top">Mix</a>
+          
+        </h1>
+        <h2>v 0.15.2-dev</h2>
+      </div>
     </div>
   </div>
 
@@ -36,11 +40,13 @@
       </div>
       <div class="search"><input type="text" placeholder="search"/></div>
       <ul id="modules-list" class="section">
-  <li>
+  <li id="nav-Mix">
   <span class="title">
-    <a href="Mix.html" title="Mix">Mix</a>
+    <a href="Mix.html" title="Mix" data-toggle="collapse" data-parent="#nav-Mix" data-target="#subnav-Mix">
+      Mix
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix" class="subsection collapse ">
     
       <li>
         <a href="Mix.html#introduction">Introduction</a>
@@ -87,11 +93,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Archive">
   <span class="title">
-    <a href="Mix.Archive.html" title="Mix.Archive">Mix.Archive</a>
+    <a href="Mix.Archive.html" title="Mix.Archive" data-toggle="collapse" data-parent="#nav-Mix-Archive" data-target="#subnav-Mix-Archive">
+      Mix.Archive
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Archive" class="subsection collapse ">
     
       <li>
         <a href="Mix.Archive.html#introduction">Introduction</a>
@@ -126,11 +134,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Config">
   <span class="title">
-    <a href="Mix.Config.html" title="Mix.Config">Mix.Config</a>
+    <a href="Mix.Config.html" title="Mix.Config" data-toggle="collapse" data-parent="#nav-Mix-Config" data-target="#subnav-Mix-Config">
+      Mix.Config
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Config" class="subsection collapse ">
     
       <li>
         <a href="Mix.Config.html#introduction">Introduction</a>
@@ -189,11 +199,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Generator">
   <span class="title">
-    <a href="Mix.Generator.html" title="Mix.Generator">Mix.Generator</a>
+    <a href="Mix.Generator.html" title="Mix.Generator" data-toggle="collapse" data-parent="#nav-Mix-Generator" data-target="#subnav-Mix-Generator">
+      Mix.Generator
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Generator" class="subsection collapse ">
     
       <li>
         <a href="Mix.Generator.html#introduction">Introduction</a>
@@ -232,11 +244,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Project">
   <span class="title">
-    <a href="Mix.Project.html" title="Mix.Project">Mix.Project</a>
+    <a href="Mix.Project.html" title="Mix.Project" data-toggle="collapse" data-parent="#nav-Mix-Project" data-target="#subnav-Mix-Project">
+      Mix.Project
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Project" class="subsection collapse ">
     
       <li>
         <a href="Mix.Project.html#introduction">Introduction</a>
@@ -307,11 +321,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-SCM">
   <span class="title">
-    <a href="Mix.SCM.html" title="Mix.SCM">Mix.SCM</a>
+    <a href="Mix.SCM.html" title="Mix.SCM" data-toggle="collapse" data-parent="#nav-Mix-SCM" data-target="#subnav-Mix-SCM">
+      Mix.SCM
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-SCM" class="subsection collapse ">
     
       <li>
         <a href="Mix.SCM.html#introduction">Introduction</a>
@@ -386,11 +402,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Shell">
   <span class="title">
-    <a href="Mix.Shell.html" title="Mix.Shell">Mix.Shell</a>
+    <a href="Mix.Shell.html" title="Mix.Shell" data-toggle="collapse" data-parent="#nav-Mix-Shell" data-target="#subnav-Mix-Shell">
+      Mix.Shell
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Shell" class="subsection collapse ">
     
       <li>
         <a href="Mix.Shell.html#introduction">Introduction</a>
@@ -449,11 +467,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Shell-IO">
   <span class="title">
-    <a href="Mix.Shell.IO.html" title="Mix.Shell.IO">Mix.Shell.IO</a>
+    <a href="Mix.Shell.IO.html" title="Mix.Shell.IO" data-toggle="collapse" data-parent="#nav-Mix-Shell-IO" data-target="#subnav-Mix-Shell-IO">
+      Mix.Shell.IO
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Shell-IO" class="subsection collapse ">
     
       <li>
         <a href="Mix.Shell.IO.html#introduction">Introduction</a>
@@ -496,11 +516,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Shell-Process">
   <span class="title">
-    <a href="Mix.Shell.Process.html" title="Mix.Shell.Process">Mix.Shell.Process</a>
+    <a href="Mix.Shell.Process.html" title="Mix.Shell.Process" data-toggle="collapse" data-parent="#nav-Mix-Shell-Process" data-target="#subnav-Mix-Shell-Process">
+      Mix.Shell.Process
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Shell-Process" class="subsection collapse in">
     
       <li>
         <a href="Mix.Shell.Process.html#introduction">Introduction</a>
@@ -547,11 +569,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Task">
   <span class="title">
-    <a href="Mix.Task.html" title="Mix.Task">Mix.Task</a>
+    <a href="Mix.Task.html" title="Mix.Task" data-toggle="collapse" data-parent="#nav-Mix-Task" data-target="#subnav-Mix-Task">
+      Mix.Task
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Task" class="subsection collapse ">
     
       <li>
         <a href="Mix.Task.html#introduction">Introduction</a>
@@ -638,11 +662,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-App-Start">
   <span class="title">
-    <a href="Mix.Tasks.App.Start.html" title="Mix.Tasks.App.Start">Mix.Tasks.App.Start</a>
+    <a href="Mix.Tasks.App.Start.html" title="Mix.Tasks.App.Start" data-toggle="collapse" data-parent="#nav-Mix-Tasks-App-Start" data-target="#subnav-Mix-Tasks-App-Start">
+      Mix.Tasks.App.Start
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-App-Start" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.App.Start.html#introduction">Introduction</a>
@@ -665,11 +691,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Archive">
   <span class="title">
-    <a href="Mix.Tasks.Archive.html" title="Mix.Tasks.Archive">Mix.Tasks.Archive</a>
+    <a href="Mix.Tasks.Archive.html" title="Mix.Tasks.Archive" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Archive" data-target="#subnav-Mix-Tasks-Archive">
+      Mix.Tasks.Archive
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Archive" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Archive.html#introduction">Introduction</a>
@@ -692,11 +720,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Archive-Build">
   <span class="title">
-    <a href="Mix.Tasks.Archive.Build.html" title="Mix.Tasks.Archive.Build">Mix.Tasks.Archive.Build</a>
+    <a href="Mix.Tasks.Archive.Build.html" title="Mix.Tasks.Archive.Build" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Archive-Build" data-target="#subnav-Mix-Tasks-Archive-Build">
+      Mix.Tasks.Archive.Build
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Archive-Build" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Archive.Build.html#introduction">Introduction</a>
@@ -719,11 +749,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Archive-Install">
   <span class="title">
-    <a href="Mix.Tasks.Archive.Install.html" title="Mix.Tasks.Archive.Install">Mix.Tasks.Archive.Install</a>
+    <a href="Mix.Tasks.Archive.Install.html" title="Mix.Tasks.Archive.Install" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Archive-Install" data-target="#subnav-Mix-Tasks-Archive-Install">
+      Mix.Tasks.Archive.Install
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Archive-Install" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Archive.Install.html#introduction">Introduction</a>
@@ -746,11 +778,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Archive-Uninstall">
   <span class="title">
-    <a href="Mix.Tasks.Archive.Uninstall.html" title="Mix.Tasks.Archive.Uninstall">Mix.Tasks.Archive.Uninstall</a>
+    <a href="Mix.Tasks.Archive.Uninstall.html" title="Mix.Tasks.Archive.Uninstall" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Archive-Uninstall" data-target="#subnav-Mix-Tasks-Archive-Uninstall">
+      Mix.Tasks.Archive.Uninstall
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Archive-Uninstall" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Archive.Uninstall.html#introduction">Introduction</a>
@@ -773,11 +807,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Clean">
   <span class="title">
-    <a href="Mix.Tasks.Clean.html" title="Mix.Tasks.Clean">Mix.Tasks.Clean</a>
+    <a href="Mix.Tasks.Clean.html" title="Mix.Tasks.Clean" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Clean" data-target="#subnav-Mix-Tasks-Clean">
+      Mix.Tasks.Clean
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Clean" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Clean.html#introduction">Introduction</a>
@@ -800,11 +836,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Cmd">
   <span class="title">
-    <a href="Mix.Tasks.Cmd.html" title="Mix.Tasks.Cmd">Mix.Tasks.Cmd</a>
+    <a href="Mix.Tasks.Cmd.html" title="Mix.Tasks.Cmd" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Cmd" data-target="#subnav-Mix-Tasks-Cmd">
+      Mix.Tasks.Cmd
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Cmd" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Cmd.html#introduction">Introduction</a>
@@ -827,11 +865,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Compile">
   <span class="title">
-    <a href="Mix.Tasks.Compile.html" title="Mix.Tasks.Compile">Mix.Tasks.Compile</a>
+    <a href="Mix.Tasks.Compile.html" title="Mix.Tasks.Compile" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Compile" data-target="#subnav-Mix-Tasks-Compile">
+      Mix.Tasks.Compile
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Compile" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Compile.html#introduction">Introduction</a>
@@ -862,11 +902,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Compile-App">
   <span class="title">
-    <a href="Mix.Tasks.Compile.App.html" title="Mix.Tasks.Compile.App">Mix.Tasks.Compile.App</a>
+    <a href="Mix.Tasks.Compile.App.html" title="Mix.Tasks.Compile.App" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Compile-App" data-target="#subnav-Mix-Tasks-Compile-App">
+      Mix.Tasks.Compile.App
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Compile-App" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Compile.App.html#introduction">Introduction</a>
@@ -889,11 +931,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Compile-Elixir">
   <span class="title">
-    <a href="Mix.Tasks.Compile.Elixir.html" title="Mix.Tasks.Compile.Elixir">Mix.Tasks.Compile.Elixir</a>
+    <a href="Mix.Tasks.Compile.Elixir.html" title="Mix.Tasks.Compile.Elixir" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Compile-Elixir" data-target="#subnav-Mix-Tasks-Compile-Elixir">
+      Mix.Tasks.Compile.Elixir
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Compile-Elixir" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Compile.Elixir.html#introduction">Introduction</a>
@@ -924,11 +968,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Compile-Erlang">
   <span class="title">
-    <a href="Mix.Tasks.Compile.Erlang.html" title="Mix.Tasks.Compile.Erlang">Mix.Tasks.Compile.Erlang</a>
+    <a href="Mix.Tasks.Compile.Erlang.html" title="Mix.Tasks.Compile.Erlang" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Compile-Erlang" data-target="#subnav-Mix-Tasks-Compile-Erlang">
+      Mix.Tasks.Compile.Erlang
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Compile-Erlang" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Compile.Erlang.html#introduction">Introduction</a>
@@ -959,11 +1005,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Compile-Leex">
   <span class="title">
-    <a href="Mix.Tasks.Compile.Leex.html" title="Mix.Tasks.Compile.Leex">Mix.Tasks.Compile.Leex</a>
+    <a href="Mix.Tasks.Compile.Leex.html" title="Mix.Tasks.Compile.Leex" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Compile-Leex" data-target="#subnav-Mix-Tasks-Compile-Leex">
+      Mix.Tasks.Compile.Leex
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Compile-Leex" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Compile.Leex.html#introduction">Introduction</a>
@@ -994,11 +1042,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Compile-Protocols">
   <span class="title">
-    <a href="Mix.Tasks.Compile.Protocols.html" title="Mix.Tasks.Compile.Protocols">Mix.Tasks.Compile.Protocols</a>
+    <a href="Mix.Tasks.Compile.Protocols.html" title="Mix.Tasks.Compile.Protocols" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Compile-Protocols" data-target="#subnav-Mix-Tasks-Compile-Protocols">
+      Mix.Tasks.Compile.Protocols
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Compile-Protocols" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Compile.Protocols.html#introduction">Introduction</a>
@@ -1021,11 +1071,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Compile-Yecc">
   <span class="title">
-    <a href="Mix.Tasks.Compile.Yecc.html" title="Mix.Tasks.Compile.Yecc">Mix.Tasks.Compile.Yecc</a>
+    <a href="Mix.Tasks.Compile.Yecc.html" title="Mix.Tasks.Compile.Yecc" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Compile-Yecc" data-target="#subnav-Mix-Tasks-Compile-Yecc">
+      Mix.Tasks.Compile.Yecc
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Compile-Yecc" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Compile.Yecc.html#introduction">Introduction</a>
@@ -1056,11 +1108,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Deps">
   <span class="title">
-    <a href="Mix.Tasks.Deps.html" title="Mix.Tasks.Deps">Mix.Tasks.Deps</a>
+    <a href="Mix.Tasks.Deps.html" title="Mix.Tasks.Deps" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Deps" data-target="#subnav-Mix-Tasks-Deps">
+      Mix.Tasks.Deps
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Deps" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Deps.html#introduction">Introduction</a>
@@ -1083,11 +1137,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Deps-Check">
   <span class="title">
-    <a href="Mix.Tasks.Deps.Check.html" title="Mix.Tasks.Deps.Check">Mix.Tasks.Deps.Check</a>
+    <a href="Mix.Tasks.Deps.Check.html" title="Mix.Tasks.Deps.Check" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Deps-Check" data-target="#subnav-Mix-Tasks-Deps-Check">
+      Mix.Tasks.Deps.Check
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Deps-Check" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Deps.Check.html#introduction">Introduction</a>
@@ -1110,11 +1166,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Deps-Clean">
   <span class="title">
-    <a href="Mix.Tasks.Deps.Clean.html" title="Mix.Tasks.Deps.Clean">Mix.Tasks.Deps.Clean</a>
+    <a href="Mix.Tasks.Deps.Clean.html" title="Mix.Tasks.Deps.Clean" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Deps-Clean" data-target="#subnav-Mix-Tasks-Deps-Clean">
+      Mix.Tasks.Deps.Clean
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Deps-Clean" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Deps.Clean.html#introduction">Introduction</a>
@@ -1137,11 +1195,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Deps-Compile">
   <span class="title">
-    <a href="Mix.Tasks.Deps.Compile.html" title="Mix.Tasks.Deps.Compile">Mix.Tasks.Deps.Compile</a>
+    <a href="Mix.Tasks.Deps.Compile.html" title="Mix.Tasks.Deps.Compile" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Deps-Compile" data-target="#subnav-Mix-Tasks-Deps-Compile">
+      Mix.Tasks.Deps.Compile
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Deps-Compile" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Deps.Compile.html#introduction">Introduction</a>
@@ -1164,11 +1224,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Deps-Get">
   <span class="title">
-    <a href="Mix.Tasks.Deps.Get.html" title="Mix.Tasks.Deps.Get">Mix.Tasks.Deps.Get</a>
+    <a href="Mix.Tasks.Deps.Get.html" title="Mix.Tasks.Deps.Get" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Deps-Get" data-target="#subnav-Mix-Tasks-Deps-Get">
+      Mix.Tasks.Deps.Get
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Deps-Get" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Deps.Get.html#introduction">Introduction</a>
@@ -1191,11 +1253,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Deps-Loadpaths">
   <span class="title">
-    <a href="Mix.Tasks.Deps.Loadpaths.html" title="Mix.Tasks.Deps.Loadpaths">Mix.Tasks.Deps.Loadpaths</a>
+    <a href="Mix.Tasks.Deps.Loadpaths.html" title="Mix.Tasks.Deps.Loadpaths" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Deps-Loadpaths" data-target="#subnav-Mix-Tasks-Deps-Loadpaths">
+      Mix.Tasks.Deps.Loadpaths
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Deps-Loadpaths" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Deps.Loadpaths.html#introduction">Introduction</a>
@@ -1218,11 +1282,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Deps-Unlock">
   <span class="title">
-    <a href="Mix.Tasks.Deps.Unlock.html" title="Mix.Tasks.Deps.Unlock">Mix.Tasks.Deps.Unlock</a>
+    <a href="Mix.Tasks.Deps.Unlock.html" title="Mix.Tasks.Deps.Unlock" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Deps-Unlock" data-target="#subnav-Mix-Tasks-Deps-Unlock">
+      Mix.Tasks.Deps.Unlock
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Deps-Unlock" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Deps.Unlock.html#introduction">Introduction</a>
@@ -1245,11 +1311,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Deps-Update">
   <span class="title">
-    <a href="Mix.Tasks.Deps.Update.html" title="Mix.Tasks.Deps.Update">Mix.Tasks.Deps.Update</a>
+    <a href="Mix.Tasks.Deps.Update.html" title="Mix.Tasks.Deps.Update" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Deps-Update" data-target="#subnav-Mix-Tasks-Deps-Update">
+      Mix.Tasks.Deps.Update
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Deps-Update" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Deps.Update.html#introduction">Introduction</a>
@@ -1272,11 +1340,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Do">
   <span class="title">
-    <a href="Mix.Tasks.Do.html" title="Mix.Tasks.Do">Mix.Tasks.Do</a>
+    <a href="Mix.Tasks.Do.html" title="Mix.Tasks.Do" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Do" data-target="#subnav-Mix-Tasks-Do">
+      Mix.Tasks.Do
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Do" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Do.html#introduction">Introduction</a>
@@ -1299,11 +1369,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Escript-Build">
   <span class="title">
-    <a href="Mix.Tasks.Escript.Build.html" title="Mix.Tasks.Escript.Build">Mix.Tasks.Escript.Build</a>
+    <a href="Mix.Tasks.Escript.Build.html" title="Mix.Tasks.Escript.Build" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Escript-Build" data-target="#subnav-Mix-Tasks-Escript-Build">
+      Mix.Tasks.Escript.Build
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Escript-Build" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Escript.Build.html#introduction">Introduction</a>
@@ -1326,11 +1398,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Help">
   <span class="title">
-    <a href="Mix.Tasks.Help.html" title="Mix.Tasks.Help">Mix.Tasks.Help</a>
+    <a href="Mix.Tasks.Help.html" title="Mix.Tasks.Help" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Help" data-target="#subnav-Mix-Tasks-Help">
+      Mix.Tasks.Help
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Help" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Help.html#introduction">Introduction</a>
@@ -1353,11 +1427,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Iex">
   <span class="title">
-    <a href="Mix.Tasks.Iex.html" title="Mix.Tasks.Iex">Mix.Tasks.Iex</a>
+    <a href="Mix.Tasks.Iex.html" title="Mix.Tasks.Iex" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Iex" data-target="#subnav-Mix-Tasks-Iex">
+      Mix.Tasks.Iex
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Iex" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Iex.html#introduction">Introduction</a>
@@ -1380,11 +1456,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Loadconfig">
   <span class="title">
-    <a href="Mix.Tasks.Loadconfig.html" title="Mix.Tasks.Loadconfig">Mix.Tasks.Loadconfig</a>
+    <a href="Mix.Tasks.Loadconfig.html" title="Mix.Tasks.Loadconfig" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Loadconfig" data-target="#subnav-Mix-Tasks-Loadconfig">
+      Mix.Tasks.Loadconfig
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Loadconfig" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Loadconfig.html#introduction">Introduction</a>
@@ -1407,11 +1485,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Loadpaths">
   <span class="title">
-    <a href="Mix.Tasks.Loadpaths.html" title="Mix.Tasks.Loadpaths">Mix.Tasks.Loadpaths</a>
+    <a href="Mix.Tasks.Loadpaths.html" title="Mix.Tasks.Loadpaths" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Loadpaths" data-target="#subnav-Mix-Tasks-Loadpaths">
+      Mix.Tasks.Loadpaths
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Loadpaths" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Loadpaths.html#introduction">Introduction</a>
@@ -1434,11 +1514,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Local">
   <span class="title">
-    <a href="Mix.Tasks.Local.html" title="Mix.Tasks.Local">Mix.Tasks.Local</a>
+    <a href="Mix.Tasks.Local.html" title="Mix.Tasks.Local" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Local" data-target="#subnav-Mix-Tasks-Local">
+      Mix.Tasks.Local
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Local" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Local.html#introduction">Introduction</a>
@@ -1461,11 +1543,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Local-Hex">
   <span class="title">
-    <a href="Mix.Tasks.Local.Hex.html" title="Mix.Tasks.Local.Hex">Mix.Tasks.Local.Hex</a>
+    <a href="Mix.Tasks.Local.Hex.html" title="Mix.Tasks.Local.Hex" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Local-Hex" data-target="#subnav-Mix-Tasks-Local-Hex">
+      Mix.Tasks.Local.Hex
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Local-Hex" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Local.Hex.html#introduction">Introduction</a>
@@ -1488,11 +1572,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Local-Rebar">
   <span class="title">
-    <a href="Mix.Tasks.Local.Rebar.html" title="Mix.Tasks.Local.Rebar">Mix.Tasks.Local.Rebar</a>
+    <a href="Mix.Tasks.Local.Rebar.html" title="Mix.Tasks.Local.Rebar" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Local-Rebar" data-target="#subnav-Mix-Tasks-Local-Rebar">
+      Mix.Tasks.Local.Rebar
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Local-Rebar" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Local.Rebar.html#introduction">Introduction</a>
@@ -1515,11 +1601,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-New">
   <span class="title">
-    <a href="Mix.Tasks.New.html" title="Mix.Tasks.New">Mix.Tasks.New</a>
+    <a href="Mix.Tasks.New.html" title="Mix.Tasks.New" data-toggle="collapse" data-parent="#nav-Mix-Tasks-New" data-target="#subnav-Mix-Tasks-New">
+      Mix.Tasks.New
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-New" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.New.html#introduction">Introduction</a>
@@ -1542,11 +1630,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Run">
   <span class="title">
-    <a href="Mix.Tasks.Run.html" title="Mix.Tasks.Run">Mix.Tasks.Run</a>
+    <a href="Mix.Tasks.Run.html" title="Mix.Tasks.Run" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Run" data-target="#subnav-Mix-Tasks-Run">
+      Mix.Tasks.Run
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Run" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Run.html#introduction">Introduction</a>
@@ -1569,11 +1659,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Tasks-Test">
   <span class="title">
-    <a href="Mix.Tasks.Test.html" title="Mix.Tasks.Test">Mix.Tasks.Test</a>
+    <a href="Mix.Tasks.Test.html" title="Mix.Tasks.Test" data-toggle="collapse" data-parent="#nav-Mix-Tasks-Test" data-target="#subnav-Mix-Tasks-Test">
+      Mix.Tasks.Test
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Tasks-Test" class="subsection collapse ">
     
       <li>
         <a href="Mix.Tasks.Test.html#introduction">Introduction</a>
@@ -1596,11 +1688,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Utils">
   <span class="title">
-    <a href="Mix.Utils.html" title="Mix.Utils">Mix.Utils</a>
+    <a href="Mix.Utils.html" title="Mix.Utils" data-toggle="collapse" data-parent="#nav-Mix-Utils" data-target="#subnav-Mix-Utils">
+      Mix.Utils
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Utils" class="subsection collapse ">
     
       <li>
         <a href="Mix.Utils.html#introduction">Introduction</a>
@@ -1679,11 +1773,13 @@
 </ul>
 
       <ul id="exceptions-list" class="section">
-  <li>
+  <li id="nav-Mix-Config-LoadError">
   <span class="title">
-    <a href="Mix.Config.LoadError.html" title="Mix.Config.LoadError">Mix.Config.LoadError</a>
+    <a href="Mix.Config.LoadError.html" title="Mix.Config.LoadError" data-toggle="collapse" data-parent="#nav-Mix-Config-LoadError" data-target="#subnav-Mix-Config-LoadError">
+      Mix.Config.LoadError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Config-LoadError" class="subsection collapse ">
     
     
     
@@ -1706,11 +1802,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-ElixirVersionError">
   <span class="title">
-    <a href="Mix.ElixirVersionError.html" title="Mix.ElixirVersionError">Mix.ElixirVersionError</a>
+    <a href="Mix.ElixirVersionError.html" title="Mix.ElixirVersionError" data-toggle="collapse" data-parent="#nav-Mix-ElixirVersionError" data-target="#subnav-Mix-ElixirVersionError">
+      Mix.ElixirVersionError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-ElixirVersionError" class="subsection collapse ">
     
     
     
@@ -1733,11 +1831,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-Error">
   <span class="title">
-    <a href="Mix.Error.html" title="Mix.Error">Mix.Error</a>
+    <a href="Mix.Error.html" title="Mix.Error" data-toggle="collapse" data-parent="#nav-Mix-Error" data-target="#subnav-Mix-Error">
+      Mix.Error
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-Error" class="subsection collapse ">
     
     
     
@@ -1760,11 +1860,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-InvalidTaskError">
   <span class="title">
-    <a href="Mix.InvalidTaskError.html" title="Mix.InvalidTaskError">Mix.InvalidTaskError</a>
+    <a href="Mix.InvalidTaskError.html" title="Mix.InvalidTaskError" data-toggle="collapse" data-parent="#nav-Mix-InvalidTaskError" data-target="#subnav-Mix-InvalidTaskError">
+      Mix.InvalidTaskError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-InvalidTaskError" class="subsection collapse ">
     
     
     
@@ -1787,11 +1889,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-NoProjectError">
   <span class="title">
-    <a href="Mix.NoProjectError.html" title="Mix.NoProjectError">Mix.NoProjectError</a>
+    <a href="Mix.NoProjectError.html" title="Mix.NoProjectError" data-toggle="collapse" data-parent="#nav-Mix-NoProjectError" data-target="#subnav-Mix-NoProjectError">
+      Mix.NoProjectError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-NoProjectError" class="subsection collapse ">
     
     
     
@@ -1814,11 +1918,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Mix-NoTaskError">
   <span class="title">
-    <a href="Mix.NoTaskError.html" title="Mix.NoTaskError">Mix.NoTaskError</a>
+    <a href="Mix.NoTaskError.html" title="Mix.NoTaskError" data-toggle="collapse" data-parent="#nav-Mix-NoTaskError" data-target="#subnav-Mix-NoTaskError">
+      Mix.NoTaskError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Mix-NoTaskError" class="subsection collapse ">
     
     
     

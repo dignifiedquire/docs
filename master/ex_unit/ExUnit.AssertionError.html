@@ -9,21 +9,25 @@
 
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="js/highlight.js"></script>
+  <script src="js/bootstrap.js"></script>
 
   <script src="js/app.js"></script>
-
 
 </head>
 <body>
   <div id="header">
-    <div class="logo"></div>
-    <div class="title">
-      <h1>
-        
-        <a href="http://elixir-lang.org/docs.html" target="_top">ExUnit</a>
-        
-      </h1>
-      <h2>v0.15.2-dev</h2>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+      </div>
+      <div class="title">
+        <h1>
+          
+          <a href="http://elixir-lang.org/docs.html" target="_top">ExUnit</a>
+          
+        </h1>
+        <h2>v 0.15.2-dev</h2>
+      </div>
     </div>
   </div>
 
@@ -36,11 +40,13 @@
       </div>
       <div class="search"><input type="text" placeholder="search"/></div>
       <ul id="modules-list" class="section">
-  <li>
+  <li id="nav-ExUnit">
   <span class="title">
-    <a href="ExUnit.html" title="ExUnit">ExUnit</a>
+    <a href="ExUnit.html" title="ExUnit" data-toggle="collapse" data-parent="#nav-ExUnit" data-target="#subnav-ExUnit">
+      ExUnit
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit" class="subsection collapse ">
     
       <li>
         <a href="ExUnit.html#introduction">Introduction</a>
@@ -79,11 +85,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ExUnit-Assertions">
   <span class="title">
-    <a href="ExUnit.Assertions.html" title="ExUnit.Assertions">ExUnit.Assertions</a>
+    <a href="ExUnit.Assertions.html" title="ExUnit.Assertions" data-toggle="collapse" data-parent="#nav-ExUnit-Assertions" data-target="#subnav-ExUnit-Assertions">
+      ExUnit.Assertions
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-Assertions" class="subsection collapse ">
     
       <li>
         <a href="ExUnit.Assertions.html#introduction">Introduction</a>
@@ -174,11 +182,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ExUnit-Callbacks">
   <span class="title">
-    <a href="ExUnit.Callbacks.html" title="ExUnit.Callbacks">ExUnit.Callbacks</a>
+    <a href="ExUnit.Callbacks.html" title="ExUnit.Callbacks" data-toggle="collapse" data-parent="#nav-ExUnit-Callbacks" data-target="#subnav-ExUnit-Callbacks">
+      ExUnit.Callbacks
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-Callbacks" class="subsection collapse ">
     
       <li>
         <a href="ExUnit.Callbacks.html#introduction">Introduction</a>
@@ -213,11 +223,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ExUnit-CaptureIO">
   <span class="title">
-    <a href="ExUnit.CaptureIO.html" title="ExUnit.CaptureIO">ExUnit.CaptureIO</a>
+    <a href="ExUnit.CaptureIO.html" title="ExUnit.CaptureIO" data-toggle="collapse" data-parent="#nav-ExUnit-CaptureIO" data-target="#subnav-ExUnit-CaptureIO">
+      ExUnit.CaptureIO
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-CaptureIO" class="subsection collapse ">
     
       <li>
         <a href="ExUnit.CaptureIO.html#introduction">Introduction</a>
@@ -248,11 +260,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ExUnit-Case">
   <span class="title">
-    <a href="ExUnit.Case.html" title="ExUnit.Case">ExUnit.Case</a>
+    <a href="ExUnit.Case.html" title="ExUnit.Case" data-toggle="collapse" data-parent="#nav-ExUnit-Case" data-target="#subnav-ExUnit-Case">
+      ExUnit.Case
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-Case" class="subsection collapse ">
     
       <li>
         <a href="ExUnit.Case.html#introduction">Introduction</a>
@@ -268,11 +282,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ExUnit-CaseTemplate">
   <span class="title">
-    <a href="ExUnit.CaseTemplate.html" title="ExUnit.CaseTemplate">ExUnit.CaseTemplate</a>
+    <a href="ExUnit.CaseTemplate.html" title="ExUnit.CaseTemplate" data-toggle="collapse" data-parent="#nav-ExUnit-CaseTemplate" data-target="#subnav-ExUnit-CaseTemplate">
+      ExUnit.CaseTemplate
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-CaseTemplate" class="subsection collapse ">
     
       <li>
         <a href="ExUnit.CaseTemplate.html#introduction">Introduction</a>
@@ -288,11 +304,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ExUnit-DocTest">
   <span class="title">
-    <a href="ExUnit.DocTest.html" title="ExUnit.DocTest">ExUnit.DocTest</a>
+    <a href="ExUnit.DocTest.html" title="ExUnit.DocTest" data-toggle="collapse" data-parent="#nav-ExUnit-DocTest" data-target="#subnav-ExUnit-DocTest">
+      ExUnit.DocTest
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-DocTest" class="subsection collapse ">
     
       <li>
         <a href="ExUnit.DocTest.html#introduction">Introduction</a>
@@ -308,11 +326,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ExUnit-Filters">
   <span class="title">
-    <a href="ExUnit.Filters.html" title="ExUnit.Filters">ExUnit.Filters</a>
+    <a href="ExUnit.Filters.html" title="ExUnit.Filters" data-toggle="collapse" data-parent="#nav-ExUnit-Filters" data-target="#subnav-ExUnit-Filters">
+      ExUnit.Filters
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-Filters" class="subsection collapse ">
     
       <li>
         <a href="ExUnit.Filters.html#introduction">Introduction</a>
@@ -351,11 +371,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ExUnit-Formatter">
   <span class="title">
-    <a href="ExUnit.Formatter.html" title="ExUnit.Formatter">ExUnit.Formatter</a>
+    <a href="ExUnit.Formatter.html" title="ExUnit.Formatter" data-toggle="collapse" data-parent="#nav-ExUnit-Formatter" data-target="#subnav-ExUnit-Formatter">
+      ExUnit.Formatter
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-Formatter" class="subsection collapse ">
     
       <li>
         <a href="ExUnit.Formatter.html#introduction">Introduction</a>
@@ -394,11 +416,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ExUnit-Test">
   <span class="title">
-    <a href="ExUnit.Test.html" title="ExUnit.Test">ExUnit.Test</a>
+    <a href="ExUnit.Test.html" title="ExUnit.Test" data-toggle="collapse" data-parent="#nav-ExUnit-Test" data-target="#subnav-ExUnit-Test">
+      ExUnit.Test
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-Test" class="subsection collapse ">
     
       <li>
         <a href="ExUnit.Test.html#introduction">Introduction</a>
@@ -414,11 +438,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ExUnit-TestCase">
   <span class="title">
-    <a href="ExUnit.TestCase.html" title="ExUnit.TestCase">ExUnit.TestCase</a>
+    <a href="ExUnit.TestCase.html" title="ExUnit.TestCase" data-toggle="collapse" data-parent="#nav-ExUnit-TestCase" data-target="#subnav-ExUnit-TestCase">
+      ExUnit.TestCase
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-TestCase" class="subsection collapse ">
     
       <li>
         <a href="ExUnit.TestCase.html#introduction">Introduction</a>
@@ -442,11 +468,13 @@
 </ul>
 
       <ul id="exceptions-list" class="section">
-  <li>
+  <li id="nav-ExUnit-AssertionError">
   <span class="title">
-    <a href="ExUnit.AssertionError.html" title="ExUnit.AssertionError">ExUnit.AssertionError</a>
+    <a href="ExUnit.AssertionError.html" title="ExUnit.AssertionError" data-toggle="collapse" data-parent="#nav-ExUnit-AssertionError" data-target="#subnav-ExUnit-AssertionError">
+      ExUnit.AssertionError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-AssertionError" class="subsection collapse in">
     
     
     
@@ -473,11 +501,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ExUnit-DocTest-Error">
   <span class="title">
-    <a href="ExUnit.DocTest.Error.html" title="ExUnit.DocTest.Error">ExUnit.DocTest.Error</a>
+    <a href="ExUnit.DocTest.Error.html" title="ExUnit.DocTest.Error" data-toggle="collapse" data-parent="#nav-ExUnit-DocTest-Error" data-target="#subnav-ExUnit-DocTest-Error">
+      ExUnit.DocTest.Error
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-DocTest-Error" class="subsection collapse ">
     
     
     
@@ -500,11 +530,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-ExUnit-TimeoutError">
   <span class="title">
-    <a href="ExUnit.TimeoutError.html" title="ExUnit.TimeoutError">ExUnit.TimeoutError</a>
+    <a href="ExUnit.TimeoutError.html" title="ExUnit.TimeoutError" data-toggle="collapse" data-parent="#nav-ExUnit-TimeoutError" data-target="#subnav-ExUnit-TimeoutError">
+      ExUnit.TimeoutError
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-ExUnit-TimeoutError" class="subsection collapse ">
     
     
     

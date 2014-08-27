@@ -9,21 +9,25 @@
 
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="js/highlight.js"></script>
+  <script src="js/bootstrap.js"></script>
 
   <script src="js/app.js"></script>
-
 
 </head>
 <body>
   <div id="header">
-    <div class="logo"></div>
-    <div class="title">
-      <h1>
-        
-        <a href="http://elixir-lang.org/docs.html" target="_top">Logger</a>
-        
-      </h1>
-      <h2>v0.15.2-dev</h2>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+      </div>
+      <div class="title">
+        <h1>
+          
+          <a href="http://elixir-lang.org/docs.html" target="_top">Logger</a>
+          
+        </h1>
+        <h2>v 0.15.2-dev</h2>
+      </div>
     </div>
   </div>
 
@@ -36,11 +40,13 @@
       </div>
       <div class="search"><input type="text" placeholder="search"/></div>
       <ul id="modules-list" class="section">
-  <li>
+  <li id="nav-Logger">
   <span class="title">
-    <a href="Logger.html" title="Logger">Logger</a>
+    <a href="Logger.html" title="Logger" data-toggle="collapse" data-parent="#nav-Logger" data-target="#subnav-Logger">
+      Logger
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Logger" class="subsection collapse ">
     
       <li>
         <a href="Logger.html#introduction">Introduction</a>
@@ -131,11 +137,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Logger-Formatter">
   <span class="title">
-    <a href="Logger.Formatter.html" title="Logger.Formatter">Logger.Formatter</a>
+    <a href="Logger.Formatter.html" title="Logger.Formatter" data-toggle="collapse" data-parent="#nav-Logger-Formatter" data-target="#subnav-Logger-Formatter">
+      Logger.Formatter
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Logger-Formatter" class="subsection collapse in">
     
       <li>
         <a href="Logger.Formatter.html#introduction">Introduction</a>
@@ -162,11 +170,13 @@
     
   </ul>
 </li>
-<li>
+<li id="nav-Logger-Translator">
   <span class="title">
-    <a href="Logger.Translator.html" title="Logger.Translator">Logger.Translator</a>
+    <a href="Logger.Translator.html" title="Logger.Translator" data-toggle="collapse" data-parent="#nav-Logger-Translator" data-target="#subnav-Logger-Translator">
+      Logger.Translator
+    </a>
   </span>
-  <ul class="subsection">
+  <ul id="subnav-Logger-Translator" class="subsection collapse ">
     
       <li>
         <a href="Logger.Translator.html#introduction">Introduction</a>
